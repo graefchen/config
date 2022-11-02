@@ -1,0 +1,50 @@
+add_newline = false
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vicmd_symbol = "[<](bold green)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[c]
+symbol = "C "
+
+[directory]
+read_only = "ro "
+
+[git_branch]
+symbol = "git "
+
+[golang]
+symbol = "go "
+
+[hostname]
+ssh_only = false
+
+[lua]
+symbol = "lua "
+detect_folders = [""]
+
+[nodejs]
+symbol = "nodejs "
+
+[package]
+symbol = "pkg "
+
+[purescript]
+symbol = "purs "
+
+[rust]
+symbol = "rs "
+
+[username]
+show_always = true
