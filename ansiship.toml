@@ -1,0 +1,54 @@
+# ~/.config/starship.toml
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vicmd_symbol = "[<](bold green)"
+
+[username]
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+disabled = false
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[git_branch]
+symbol = "git "
+
+[hg_branch]
+symbol = "hg "
+
+[c]
+symbol = "C "
+# the commands of the Tiny C Compiler
+# commands = [["tcc", "-vv"]]
+
+[dotnet]
+format = "via [$symbol($version )(tfm $tfm )]($style)"
+symbol = ".NET "
+
+[directory]
+read_only = " ro"
+
+[nodejs]
+symbol = "nodejs "
+
+[package]
+symbol = "pkg "
+
+[perl]
+symbol = "pl "
+
+[rust]
+symbol = "rs "

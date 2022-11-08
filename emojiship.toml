@@ -1,0 +1,63 @@
+# ~/.config/starship.toml
+
+[c]
+symbol = "🌌 "
+# the commands of the Tiny C Compiler
+# commands = [["tcc", "-vv"]]
+
+[cmake]
+symbol = "🐐 "
+
+[dotnet]
+symbol= "🥅 "
+
+[erlang]
+symbol = "🐓 "
+
+# [git_status]
+# conflicted = "🚩"
+# ahead = "💨"
+# behind = "😰"
+# diverged = "😵"
+# up_to_date = "👌"
+# untracked = "🤷"
+# stashed = "📦"
+# modified = "📝"
+# staged = '[++\($count\)](green)'
+# renamed = "👅"
+# deleted = "😞"
+
+[haskell]
+symbol = "🦈 "
+
+[helm]
+symbol = "🐜 "
+
+[julia]
+symbol = "📊 "
+
+[kotlin]
+symbol = "🐙 "
+
+[nodejs]
+symbol = "🐝 "
+
+[purescript]
+symbol = "🦚"
+
+[scala]
+symbol = "📏 "
+
+[vlang]
+symbol = "🦦"
+
+[zig]
+symbol = "🦎 "
+
+[buf]
+symbol = "🐂"
+
+# [custom.clanguage]
+# command = "echo 🌌 v$(tcc -v | cut -d ' ' -f 3)"
+# extensions = ["c", "h"]
+# style = "bold blue"

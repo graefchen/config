@@ -1,0 +1,45 @@
+# ~/.config/starship.toml
+
+[c]
+symbol = "🦏 "
+# the commands of the Tiny C Compiler
+# commands = [["tcc", "-vv"]]
+
+[cmake]
+symbol = "🐐 "
+
+[dotnet]
+symbol= "🥅 "
+
+[erlang]
+symbol = "🐓 "
+
+[haskell]
+symbol = "🦈 "
+
+[helm]
+symbol = "🐜 "
+
+[julia]
+symbol = "🦗 "
+
+[kotlin]
+symbol = "🐙 "
+
+[nodejs]
+symbol = "🐝 "
+
+[purescript]
+symbol = "🦚"
+
+[scala]
+symbol = "🦟 "
+
+[vlang]
+symbol = "🦦 "
+
+[zig]
+symbol = "🦎 "
+
+[buf]
+symbol = "🐂 "

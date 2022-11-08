@@ -1,0 +1,39 @@
+# ~/.config/starship.toml
+
+#get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$time\
+$username\
+$shlvl\
+$directory\
+$git_branch\
+$character
+"""
+
+add_newline = false
+
+[character]
+success_symbol = "[\\$](bold green)"
+error_symbol = "[\\$](bold red)"
+vicmd_symbol = "[<](bold green)"
+
+[directory]
+truncation_length = 3
+style = "bold green"
+read_only = "ro "
+
+[git_branch]
+format = "[$symbol:\\($branch\\)]($style) "
+style = "bold yellow"
+symbol = "git"
+
+[username]
+show_always = true
+style_user = "bold blue"
+format = "[$user]($style):"
+
+[time]
+format = "\\[$time\\] "
+disabled = false

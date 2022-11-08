@@ -1,0 +1,22 @@
+# ~/.config/starship.toml
+ 
+[username]
+disabled = false
+show_always = true
+
+[c]
+symbol = "🌌 "
+# the commands of the Tiny C Compiler
+# commands = [["tcc", "-vv"]]
+
+[cmake]
+symbol = "🐐 "
+
+[dotnet]
+symbol= "🥅 "
+
+[julia]
+symbol = "🦗 "
+
+[nodejs]
+symbol = "🐝 "
