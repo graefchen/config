@@ -9,6 +9,7 @@ $username\
 $shlvl\
 $directory\
 $git_branch\
+$git_status\
 $character
 """
 
@@ -22,16 +23,24 @@ vicmd_symbol = "[<](bold green)"
 [directory]
 truncation_length = 3
 style = "bold green"
-read_only = "ro "
+read_only = "ro"
 
 [git_branch]
-format = "[$symbol:\\($branch\\)]($style) "
+format = "[$symbol:\\($branch]($style)"
 style = "bold yellow"
 symbol = "git"
 
+[git_status]
+format = "[$modified$deleted\\) ]($style)"
+modified = "*"
+deleted = "*"
+untracked = "*"
+renamed = "*"
+style = "bold yellow"
+
 [username]
 show_always = true
-style_user = "bold blue"
+style_user = "bold cyan"
 format = "[$user]($style):"
 
 [time]
