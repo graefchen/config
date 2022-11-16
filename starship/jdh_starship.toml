@@ -1,6 +1,6 @@
 # ~/.config/starship.toml
 
-#get editor completions based on the config schema
+# get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
@@ -18,7 +18,7 @@ add_newline = false
 [character]
 success_symbol = "[\\$](bold green)"
 error_symbol = "[\\$](bold red)"
-vicmd_symbol = "[<](bold green)"
+# vicmd_symbol = "[<](bold green)"
 
 [directory]
 truncation_length = 3
