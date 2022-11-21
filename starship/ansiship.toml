@@ -10,12 +10,22 @@ success_symbol = "[>](bold green)"
 error_symbol = "[x](bold red)"
 # vicmd_symbol = "[<](bold green)"
 
+[cmd_duration]
+min_time = 10
+show_milliseconds = true
+
+[directory]
+read_only = " ro"
+
+[hostname]
+ssh_only = false
+disabled = false
+
 [username]
 disabled = false
 show_always = true
 
-[hostname]
-ssh_only = false
+[time]
 disabled = false
 
 [git_commit]
@@ -31,23 +41,27 @@ deleted = "x"
 [git_branch]
 symbol = "git "
 
-[hg_branch]
-symbol = "hg "
+[git_metrics]
+disabled = false
 
 [c]
 symbol = "C "
 # the commands of the Tiny C Compiler
-commands = [["tcc", "-vv"]]
+# commands = [["tcc", "-vv"]]
 
 [dotnet]
 format = "via [$symbol($version )(tfm $tfm )]($style)"
 symbol = ".NET "
 
-[directory]
-read_only = " ro"
+[golang]
+symbol = "go "
 
 [java]
 symbol = "java "
+
+[lua]
+symbol = "lua "
+detect_folders = [""]
 
 [nodejs]
 symbol = "nodejs "
@@ -57,6 +71,9 @@ symbol = "pkg "
 
 [perl]
 symbol = "pl "
+
+[purescript]
+symbol = "purs "
 
 [rust]
 symbol = "rs "
