@@ -1,0 +1,60 @@
+# ~/.config/starship.toml
+
+# get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+format = """
+[==   system  ==](bold green) $username $hostname $localip $time $shell $jobs
+[== directory ==](bold green) $directory
+[==  project  ==](bold green) $git_branch$git_commit$git_state$git_metrics$git_status$package$c$cmake$cobol$daml$dart$deno$dotnet$elixir$elm$erlang$golang$haskell$helm$java$julia$kotlin$lua$nim$nodejs$ocaml$perl$php$pulumi$purescript$python$raku$rlang$red$ruby$rust$scala$swift$terraform$vlang$vagrant$zig
+[==  command  ==](bold green) $cmd_duration $character
+"""
+
+[fill]
+symbol = "-"
+style = "bold black"
+
+[username]
+show_always = true
+format = "User: [$user]($style)"
+
+[hostname]
+ssh_only = false
+format = "Host: [$ssh_symbol$hostname]($style)"
+
+[localip]
+ssh_only = false
+disabled = false
+format = "IP: [$localipv4]($style)"
+
+[time]
+disabled = false
+format = "Time: [$time]($style)"
+
+[shell]
+disabled = false
+format = "Shell: [$indicator]($style)"
+
+[jobs]
+disabled = false
+format = "Jobs: [$symbol$number]($style)"
+number_threshold = 0
+
+[directory]
+read_only = "ro"
+format = "Directory: [$path]($style)[$read_only]($read_only_style)"
+
+[git_branch]
+symbol = "git "
+format = "Git Branch: [$symbol$branch(:$remote_branch)]($style)"
+
+[cmd_duration]
+min_time = 10
+format = "Last CMD Duration: [$duration]($style)"
+show_milliseconds = true
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
