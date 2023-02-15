@@ -13,6 +13,7 @@
 		"James-Yu.latex-workshop",
 		"bierner.github-markdown-preview",
 		// C/C++
+		"ms-vscode.cpptools",
 		"llvm-vs-code-extensions.vscode-clangd",
 		"vadimcn.vscode-lldb",
 		// Rust
