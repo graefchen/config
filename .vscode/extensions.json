@@ -1,0 +1,25 @@
+{
+	"recommendations": [
+		// Themes & Generals
+		"teabyii.ayu",
+		"ykray.lightbulb",
+		"wayou.vscode-todo-highlight",
+		"vscode-icons-team.vscode-icons",
+		"usernamehw.errorlens",
+		"alefragnani.project-manager",
+		"pnp.polacode",
+		"mhutchie.git-graph",
+		// Markdown/Latex
+		"James-Yu.latex-workshop",
+		"bierner.github-markdown-preview",
+		// C/C++
+		"llvm-vs-code-extensions.vscode-clangd",
+		"vadimcn.vscode-lldb",
+		// Rust
+		"rust-lang.rust-analyzer",
+		"serayuzgur.crates",
+		"bungcip.better-toml",
+		"tamasfe.even-better-toml",
+		"PolyMeilex.wgsl",
+	]
+}
