@@ -23,7 +23,7 @@ deleted = "x"
 [c]
 symbol = "C "
 # the commands of the Tiny C Compiler
-commands = [["tcc", "-vv"]]
+# commands = [["tcc", "-vv"]]
 
 [directory]
 read_only = "ro "

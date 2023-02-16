@@ -3,10 +3,16 @@
 # get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+add_newline = false
+
+[username]
+disabled = false
+show_always = true
+
 [c]
 symbol = "🌌 "
 # the commands of the Tiny C Compiler
-commands = [["tcc", "-vv"]]
+# commands = [["tcc", "-vv"]]
 
 [cmake]
 symbol = "🐐 "

@@ -10,7 +10,7 @@ show_always = true
 [c]
 symbol = "🌌 "
 # the commands of the Tiny C Compiler
-commands = [["tcc", "-vv"]]
+# commands = [["tcc", "-vv"]]
 
 [cmake]
 symbol = "🐐 "
