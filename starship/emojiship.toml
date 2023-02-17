@@ -10,7 +10,7 @@ disabled = false
 show_always = true
 
 [c]
-symbol = "🌌 "
+symbol = "🚀 "
 # the commands of the Tiny C Compiler
 # commands = [["tcc", "-vv"]]
 
