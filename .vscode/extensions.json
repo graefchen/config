@@ -1,14 +1,21 @@
 {
 	"recommendations": [
-		// Themes & Generals
+		// Generals
 		"teabyii.ayu",
 		"ykray.lightbulb",
-		"wayou.vscode-todo-highlight",
+		// Generel things
 		"vscode-icons-team.vscode-icons",
+		// Highlighting / Error
+		"wayou.vscode-todo-highlight",
 		"usernamehw.errorlens",
-		"alefragnani.project-manager",
+		// Productivity
 		"pnp.polacode",
+		"alefragnani.project-manager",
 		"mhutchie.git-graph",
+		// "stateful.marquee",
+		// Fun
+		// "le-nn.vscode-vector-aquarium",
+		// "tonybaloney.vscode-pets",
 		// Markdown/Latex
 		"James-Yu.latex-workshop",
 		"bierner.github-markdown-preview",
@@ -22,5 +29,10 @@
 		"bungcip.better-toml",
 		"tamasfe.even-better-toml",
 		"PolyMeilex.wgsl",
+		// Shell's
+		"ms-vscode.powershell",
+		"mads-hartmann.bash-ide-vscode",
+		// Haskell
+		"haskell.haskell"
 	]
 }
