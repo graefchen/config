@@ -59,6 +59,8 @@ alias cc='clang'
 alias glg="git log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative"
 # hexviewer alias
 # alias hexyl='hexyl --border ascii'
+# npx call server
+alias server='npx serve'
 
 # language in the shell
 LANG=de.UTF8
