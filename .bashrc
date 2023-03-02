@@ -65,6 +65,8 @@ alias server='npx serve'
 # language in the shell
 LANG=de.UTF8
 
+export COLORTERM='truecolor'
+
 # starship config
 # the default config of plain text will be choosen
 eval "$(starship init bash)"
