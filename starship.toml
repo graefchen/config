@@ -31,6 +31,9 @@ read_only = "ro "
 [git_branch]
 symbol = "git "
 
+[git_metrics]
+disabled = false
+
 [golang]
 symbol = "go "
 

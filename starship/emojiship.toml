@@ -36,6 +36,9 @@ symbol = "🐓 "
 # renamed = "👅"
 # deleted = "😞"
 
+[git_metrics]
+disabled = false
+
 [haskell]
 symbol = "🦈 "
 

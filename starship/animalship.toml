@@ -21,6 +21,9 @@ symbol= "🥅 "
 [erlang]
 symbol = "🐓 "
 
+[git_metrics]
+disabled = false
+
 [haskell]
 symbol = "🦈 "
 

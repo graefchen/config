@@ -48,7 +48,10 @@ format = "Directory: [$path]($style)[$read_only]($read_only_style)"
 
 [git_branch]
 symbol = "git "
-format = "Git Branch: [$symbol$branch(:$remote_branch)]($style)"
+format = "Git Branch: [$symbol$branch(:$remote_branch)]($style) "
+
+[git_metrics]
+disabled = false
 
 [cmd_duration]
 min_time = 10
