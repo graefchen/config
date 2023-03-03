@@ -23,6 +23,8 @@
 		"ms-vscode.cpptools",
 		"llvm-vs-code-extensions.vscode-clangd",
 		"vadimcn.vscode-lldb",
+		// JS
+		"denoland.vscode-deno",
 		// Rust
 		"rust-lang.rust-analyzer",
 		"serayuzgur.crates",
