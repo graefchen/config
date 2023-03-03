@@ -42,15 +42,21 @@ reset='\E[0m'
 
 # Some aliases
 # list alias
+alias l="ls --color='always'"
 alias ls="ls --color='always'"
+alias la="ls -a --color='always'"
 alias ll="ls -l --color='always'"
-alias la="ls -la --color='always'"
+alias lla="ls -la --color='always'"
 # alias tree='lsd --tree'
+
+
 # cd alias
 alias ..="cd .."
 alias ....='cd ../..'
 alias ......='cd ../../..'
 alias ........='cd ../../../..'
+
+
 # helper alias
 alias re='source ~/.bashrc'
 # compiler alias
@@ -65,6 +71,9 @@ alias server='npx serve'
 # language in the shell
 LANG=de.UTF8
 
+# Setting the console to truecolor so 
+# that onefetc can display the
+# language logos in the correct colour
 export COLORTERM='truecolor'
 
 # starship config
