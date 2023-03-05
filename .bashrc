@@ -56,6 +56,9 @@ alias ....='cd ../..'
 alias ......='cd ../../..'
 alias ........='cd ../../../..'
 
+# set nvim alias
+alias vi='nvim'
+alias vim='nvim'
 
 # helper alias
 alias re='source ~/.bashrc'
@@ -75,6 +78,11 @@ LANG=de.UTF8
 # that onefetc can display the
 # language logos in the correct colour
 export COLORTERM='truecolor'
+
+# Setting to allow nvim / (vim)
+# to use the .config folder as the
+# config home
+export XDG_CONFIG_HOME='~/.config'
 
 # starship config
 # the default config of plain text will be choosen
@@ -96,7 +104,7 @@ export STARSHIP_CONFIG=~/.config/starship/animalship.toml
 # a costum complex version
 # export STARSHIP_CONFIG=~/.config/starship/complex.toml
 
-export PATH=$PATH:~/programming/bash:~/programming/c/repos/colours
+export PATH=$PATH:~/programming/bash:~/programming/c/repos/colours:~/programming/powershell
 
 function pd {
 	cd D:/Program\ Files\ \(x86\)/Steam/steamapps/common/'PAYDAY 2'/mods
