@@ -106,6 +106,7 @@ export STARSHIP_CONFIG=~/.config/starship/animalship.toml
 
 export PATH=$PATH:~/programming/bash:~/programming/c/repos/colours:~/programming/powershell
 
+# way to go to the payday 2 mod files
 function pd {
 	cd D:/Program\ Files\ \(x86\)/Steam/steamapps/common/'PAYDAY 2'/mods
 }

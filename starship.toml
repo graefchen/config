@@ -28,6 +28,9 @@ symbol = "C "
 [directory]
 read_only = "ro "
 
+[deno]
+symbol = "deno "
+
 [git_branch]
 symbol = "git "
 
