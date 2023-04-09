@@ -5,6 +5,7 @@
 		"ykray.lightbulb",
 		// Generel things
 		"vscode-icons-team.vscode-icons",
+		"helgardrichard.helium-icon-theme",
 		// Highlighting / Error
 		"wayou.vscode-todo-highlight",
 		"usernamehw.errorlens",
@@ -23,8 +24,9 @@
 		"ms-vscode.cpptools",
 		"llvm-vs-code-extensions.vscode-clangd",
 		"vadimcn.vscode-lldb",
-		// JS
+		// Deno
 		"denoland.vscode-deno",
+		"sastan.twind-intellisense",
 		// Rust
 		"rust-lang.rust-analyzer",
 		"serayuzgur.crates",
@@ -35,6 +37,17 @@
 		"ms-vscode.powershell",
 		"mads-hartmann.bash-ide-vscode",
 		// Haskell
-		"haskell.haskell"
+		"haskell.haskell",
+		// lilypond
+		"lhl2617.vslilypond",
+		// vim
+		"XadillaX.viml",
+		// awk
+		"beaglefoot.awk-ide-vscode",
+		// autohotkey
+		"cweijan.vscode-autohotkey-plus",
+		// perl
+		"bscan.perlnavigator",
+		// "richterger.perl"
 	]
 }

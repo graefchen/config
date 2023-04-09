@@ -49,7 +49,6 @@ alias ll="ls -l --color='always'"
 alias lla="ls -la --color='always'"
 # alias tree='lsd --tree'
 
-
 # cd alias
 alias ..="cd .."
 alias ....='cd ../..'
@@ -72,7 +71,7 @@ alias glg="git log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(r
 alias server='npx serve'
 
 # language in the shell
-LANG=de.UTF8
+# LANG=de.UTF8
 
 # Setting the console to truecolor so 
 # that onefetc can display the
@@ -104,7 +103,7 @@ export STARSHIP_CONFIG=~/.config/starship/animalship.toml
 # a costum complex version
 # export STARSHIP_CONFIG=~/.config/starship/complex.toml
 
-export PATH=$PATH:~/programming/bash:~/programming/c/repos/colours:~/programming/powershell
+export PATH=$PATH:~/programming/bash:~/programming/c/repos/colours:~/programming/powershell:~/programming/awk
 
 # way to go to the payday 2 mod files
 function pd {
