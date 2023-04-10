@@ -20,6 +20,8 @@
 		// Markdown/Latex
 		"James-Yu.latex-workshop",
 		"bierner.github-markdown-preview",
+		// svg
+		"jock.svg",
 		// C/C++
 		"ms-vscode.cpptools",
 		"llvm-vs-code-extensions.vscode-clangd",
@@ -27,6 +29,8 @@
 		// Deno
 		"denoland.vscode-deno",
 		"sastan.twind-intellisense",
+		// Java
+		"redhat.java",
 		// Rust
 		"rust-lang.rust-analyzer",
 		"serayuzgur.crates",
@@ -39,7 +43,7 @@
 		// Haskell
 		"haskell.haskell",
 		// lilypond
-		"lhl2617.vslilypond",
+		// "lhl2617.vslilypond",
 		// vim
 		"XadillaX.viml",
 		// awk
