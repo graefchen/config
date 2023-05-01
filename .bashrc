@@ -103,7 +103,7 @@ export STARSHIP_CONFIG=~/.config/starship/animalship.toml
 # a costum complex version
 # export STARSHIP_CONFIG=~/.config/starship/complex.toml
 
-export PATH=$PATH:~/programming/bash:~/programming/c/repos/colours:~/programming/powershell:~/programming/awk
+export PATH=$PATH:~/programming/bash:~/programming/c/repos/colours:~/programming/powershell:~/programming/awk:~/programming/nu
 
 # way to go to the payday 2 mod files
 function pd {
