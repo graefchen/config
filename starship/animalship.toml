@@ -7,19 +7,30 @@
 disabled = false
 show_always = true
 
+# Made that also cpp is shown under this ... lol
 [c]
 symbol = "🦏 "
 # the commands of the Tiny C Compiler
 # commands = [["tcc", "-vv"]]
+commands = [ [ "clang", "--version" ] ]
+detect_extensions = [ "c", "h", "cc", "hh", "cpp", "hpp", "c++", "h++" ]
+# detects the .clangd file => LSP for clang
+detect_files = [ ".clangd" ]
 
 [cmake]
 symbol = "🐐 "
 
-[dotnet]
-symbol= "🥅 "
+[dart]
+symbol = "🦔 "
 
-[erlang]
-symbol = "🐓 "
+[deno]
+symbol = "🦕 "
+
+[dotnet]
+symbol= "🦑 "
+
+[golang]
+symbol = "🐹 "
 
 [git_metrics]
 disabled = false
@@ -27,8 +38,8 @@ disabled = false
 [haskell]
 symbol = "🦈 "
 
-[helm]
-symbol = "🐜 "
+[java]
+symbol = "🐈 "
 
 [julia]
 symbol = "🦗 "
@@ -36,11 +47,33 @@ symbol = "🦗 "
 [kotlin]
 symbol = "🐙 "
 
+[lua]
+symbol = "🐜 "
+detect_folders = [""]
+
 [nodejs]
 symbol = "🐝 "
 
+[perl]
+symbol = "🐪 "
+
+[php]
+symbol = "🐘 "
+
 [purescript]
 symbol = "🦚"
+
+[python]
+symbol = "🐍 "
+
+[rlang]
+symbol = "🦉 "
+
+[ruby]
+symbol = "🦙 "
+
+[rust]
+symbol = "🦀 "
 
 [scala]
 symbol = "🦟 "
@@ -50,6 +83,3 @@ symbol = "🦦 "
 
 [zig]
 symbol = "🦎 "
-
-[buf]
-symbol = "🐂 "

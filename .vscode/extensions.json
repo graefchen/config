@@ -1,14 +1,8 @@
 {
     "recommendations": [
-        // Generals
-        "teabyii.ayu",
-        "ykray.lightbulb",
-        // Generel things
-        "vscode-icons-team.vscode-icons",
-        "helgardrichard.helium-icon-theme",
         // Highlighting / Error
         "wayou.vscode-todo-highlight",
-        "usernamehw.errorlens",
+        // "usernamehw.errorlens",
         // Productivity
         "pnp.polacode",
         "alefragnani.project-manager",
@@ -26,23 +20,23 @@
         "ms-vscode.cpptools",
         "llvm-vs-code-extensions.vscode-clangd",
         "vadimcn.vscode-lldb",
+        "surajbarkale.ninja",
         // Deno
         "denoland.vscode-deno",
-        "sastan.twind-intellisense",
+        // "sastan.twind-intellisense",
         // Java
         "redhat.java",
         // Rust
         "rust-lang.rust-analyzer",
         "serayuzgur.crates",
-        "bungcip.better-toml",
         "tamasfe.even-better-toml",
-        "PolyMeilex.wgsl",
+        // "PolyMeilex.wgsl",
         // Shell's
-        "ms-vscode.powershell",
+        // "ms-vscode.powershell",
         "mads-hartmann.bash-ide-vscode",
         "TheNuProjectContributors.vscode-nushell-lang",
         // Haskell
-        "haskell.haskell",
+        // "haskell.haskell",
         // lilypond
         // "lhl2617.vslilypond",
         // vim
@@ -55,6 +49,27 @@
         "bscan.perlnavigator",
         // "richterger.perl"
         // lua
-        "sumneko.lua",
+        // "sumneko.lua",
+        "yinfei.luahelper",
+        // Themes I once used ...
+        // Colour
+        // "eliverlara.andromeda",
+        "teabyii.ayu",
+        "ms-vscode.cpptools-themes",
+        // "catppuccin.catppuccin-vs",
+        // "github.github-vscode-theme",
+        // "ykray.lightbulb",
+        // "shubham-saudolla.lilac",
+        // "databyne.theme-monokai-hc",
+        // "74th.monokai-charcoal-high-contrast",
+        // "sdras.night-owl",
+        // "liviuschera.noctis",
+        // "arcticicestudio.nord-visual-studio-code",
+        // "whizkydee.material-palenight-theme",
+        // "ftsamoyed.theme-pink-cat-boo",
+        // "enkia.tokyo-night",
+        // Icons
+        // "helgardrichard.helium-icon-theme",
+        "vscode-icons-team.vscode-icons"
     ]
 }

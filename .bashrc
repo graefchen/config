@@ -42,12 +42,12 @@ reset='\E[0m'
 
 # Some aliases
 # list alias
-alias l="ls --color='always'"
-alias ls="ls --color='always'"
-alias la="ls -a --color='always'"
-alias ll="ls -l --color='always'"
-alias lla="ls -la --color='always'"
-# alias tree='lsd --tree'
+alias l="lsd"
+alias ls="lsd"
+alias la="lsd"
+alias ll="lsd"
+alias lla="lsd -la"
+alias tree='lsd --tree'
 
 # cd alias
 alias ..="cd .."
@@ -58,10 +58,11 @@ alias ........='cd ../../../..'
 # set nvim alias
 alias vi='nvim'
 alias vim='nvim'
+alias hx='hx -c ~/.config/helix/config.toml'
 
 # helper alias
 alias re='source ~/.bashrc'
-# compiler alias
+# c compiler alias
 alias cc='clang'
 # git alias
 alias glg="git log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative"
