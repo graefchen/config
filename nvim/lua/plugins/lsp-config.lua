@@ -6,15 +6,39 @@ return {
 	{
 		"williamboman/mason.nvim",
 		config = function()
-			require("mason").setup()
+			require("mason").setup({})
 		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
+				-- Making sure that those LSP's are 100% installed
+				-- List of possible extenions here: https://mason-registry.dev/registry/list
+				-- And the names of the extensions: https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#available-lsp-servers
+				-- Todo: Add HTML Server
 				ensure_installed = {
+					-- biome (json, js, ts)
+					"biome",
+					-- clangd(c, c++)
+					"clangd",
+					-- cssls (css, scss, less)
+					"cssls",
+					-- denols (js, ts)
+					"denols",
+					-- html (html)
+					"html",
+					-- hls (haskell)
+					"hls",
+					-- lua_ls (lua)
 					"lua_ls",
+					-- rust_analyzer (rust)
+					"rust_analyzer",
+					-- tailwindcss (css) [specifically for tailwind classes]
+					"tailwindcss",
+					-- taplo (toml)
+					"taplo",
+					-- tsserver (js, ts)
 					"tsserver",
 				},
 			})
@@ -26,10 +50,9 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
+			-- setting up the lsp with all the needed capabilities
+			-- Todo: Make that even better ... somehow
 			lspconfig.lua_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
 

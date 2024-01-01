@@ -18,7 +18,7 @@ return {
 			enable_git_status = true,
 			enable_diagnostics = true,
 			window = {
-				position = "right",
+				position = "float",
 			},
 			filesystem = {
 				filtered_items = {
@@ -31,6 +31,7 @@ return {
 					always_show = {},
 					never_show = {
 						".git",
+						"node_modules"
 					},
 					never_show_by_pattern = {},
 				},
@@ -38,7 +39,7 @@ return {
 		})
 
 		-- Todo: Maybe put this in another place...
-		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal right<CR>")
+		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal<CR>")
 
 		-- Here come all the dev icon changes...
 		require("nvim-web-devicons").setup({
