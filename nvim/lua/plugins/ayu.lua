@@ -6,6 +6,7 @@ return {
 	priority = 1000,
 	config = function()
 		require("ayu").setup({
+			mirage = false,
 			overrides = {
 				Normal = { bg = "None" },
 				ColorColumn = { bg = "None" },
@@ -18,6 +19,6 @@ return {
 				VertSplit = { bg = "None" },
 			},
 		})
-		vim.cmd.colorscheme("ayu")
+		require("ayu").colorscheme()
 	end,
 }

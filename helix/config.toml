@@ -1,4 +1,13 @@
-theme = "gruvbox"
+theme = "ayu_dark"
 
 [editor]
-line-number = "relative"
+line-number = "absolute"
+rulers = [80]
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.whitespace]
+render = "all"
