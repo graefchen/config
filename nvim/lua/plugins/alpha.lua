@@ -16,10 +16,11 @@ return {
 		-- [1] startify
 		-- [2] theta
 		-- [3] dashboard
-		local theme = require("alpha.themes.dashboard")
-		local fortune = require("alpha.fortune")
+		local theme = require("alpha.themes.theta")
+		-- fortune printing ...
+		-- need to look how to implement in a good way with the layout
+		-- local fortune = require("alpha.fortune")
 
-		theme.section.footer.val = fortune
-		alpha.setup(theme.opts)
+		alpha.setup(theme.config)
 	end,
 }

@@ -52,7 +52,13 @@ return {
 			local lspconfig = require("lspconfig")
 			-- setting up the lsp with all the needed capabilities
 			-- Todo: Make that even better ... somehow
+			lspconfig.html.setup = {
+				capabilities = capabilities,
+			}
 			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
 			})
 

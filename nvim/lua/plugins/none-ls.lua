@@ -9,9 +9,13 @@ return {
 			local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 			null_ls.setup({
-				-- The formater we use
+				-- The formaters we use ...
+				-- More formatters can be found here: (https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting)
+				-- [1] rust
+				-- [2] lua
 				sources = {
-					-- lua formatter
+					null_ls.builtins.formatting.prettier,
+					null_ls.builtins.formatting.rustfmt,
 					null_ls.builtins.formatting.stylua,
 				},
 				-- Attaching an function that fromats every time a file gets saved
