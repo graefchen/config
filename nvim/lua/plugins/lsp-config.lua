@@ -52,9 +52,18 @@ return {
 			local lspconfig = require("lspconfig")
 			-- setting up the lsp with all the needed capabilities
 			-- Todo: Make that even better ... somehow
-			lspconfig.html.setup = {
+			lspconfig.clangd.setup({
 				capabilities = capabilities,
-			}
+			})
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.denols.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.html.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
