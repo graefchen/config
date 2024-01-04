@@ -10,4 +10,4 @@ vim.cmd("set mouse=a")
 vim.cmd("set wildmode=longest,list")
 
 vim.g.mapleader = " "
-
+vim.opt.list = true

@@ -10,7 +10,6 @@ Just my config files.
 - bash config
 - [more will follow]
 
-
 ## NeoVim setup:
 
 - Language Server & Snippets
@@ -21,4 +20,3 @@ Just my config files.
 - Sidebar/File Tree
 - Packet Manager
 - [more will follow]
-
