@@ -1,4 +1,5 @@
 vim.cmd("language en_US")
+vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.cmd("set showmatch")
 vim.cmd("set tabstop=2")
