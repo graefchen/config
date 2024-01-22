@@ -16,7 +16,12 @@ Just my config files.
 - Color
 - Formatting
   - Lua
-  - JS/TS (NOT! Deno)
 - Sidebar/File Tree
 - Packet Manager
 - [more will follow]
+
+## Potential nvim plugins to be added:
+
+- https://github.com/gorbit99/codewindow.nvim
+- https://github.com/fedepujol/move.nvim
+- https://github.com/gaborvecsei/usage-tracker.nvim

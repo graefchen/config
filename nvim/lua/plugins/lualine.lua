@@ -5,8 +5,10 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		require("lualine").setup({
-			options = { theme = "ayu" },
-		})
+		local ayu_theme = "ayu-light"
+		if vim.o.background == "dark" then
+			ayu_theme = "ayu-dark"
+		end
+		require("tabby.tabline").use_preset("tab_only", { theme = nil, nerdfont = true, lualine_theme = ayu_theme })
 	end,
 }
