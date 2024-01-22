@@ -10,7 +10,10 @@ vim.cmd("syntax on")
 vim.cmd("set mouse=a")
 vim.cmd("set wildmode=longest,list")
 
+-- Do not delete this line below !!!!
+vim.g.mapleader = " "
+
 -- vim.opt.list = true
 
 -- Setting the background to light...
-vim.opt.background = "dark"
+-- vim.opt.background = "dark"
