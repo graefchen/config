@@ -2,6 +2,8 @@
 -- [1] https://github.com/williamboman/mason.nvim
 -- [2] https://github.com/williamboman/mason-lspconfig.nvim
 -- [3] https://github.com/neovim/nvim-lspconfig
+-- [4] https://github.com/hrsh7th/cmp-nvim-lsp-signature-help
+-- [5] https://github.com/ray-x/lsp_signature.nvim
 return {
 	{
 		"williamboman/mason.nvim",
@@ -81,4 +83,23 @@ return {
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
 		end,
 	},
+	-- This signatiure helper is fine but sadly not persistent
+	-- {
+	-- 	"hrsh7th/cmp-nvim-lsp-signature-help",
+	-- 	config = function()
+	-- 		require("cmp").setup({
+	-- 			sources = {
+	-- 				{ name = "nvim_lsp_signature_help" },
+	-- 			},
+	-- 		})
+	-- 	end,
+	-- },
+	{
+		"ray-x/lsp_signature.nvim",
+		config = function()
+			require('lsp_signature').setup({
+				hint_enable = false
+			})
+		end,
+	}
 }

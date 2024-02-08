@@ -5,7 +5,7 @@
 -- [2] https://github.com/L3MON4D3/LuaSnip
 -- [3] https://github.com/saadparwaiz1/cmp_luasnip
 -- [4] https://github.com/rafamadriz/friendly-snippets
--- [5] https://github.com/topics/nvim-cmp
+-- [5] https://github.com/hrsh7th/nvim-cmp
 return {
 	{
 		"hrsh7th/cmp-nvim-lsp",

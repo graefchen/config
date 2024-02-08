@@ -11,9 +11,12 @@ return {
 			null_ls.setup({
 				-- The formaters we use ...
 				-- More formatters can be found here: (https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting)
-				-- [1] rust
-				-- [2] lua
+				-- [1] c, cpp
+				-- [2] js, css
+				-- [3] rust
+				-- [4] lua
 				sources = {
+					null_ls.builtins.formatting.clang_format
 					null_ls.builtins.formatting.prettier,
 					null_ls.builtins.formatting.rustfmt,
 					null_ls.builtins.formatting.stylua,

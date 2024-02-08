@@ -5,6 +5,7 @@
 -- [4] https://github.com/lukas-reineke/indent-blankline.nvim
 -- [5] https://github.com/NvChad/nvim-colorizer.lua
 -- [6] https://github.com/lewis6991/gitsigns.nvim
+-- [7] https://github.com/windwp/nvim-ts-autotag
 return {
 	{
 		-- A tabline plugin
@@ -12,9 +13,6 @@ return {
 		event = "VimEnter",
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
-			-- Make the tabline always appear
-			vim.o.showtabline = 2
-
 			local ayu_theme = "ayu-light"
 			if vim.o.background == "dark" then
 				ayu_theme = "ayu-dark"
@@ -37,7 +35,9 @@ return {
 		-- of html elements and brackets
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
-		config = function() end,
+		config = function()
+			require("nvim-autopairs").setup({})
+		end,
 	},
 	{
 		-- This here add indentation lines
@@ -88,6 +88,16 @@ return {
 		"lewis6991/gitsigns.nvim",
 		config = function()
 			require("gitsigns").setup()
+		end,
+	},
+	{
+		"windwp/nvim-ts-autotag",
+		config = function()
+			require("nvim-treesitter.configs").setup({
+				autotag = {
+					enable = true,
+				},
+			})
 		end,
 	},
 }
