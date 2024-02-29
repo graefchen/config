@@ -22,13 +22,13 @@ return {
 				-- Todo: Add HTML Server
 				ensure_installed = {
 					-- biome (json, js, ts)
-					"biome",
+					-- "biome",
 					-- clangd(c, c++)
 					"clangd",
 					-- cssls (css, scss, less)
 					"cssls",
 					-- denols (js, ts)
-					"denols",
+					-- "denols",
 					-- html (html)
 					"html",
 					-- hls (haskell)
@@ -55,15 +55,18 @@ return {
 			local lspconfig = require("lspconfig")
 			-- setting up the lsp with all the needed capabilities
 			-- Todo: Make that even better ... somehow
+			-- lspconfig.biome.setup( {
+			--	capabilities = capabilities,
+			-- })
 			lspconfig.clangd.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.cssls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.denols.setup({
-				capabilities = capabilities,
-			})
+			-- lspconfig.denols.setup({
+			--	capabilities = capabilities,
+			-- })
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
@@ -74,6 +77,9 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
 
