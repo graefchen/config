@@ -19,30 +19,52 @@ return {
 				-- Making sure that those LSP's are 100% installed
 				-- List of possible extenions here: https://mason-registry.dev/registry/list
 				-- And the names of the extensions: https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#available-lsp-servers
-				-- Todo: Add HTML Server
+				-- TODO: Add more servers...
 				ensure_installed = {
+					-- bashls (bash)
+					"bashls",
 					-- biome (json, js, ts)
-					-- "biome",
+					"biome",
 					-- clangd(c, c++)
 					"clangd",
 					-- cssls (css, scss, less)
 					"cssls",
 					-- denols (js, ts)
-					-- "denols",
+					"denols",
 					-- html (html)
 					"html",
 					-- hls (haskell)
 					"hls",
 					-- lua_ls (lua)
 					"lua_ls",
+					-- jqls (jq)
+					"jqls",
+					-- marksman (md)
+					"marksman",
+					-- ols (odin)
+					"ols",
+					-- perlnavigator (perl)
+					"perlnavigator",
+					-- purescriptls (ps)
+					"purescriptls",
+					-- swift_mesonls (meson)
+					"swift_mesonls",
+					-- r_language_server (r)
+					-- "r_language_server",
 					-- rust_analyzer (rust)
 					"rust_analyzer",
 					-- tailwindcss (css) [specifically for tailwind classes]
 					"tailwindcss",
 					-- taplo (toml)
 					"taplo",
+					-- texlab (latex)
+					"texlab",
 					-- tsserver (js, ts)
 					"tsserver",
+					-- vls (v)
+					"vls",
+					-- zls (zig)
+					"zls",
 				},
 			})
 		end,
@@ -70,7 +92,16 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.jqls.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.marksman.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.ols.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({
@@ -82,6 +113,9 @@ return {
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.vls.setup({
+				capabilities = capabilities,
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
@@ -91,9 +125,9 @@ return {
 	{
 		"ray-x/lsp_signature.nvim",
 		config = function()
-			require('lsp_signature').setup({
-				hint_enable = false
+			require("lsp_signature").setup({
+				hint_enable = false,
 			})
 		end,
-	}
+	},
 }
