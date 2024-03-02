@@ -6,6 +6,9 @@
 -- [5] https://github.com/NvChad/nvim-colorizer.lua
 -- [6] https://github.com/lewis6991/gitsigns.nvim
 -- [7] https://github.com/windwp/nvim-ts-autotag
+-- [8] https://github.com/fedepujol/move.nvim
+-- [9] https://github.com/folke/todo-comments.nvim
+-- [10] https://github.com/nvim-lua/plenary.nvim
 return {
 	{
 		-- A tabline plugin
@@ -99,5 +102,16 @@ return {
 				},
 			})
 		end,
+	},
+	{
+		"fedepujol/move.nvim",
+		config = function()
+			require("move").setup({})
+		end,
+	},
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		opts = {},
 	},
 }

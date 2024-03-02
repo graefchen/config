@@ -23,5 +23,4 @@ Just my config files.
 ## Potential nvim plugins to be added:
 
 - https://github.com/gorbit99/codewindow.nvim
-- https://github.com/fedepujol/move.nvim
-- https://github.com/gaborvecsei/usage-tracker.nvim
+- https://github.com/iamcco/markdown-preview.nvim

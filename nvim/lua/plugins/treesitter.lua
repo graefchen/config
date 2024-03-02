@@ -17,9 +17,10 @@ return {
 				"c",
 				"c_sharp",
 				"cmake",
-				"comment",
+				-- Adds some cool things to comments
+				-- "comment",
 				-- Interesting "language"
-				"corn",
+				-- "corn",
 				"cpp",
 				"css",
 				"csv",
