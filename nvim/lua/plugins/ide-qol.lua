@@ -107,6 +107,13 @@ return {
 		"fedepujol/move.nvim",
 		config = function()
 			require("move").setup({})
+			-- Normal-mode commands
+			vim.keymap.set('n', '<C-Down>', ':MoveLine(1)<CR>')
+			vim.keymap.set('n', '<C-Up>', ':MoveLine(-1)<CR>')
+
+			-- Visual-mode commands
+			vim.keymap.set('v', '<A-j>', ':MoveBlock(1)<CR>')
+			vim.keymap.set('v', '<A-k>', ':MoveBlock(-1)<CR>')
 		end,
 	},
 	{
