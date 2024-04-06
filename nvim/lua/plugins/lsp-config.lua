@@ -47,8 +47,6 @@ return {
 					"perlnavigator",
 					-- purescriptls (ps)
 					"purescriptls",
-					-- swift_mesonls (meson)
-					"swift_mesonls",
 					-- r_language_server (r)
 					-- "r_language_server",
 					-- rust_analyzer (rust)
@@ -61,8 +59,6 @@ return {
 					"texlab",
 					-- tsserver (js, ts)
 					"tsserver",
-					-- vls (v)
-					"vls",
 					-- zls (zig)
 					"zls",
 				},
@@ -87,7 +83,7 @@ return {
 				capabilities = capabilities,
 			})
 			-- lspconfig.denols.setup({
-			--	capabilities = capabilities,
+			-- 	capabilities = capabilities,
 			-- })
 			lspconfig.html.setup({
 				capabilities = capabilities,
@@ -110,12 +106,9 @@ return {
 			lspconfig.tailwindcss.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.tsserver.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.vls.setup({
-				capabilities = capabilities,
-			})
+			-- lspconfig.tsserver.setup({
+			-- 	capabilities = capabilities,
+			-- })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})

@@ -11,8 +11,10 @@ return {
 			null_ls.setup({
 				-- The formaters we use ...
 				-- More formatters can be found here: (https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting)
-				-- [1] lua
+				-- [1] prettier
+				-- [2] lua
 				sources = {
+					null_ls.builtins.formatting.prettier,
 					null_ls.builtins.formatting.stylua,
 				},
 				-- Attaching an function that fromats every time a file gets saved

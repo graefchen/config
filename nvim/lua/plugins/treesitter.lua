@@ -18,7 +18,7 @@ return {
 				"c_sharp",
 				"cmake",
 				-- Adds some cool things to comments
-				-- "comment",
+				"comment",
 				-- Interesting "language"
 				-- "corn",
 				"cpp",
@@ -94,7 +94,6 @@ return {
 				"tsv",
 				"tsx",
 				"typescript",
-				"v",
 				"vim",
 				"vimdoc",
 				"vue",
