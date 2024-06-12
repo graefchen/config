@@ -44,32 +44,40 @@ reset='\E[0m'
 # list alias
 alias l="lsd"
 alias ls="lsd"
-alias la="lsd"
-alias ll="lsd"
+alias la="lsd -a"
+alias ll="lsd -l"
 alias lla="lsd -la"
 alias tree='lsd --tree'
 
 # cd alias
 alias ..="cd .."
-alias ....='cd ../..'
-alias ......='cd ../../..'
-alias ........='cd ../../../..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 
 # set nvim alias
+alias neovim='nvim'
 alias vi='nvim'
 alias vim='nvim'
-alias hx='hx -c ~/.config/helix/config.toml'
+alias nv='nvim'
 
 # helper alias
 alias re='source ~/.bashrc'
 # c compiler alias
 alias cc='clang'
+
 # git alias
 alias glg="git log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative"
+alias g='git'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gp='git add --patch'
+
 # hexviewer alias
 # alias hexyl='hexyl --border ascii'
-# npx call server
-alias server='npx serve'
+
+alias fresh='deno run -A -r https://fresh.deno.dev'
+alias lume='deno run -A https://lume.land/init.ts'
 
 # language in the shell
 # LANG=de.UTF8
@@ -82,7 +90,7 @@ export COLORTERM='truecolor'
 # Setting to allow nvim / (vim)
 # to use the .config folder as the
 # config home
-export XDG_CONFIG_HOME='~/.config'
+export XDG_CONFIG_HOME='C:\\Users\Graef\.config'
 
 # starship config
 # the default config of plain text will be choosen
@@ -105,11 +113,6 @@ export STARSHIP_CONFIG=~/.config/starship/animalship.toml
 # export STARSHIP_CONFIG=~/.config/starship/complex.toml
 
 export PATH=$PATH:~/programming/bash:~/programming/c/repos/colours:~/programming/powershell:~/programming/awk:~/programming/nu
-
-# way to go to the payday 2 mod files
-function pd {
-	cd D:/Program\ Files\ \(x86\)/Steam/steamapps/common/'PAYDAY 2'/mods
-}
 
 function adog {
 	git log --all --decorate --oneline --graph
