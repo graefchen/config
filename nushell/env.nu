@@ -112,6 +112,7 @@ alias lume = deno run -A https://lume.land/init.ts
 
 # git alias and easy git stuff
 alias g = git
+alias gl = git log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative
 alias gc = git commit
 alias gcm = git commit -m
 alias gap = git add --patch
