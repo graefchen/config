@@ -3,6 +3,8 @@
 # get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+add_newline = false
+
 [username]
 disabled = false
 show_always = true
@@ -12,10 +14,10 @@ show_always = true
 symbol = "🦏 "
 # the commands of the Tiny C Compiler
 # commands = [["tcc", "-vv"]]
-commands = [ [ "clang", "--version" ] ]
-detect_extensions = [ "c", "h", "cc", "hh", "cpp", "hpp", "c++", "h++" ]
+commands = [["clang", "--version"]]
+detect_extensions = ["c", "h", "cc", "hh", "cpp", "hpp", "c++", "h++"]
 # detects the .clangd file => LSP for clang
-detect_files = [ ".clangd" ]
+detect_files = [".clangd"]
 
 [cmake]
 symbol = "🐐 "
@@ -27,7 +29,7 @@ symbol = "🦔 "
 symbol = "🦕 "
 
 [dotnet]
-symbol= "🦑 "
+symbol = "🦑 "
 
 [golang]
 symbol = "🐹 "
@@ -53,6 +55,9 @@ detect_folders = [""]
 
 [nodejs]
 symbol = "🐝 "
+
+[odin]
+symbol = "🐇 "
 
 [perl]
 symbol = "🐪 "

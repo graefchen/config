@@ -65,6 +65,9 @@ detect_folders = [""]
 [nodejs]
 symbol = "nodejs "
 
+[odin]
+symbol = "odin "
+
 [package]
 symbol = "pkg "
 
