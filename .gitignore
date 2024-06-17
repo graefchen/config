@@ -2,3 +2,5 @@ secret.json
 *.yml
 /scoop
 history.txt
+*/.hyper_plugins
+*/completions

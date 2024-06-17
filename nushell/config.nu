@@ -896,3 +896,16 @@ $env.config = {
 
 use ~/.cache/starship/init.nu
 use ~/programming/projects/walk/walk/
+
+# Using completions ...
+source ./completions/bat-completions.nu
+source ./completions/cargo-completions.nu
+source ./completions/gh-completions.nu
+source ./completions/git-completions.nu
+source ./completions/npm-completions.nu
+source ./completions/rg-completions.nu
+source ./completions/rustup-completions.nu
+source ./completions/scoop-completions.nu
+source ./completions/vscode-completions.nu
+source ./completions/winget-completions.nu
+source ./completions/yarn-v4-completions.nu
