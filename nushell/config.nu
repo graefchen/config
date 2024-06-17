@@ -900,6 +900,7 @@ use ~/programming/projects/walk/walk/
 # Using completions ...
 source ./completions/bat-completions.nu
 source ./completions/cargo-completions.nu
+source ./completions/deno-completions.nu
 source ./completions/gh-completions.nu
 source ./completions/git-completions.nu
 source ./completions/npm-completions.nu

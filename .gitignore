@@ -3,4 +3,5 @@ secret.json
 /scoop
 history.txt
 */.hyper_plugins
-*/completions
+/nushell/completions/*
+!/nushell/completions/deno-completions.nu
