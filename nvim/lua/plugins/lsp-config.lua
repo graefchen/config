@@ -82,9 +82,9 @@ return {
 			lspconfig.cssls.setup({
 				capabilities = capabilities,
 			})
-			-- lspconfig.denols.setup({
-			-- 	capabilities = capabilities,
-			-- })
+			lspconfig.denols.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})

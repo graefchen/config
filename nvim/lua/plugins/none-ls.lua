@@ -42,7 +42,11 @@ return {
 		lazy = false,
 		config = function()
 			-- setting up Comment
-			require("Comment").setup()
+			require("Comment").setup({
+				-- Setting cmd and the # key (german keyboard) to comment line(s)
+				toggler = { line = "<C-\\>" },
+				opleader = { line = "<C-\\>" },
+			})
 		end,
 	},
 }
