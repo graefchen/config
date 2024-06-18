@@ -94,6 +94,7 @@ return {
 				"tsv",
 				"tsx",
 				"typescript",
+				"vento",
 				"vim",
 				"vimdoc",
 				"vue",
