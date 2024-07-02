@@ -100,6 +100,7 @@ $env.NU_PLUGIN_DIRS = [
 # source ($nu.default-config-dir | path join 'custom.nu')
 
 $env.XDG_CONFIG_HOME = "C:/Users/Graef/.config"
+$env.COLORTERM = "truecolor"
 
 # Configuration for starship
 $env.STARSHIP_CONFIG = "C:/Users/Graef/.config/starship/animalship.toml"
