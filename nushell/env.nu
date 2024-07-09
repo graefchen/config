@@ -99,13 +99,12 @@ $env.NU_PLUGIN_DIRS = [
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
 
-$env.XDG_CONFIG_HOME = "C:/Users/Graef/.config"
 $env.COLORTERM = "truecolor"
 
 # Configuration for starship
-$env.STARSHIP_CONFIG = "C:/Users/Graef/.config/starship/animalship.toml"
+$env.STARSHIP_CONFIG =  ($env.XDG_CONFIG_HOME | path join 'starship\animalship.toml')
 mkdir ~/.cache/starship
-starship init nu | save -f "C:/Users/Graef/.cache/starship/init.nu"
+starship init nu | save -f "~/.cache/starship/init.nu"
 
 # alias for better work
 alias fresh = deno run -A -r https://fresh.deno.dev

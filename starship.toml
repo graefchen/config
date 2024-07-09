@@ -10,6 +10,9 @@ success_symbol = "[>](bold green)"
 error_symbol = "[x](bold red)"
 # vicmd_symbol = "[<](bold green)"
 
+[username]
+show_always = true
+
 [git_commit]
 tag_symbol = " tag "
 
@@ -58,6 +61,3 @@ symbol = "purs "
 
 [rust]
 symbol = "rs "
-
-[username]
-show_always = true
