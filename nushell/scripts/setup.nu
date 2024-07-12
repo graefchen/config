@@ -15,7 +15,7 @@ def download-completion [
 # downloads all the completions defined in the `completions_list` constant
 def completions []: nothing -> nothing {
 	const completions_list = [
-		"bat" "cargo" "gh" "git" "npm" "rg" "rustup" "scoop" "vscode" "winget" "yarn-v4"
+		"bat" "cargo" "gh" "git" "npm" "rg" "rustup" "scoop" "vscode" "yarn-v4"
 	]
 	print "Starting to download completions..."
 	for i in $completions_list {
@@ -31,7 +31,7 @@ def rustapps []: nothing -> nothing {
 	for i in $rustapps_list {
 		cargo install $i
 	}
-	print "Finished donwloading rustapps..."
+	print "Finished downloading rustapps..."
 }
 
 # for adding nupm later ... maybe
