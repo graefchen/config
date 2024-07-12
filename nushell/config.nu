@@ -277,13 +277,7 @@ $env.config = {
             enabled: true # true to enable stopping of inactive plugins
             stop_after: 10sec # how long to wait after a plugin is inactive to stop it
         }
-        plugins: {
-            # alternate configuration for specific plugins, by name, for example:
-            #
-            # gstat: {
-            #     enabled: false
-            # }
-        }
+        plugins: {}
     }
 
     hooks: {
@@ -894,8 +888,8 @@ $env.config = {
     ]
 }
 
+# Starship
 use ~/.cache/starship/init.nu
-use ~/programming/projects/walk/walk/
 
 # Using completions ...
 source ./completions/bat-completions.nu
@@ -911,4 +905,7 @@ source ./completions/vscode-completions.nu
 source ./completions/winget-completions.nu
 source ./completions/yarn-v4-completions.nu
 
+# Using scripts...
+use ./scripts/walk.nu
+use ./scripts/setup.nu
 use ./scripts/rustapps.nu

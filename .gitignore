@@ -5,3 +5,4 @@ history.txt
 */.hyper_plugins
 /nushell/completions/*
 !/nushell/completions/deno-completions.nu
+/nushell/modules/*
