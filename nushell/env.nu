@@ -73,5 +73,5 @@ alias vim = nvim
 alias nv = nvim
 
 # Compiler things
-alias cc = clang -Wall -Werror -pedantic
-alias cca = clang -Wall -Werror -pedantic -fsanitize=address
+alias clang = clang -Wall -Werror -pedantic -fsanitize=address
+
