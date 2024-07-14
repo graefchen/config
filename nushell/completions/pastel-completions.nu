@@ -119,7 +119,7 @@ def "nu-completion pastel color-mode" [] {
 }
 
 def "nu-completion pastel color-picker" [] {
-	["gpick, xcolor" "wcolor" "grabc" "colorpicker" "chameleon" "kcolorchooser" "zenity" "yad"]
+	["gpick" "xcolor" "wcolor" "grabc" "colorpicker" "chameleon" "kcolorchooser" "zenity" "yad"]
 }
 
 export extern "pastel" [
