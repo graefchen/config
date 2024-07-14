@@ -108,11 +108,8 @@ export extern "pastel textcolor" [
 
 ]
 
-# Print this message or the help of the given subcommand(s)
-export extern "pastel help" [
-
-]
-
+# Print the help of the given subcommand(s)
+export extern "pastel help" []
 
 def "nu-completion pastel color-mode" [] {
 	["24bit" "8bit" "off" "auto"]
@@ -122,6 +119,7 @@ def "nu-completion pastel color-picker" [] {
 	["gpick" "xcolor" "wcolor" "grabc" "colorpicker" "chameleon" "kcolorchooser" "zenity" "yad"]
 }
 
+# A command-line tool to generate, analyze, convert and manipulate colors
 export extern "pastel" [
 	--color-mode(-m): string@"nu-completion pastel color-mode" # Specify the terminal color mode.
 	--force-color(-f)                                          # Alias for --mode=24bit

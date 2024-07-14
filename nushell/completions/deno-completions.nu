@@ -183,7 +183,7 @@ export extern "deno init" [
 	dir?: string
 	--lib
 	--quiet(-q)                   # Suppress diagnostic output
-	--help(-h)                    # Print help (see a summary with '-h')clear
+	--help(-h)                    # Print help (see a summary with '-h')
 	--version(-V)                 # Print version
 	--unstable                    # Enable unstable features and APIs
 	--unstable-bare-node-builtins # Enable unstable bare node builtins feature
@@ -381,7 +381,7 @@ export extern "deno upgrade" [
 # Vendor remote modules into a local directory
 export extern "deno vendor" []
 
-# Print this message or the help of the given subcommand(s)
+# Print the help of the given subcommand(s)
 export extern "deno help" [
 	--quiet(-q)                   # Suppress diagnostic output
 	--help(-h)                    # Print help (see a summary with '-h')clear
