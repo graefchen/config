@@ -901,6 +901,7 @@ source ./completions/hexyl-completions.nu
 source ./completions/lua-completions.nu
 source ./completions/luarocks-completions.nu
 source ./completions/misc-completions.nu
+source ./completions/ninja-completions.nu
 source ./completions/npm-completions.nu
 source ./completions/numbat-completions.nu
 source ./completions/pastel-completions.nu
