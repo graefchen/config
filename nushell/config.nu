@@ -897,10 +897,17 @@ source ./completions/cargo-completions.nu
 source ./completions/deno-completions.nu
 source ./completions/gh-completions.nu
 source ./completions/git-completions.nu
+source ./completions/hexyl-completions.nu
+source ./completions/lua-completions.nu
+source ./completions/luarocks-completions.nu
+source ./completions/misc-completions.nu
 source ./completions/npm-completions.nu
+source ./completions/numbat-completions.nu
 source ./completions/rg-completions.nu
 source ./completions/rustup-completions.nu
 source ./completions/scoop-completions.nu
+source ./completions/tokei-completions.nu
+source ./completions/uiua-completions.nu
 source ./completions/vscode-completions.nu
 source ./completions/yarn-v4-completions.nu
 
@@ -908,3 +915,4 @@ source ./completions/yarn-v4-completions.nu
 use ./scripts/walk.nu
 use ./scripts/setup.nu
 use ./scripts/rustapps.nu
+use ./scripts/executables.nu

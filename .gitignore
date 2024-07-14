@@ -1,8 +1,27 @@
+# cecret.json is TOP SECRET
 secret.json
+
 *.yml
+
+# my scoop -- psssst
 /scoop
+
+# My histroy!
 history.txt
+
+# Just a lot of repo bloat
 */.hyper_plugins
+
+# Ignore all nushell completions files except those that I wrote
 /nushell/completions/*
 !/nushell/completions/deno-completions.nu
+!/nushell/completions/hexyl-completions.nu
+!/nushell/completions/lua-completions.nu
+!/nushell/completions/luarocks-completions.nu
+!/nushell/completions/misc-completions.nu
+!/nushell/completions/numbat-completions.nu
+!/nushell/completions/tokei-completions.nu
+!/nushell/completions/uiua-completions.nu
+
+# Ignore all nushell modules
 /nushell/modules/*

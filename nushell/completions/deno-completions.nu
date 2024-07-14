@@ -1,4 +1,4 @@
-# Writtem by greafchen
+# Written by greafchen
 # TODO: Add missing completions
 
 def "nu-complete deno run" [] {
@@ -7,7 +7,7 @@ def "nu-complete deno run" [] {
 	| find --regex ".*(\\.(ts|js){1})+$"
 }
 
-def dr-ext [] {
+def "nu-complete deno run ext" [] {
 	["ts", "tsx", "js", "jsx"]
 }
 
@@ -56,27 +56,27 @@ export extern "deno run" [
 	# --check[=<CHECK_TYPE>]
 	# --watch[=<FILES>...]
 	# --watch-exclude[=<FILES>...]
-	--no-clear-screen             # Do not clear terminal screen when under watch mode
-	--ext: string@dr-ext          # Set content type of the supplied file
+	--no-clear-screen                        # Do not clear terminal screen when under watch mode
+	--ext: string@"nu-complete deno run ext" # Set content type of the supplied file
 	# --env[=<FILE>]
-	--no-code-cache               # Disable V8 code cache feature
-	--help(-h)                    # Print help (see a summary with '-h')
-	--unstable                    # Enable unstable features and APIs
-	--unstable-bare-node-builtins # Enable unstable bare node builtins feature
-	--unstable-byonm              # Enable unstable 'bring your own node_modules' feature
-	--unstable-sloppy-imports     # Enable unstable resolving of specifiers by extension probing, .js to .ts, and directory probing.
-	--unstable-broadcast-channel  # Enable unstable `BroadcastChannel` API
-	--unstable-cron               # Enable unstable Deno.cron API
-	--unstable-ffi                # Enable unstable FFI APIs
-	--unstable-fs                 # Enable unstable file system APIs
-	--unstable-http               # Enable unstable HTTP APIs
-	--unstable-kv                 # Enable unstable Key-Value store APIs
-	--unstable-net                # Enable unstable net APIs
-	--unstable-process            # Enable unstable process APIs
-	--unstable-temporal           # Enable unstable Temporal API
-	--unstable-unsafe-proto       # Enable unsafe __proto__ support. This is a security risk.
-	--unstable-webgpu             # Enable unstable `WebGPU` API
-	--unstable-worker-options     # Enable unstable Web Worker APIs
+	--no-code-cache                          # Disable V8 code cache feature
+	--help(-h)                               # Print help (see a summary with '-h')
+	--unstable                               # Enable unstable features and APIs
+	--unstable-bare-node-builtins            # Enable unstable bare node builtins feature
+	--unstable-byonm                         # Enable unstable 'bring your own node_modules' feature
+	--unstable-sloppy-imports                # Enable unstable resolving of specifiers by extension probing, .js to .ts, and directory probing.
+	--unstable-broadcast-channel             # Enable unstable `BroadcastChannel` API
+	--unstable-cron                          # Enable unstable Deno.cron API
+	--unstable-ffi                           # Enable unstable FFI APIs
+	--unstable-fs                            # Enable unstable file system APIs
+	--unstable-http                          # Enable unstable HTTP APIs
+	--unstable-kv                            # Enable unstable Key-Value store APIs
+	--unstable-net                           # Enable unstable net APIs
+	--unstable-process                       # Enable unstable process APIs
+	--unstable-temporal                      # Enable unstable Temporal API
+	--unstable-unsafe-proto                  # Enable unsafe __proto__ support. This is a security risk.
+	--unstable-webgpu                        # Enable unstable `WebGPU` API
+	--unstable-worker-options                # Enable unstable Web Worker APIs
 ]
 
 # Run a server
@@ -84,7 +84,7 @@ export extern "deno serve" []
 
 # Add dependencies
 export extern "deno add" [
-	packages:list<string>
+	packages: string
 	--quiet(-q)                   # Suppress diagnostic output
 	--help(-h)                    # Print help (see a summary with '-h')clear
 	--unstable                    # Enable unstable features and APIs
@@ -132,49 +132,49 @@ export extern "deno doc" []
 # Eval script
 export extern "deno eval" []
 
-def df-ext [] {
+def "nu-complete deno fmt ext"  [] {
 	["ts", "tsx", "js", "jsx", "md", "json", "jsonc", "ipynb"]
 }
 
-def df-prose-wrap [] {
+def "nu-complete deno fmt prose-wrap" [] {
 	["always", "never", "preserve"]
 }
 
 # Format source filescl
 export extern "deno fmt" [
-	--config(-c):path                  # The configuration file can be used to configure different aspects of deno including TypeScript, linting, and code formatting.
-	--no-config                        # Disable automatic loading of the configuration file.
-	--quiet(-q)                        # Suppress diagnostic output
-	--check                            # Check if the source files are formatted
-	--ext:string@df-ext                # Set content type of the supplied file
+	--config(-c):path                                      # The configuration file can be used to configure different aspects of deno including TypeScript, linting, and code formatting.
+	--no-config                                            # Disable automatic loading of the configuration file.
+	--quiet(-q)                                            # Suppress diagnostic output
+	--check                                                # Check if the source files are formatted
+	--ext: string@"nu-complete deno fmt ext"               # Set content type of the supplied file
 	# --ignore=<ignore>...
-	--watch                            # Watch for file changes and restart process automatically.
+	--watch                                                # Watch for file changes and restart process automatically.
 	# --watch-exclude[=<FILES>...]
-	--no-clear-screen                  # Do not clear terminal screen when under watch mode
+	--no-clear-screen                                      # Do not clear terminal screen when under watch mode
 	# --use-tabs[=<use-tabs>]
-	--line-width:number                # Define maximum line width. Defaults to 80.
-	--indent-width:number              # Define indentation width. Defaults to 2.
+	--line-width: number                                   # Define maximum line width. Defaults to 80.
+	--indent-width: number                                 # Define indentation width. Defaults to 2.
 	# --single-quote[=<single-quote>]
-	--prose-wrap:string@df-prose-wrap  # Define how prose should be wrapped. Defaults to always.
+	--prose-wrap: string@"nu-complete deno fmt prose-wrap" # Define how prose should be wrapped. Defaults to always.
 	# --no-semicolons[=<no-semicolons>]
-	--help(-h)                         # Print help (see a summary with '-h')clear
-	--version(-V)                      # Print version
-	--unstable                         # Enable unstable features and APIs
-	--unstable-bare-node-builtins      # Enable unstable bare node builtins feature
-	--unstable-byonm                   # Enable unstable 'bring your own node_modules' feature
-	--unstable-sloppy-imports          # Enable unstable resolving of specifiers by extension probing, .js to .ts, and directory probing.
-	--unstable-broadcast-channel       # Enable unstable `BroadcastChannel` API
-	--unstable-cron                    # Enable unstable Deno.cron API
-	--unstable-ffi                     # Enable unstable FFI APIs
-	--unstable-fs                      # Enable unstable file system APIs
-	--unstable-http                    # Enable unstable HTTP APIs
-	--unstable-kv                      # Enable unstable Key-Value store APIs
-	--unstable-net                     # Enable unstable net APIs
-	--unstable-process                 # Enable unstable process APIs
-	--unstable-temporal                # Enable unstable Temporal API
-	--unstable-unsafe-proto            # Enable unsafe __proto__ support. This is a security risk.
-	--unstable-webgpu                  # Enable unstable `WebGPU` API
-	--unstable-worker-options          # Enable unstable Web Worker APIs
+	--help(-h)                                             # Print help (see a summary with '-h')clear
+	--version(-V)                                          # Print version
+	--unstable                                             # Enable unstable features and APIs
+	--unstable-bare-node-builtins                          # Enable unstable bare node builtins feature
+	--unstable-byonm                                       # Enable unstable 'bring your own node_modules' feature
+	--unstable-sloppy-imports                              # Enable unstable resolving of specifiers by extension probing, .js to .ts, and directory probing.
+	--unstable-broadcast-channel                           # Enable unstable `BroadcastChannel` API
+	--unstable-cron                                        # Enable unstable Deno.cron API
+	--unstable-ffi                                         # Enable unstable FFI APIs
+	--unstable-fs                                          # Enable unstable file system APIs
+	--unstable-http                                        # Enable unstable HTTP APIs
+	--unstable-kv                                          # Enable unstable Key-Value store APIs
+	--unstable-net                                         # Enable unstable net APIs
+	--unstable-process                                     # Enable unstable process APIs
+	--unstable-temporal                                    # Enable unstable Temporal API
+	--unstable-unsafe-proto                                # Enable unsafe __proto__ support. This is a security risk.
+	--unstable-webgpu                                      # Enable unstable `WebGPU` API
+	--unstable-worker-options                              # Enable unstable Web Worker APIs
 ]
 
 # Initialize a new project
