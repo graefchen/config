@@ -20,6 +20,7 @@ history.txt
 !/nushell/completions/luarocks-completions.nu
 !/nushell/completions/misc-completions.nu
 !/nushell/completions/numbat-completions.nu
+!/nushell/completions/pastel-completions.nu
 !/nushell/completions/tokei-completions.nu
 !/nushell/completions/uiua-completions.nu
 
