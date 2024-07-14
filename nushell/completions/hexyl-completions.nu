@@ -1,4 +1,6 @@
 # Written by greafchen
+# based on hexyl 0.14.0
+# link: https://github.com/sharkdp/hexyl
 
 def "nu-completion hexyl color" [] {
 	["always" "auto" "never" "force"]

@@ -1,4 +1,6 @@
 # Written by greafchen
+# based on: numbat 1.12.0
+# link: https://github.com/sharkdp/numbat
 
 def "nu-complete numbat pretty-print" [] {
 	["always" "never" "auto"]

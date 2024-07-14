@@ -1,5 +1,6 @@
 # Written by greafchen
-# TODO: Add missing completions
+# Based on the deno 1.45.2
+# link: https://github.com/denoland/deno
 
 def "nu-complete deno run" [] {
 	ls

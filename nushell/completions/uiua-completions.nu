@@ -1,4 +1,6 @@
 # Written by greafchen
+# based on: uiua 0.11.1
+# link: https://github.com/uiua-lang/uiua
 
 # Initialize a new main.ua file
 export extern "uiua init" [

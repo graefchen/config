@@ -1,4 +1,8 @@
 # Written by greafchen
+# Lua 5.4.2
+# link: https://www.lua.org
+# LuaJIT 2.1.0-beta
+# link: https://luajit.org
 
 # lua
 export extern "lua" [
