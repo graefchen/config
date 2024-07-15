@@ -1,3 +1,5 @@
+# written by graefchen
+
 def list []: nothing -> table {
 	cargo install --list
 	| split row "\n"

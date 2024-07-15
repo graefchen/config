@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # Lua 5.4.2
 # link: https://www.lua.org
 # LuaJIT 2.1.0-beta

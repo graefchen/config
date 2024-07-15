@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # based on luarocks 3.9.2
 # link: https://luarocks.org
 

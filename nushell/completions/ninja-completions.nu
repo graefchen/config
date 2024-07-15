@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # based on: ninja 1.11.1
 # link: https://github.com/ninja-build/ninja
 

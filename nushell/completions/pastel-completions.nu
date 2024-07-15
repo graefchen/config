@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # based on: pastel 0.9.0
 # link: https://github.com/sharkdp/pastel
 

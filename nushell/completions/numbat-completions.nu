@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # based on: numbat 1.12.0
 # link: https://github.com/sharkdp/numbat
 

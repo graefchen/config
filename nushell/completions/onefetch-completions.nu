@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # based on: onefetch 2.21.0
 # link: https://github.com/sharkdp/pastel
 

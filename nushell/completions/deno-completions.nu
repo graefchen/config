@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # Based on the deno 1.45.2
 # link: https://github.com/denoland/deno
 

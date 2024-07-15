@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # Just some miscellaneous apps (small and big)
 # Or just as text for the command
 

@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # based on: uiua 0.11.1
 # link: https://github.com/uiua-lang/uiua
 

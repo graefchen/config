@@ -1,4 +1,4 @@
-# Written by greafchen
+# Written by graefchen
 # based on tokei version: 12.1.2
 # link: https://github.com/XAMPPRocky/tokei
 
