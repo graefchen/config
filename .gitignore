@@ -21,6 +21,7 @@ history.txt
 !/nushell/completions/misc-completions.nu
 !/nushell/completions/ninja-completions.nu
 !/nushell/completions/numbat-completions.nu
+!/nushell/completions/onefetch-completions.nu
 !/nushell/completions/pastel-completions.nu
 !/nushell/completions/tokei-completions.nu
 !/nushell/completions/uiua-completions.nu

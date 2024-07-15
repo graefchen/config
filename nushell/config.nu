@@ -904,6 +904,7 @@ source ./completions/misc-completions.nu
 source ./completions/ninja-completions.nu
 source ./completions/npm-completions.nu
 source ./completions/numbat-completions.nu
+source ./completions/onefetch-completions.nu
 source ./completions/pastel-completions.nu
 source ./completions/rg-completions.nu
 source ./completions/rustup-completions.nu
