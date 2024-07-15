@@ -3,121 +3,75 @@
 # link: https://luarocks.org
 
 # Show help for commands.
-export extern "luarocks help" [
-
-]
+export extern "luarocks help" []
 
 # Output a shell completion script.
-export extern "luarocks completion" [
-
-]
+export extern "luarocks completion" []
 
 # Build/compile a rock.
-export extern "luarocks build" [
-
-]
+export extern "luarocks build" []
 
 # Query information about the LuaRocks configuration.
-export extern "luarocks config" [
-
-]
+export extern "luarocks config" []
 
 # Show documentation for an installed rock.
-export extern "luarocks doc" [
-
-]
+export extern "luarocks doc" []
 
 # Download a specific rock file from a rocks server.
-export extern "luarocks download" [
-
-]
+export extern "luarocks download" []
 
 # Initialize a directory for a Lua project using LuaRocks.
-export extern "luarocks init" [
-
-]
+export extern "luarocks init" []
 
 # Install a rock.
-export extern "luarocks install" [
-
-]
+export extern "luarocks install" []
 
 # Check syntax of a rockspec.
-export extern "luarocks lint" [
-
-]
+export extern "luarocks lint" []
 
 # List currently installed rocks.
-export extern "luarocks list" [
-
-]
+export extern "luarocks list" []
 
 # Compile package in current directory using a rockspec.
-export extern "luarocks make" [
-
-]
+export extern "luarocks make" []
 
 # Auto-write a rockspec for a new version of a rock.
-export extern "luarocks new_version" [
-
-]
+export extern "luarocks new_version" []
 
 # Create a rock, packing sources or binaries.
-export extern "luarocks pack" [
-
-]
+export extern "luarocks pack" []
 
 # Return the currently configured package path.
-export extern "luarocks path" [
-
-]
+export extern "luarocks path" []
 
 # Remove all installed rocks from a tree.
-export extern "luarocks purge" [
-
-]
+export extern "luarocks purge" []
 
 # Uninstall a rock.
-export extern "luarocks remove" [
-
-]
+export extern "luarocks remove" []
 
 # Query the LuaRocks servers.
-export extern "luarocks search" [
-
-]
+export extern "luarocks search" []
 
 # Show information about an installed rock.
-export extern "luarocks show" [
-
-]
+export extern "luarocks show" []
 
 # Run the test suite in the current directory.
-export extern "luarocks test" [
-
-]
+export extern "luarocks test" []
 
 # Unpack the contents of a rock.
-export extern "luarocks unpack" [
-
-]
+export extern "luarocks unpack" []
 
 # Upload a rockspec to the public rocks repository.
-export extern "luarocks upload" [
-
-]
+export extern "luarocks upload" []
 
 # Tell which file corresponds to a given module name.
-export extern "luarocks which" [
-
-]
+export extern "luarocks which" []
 
 # Write a template for a rockspec file.
-export extern "luarocks write_rockspec" [
+export extern "luarocks write_rockspec" []
 
-]
-
-# luarocks
+# luarocks (lua package manager)
 export extern "luarocks" [
 	--help(-h)             # Show this help message and exit.
 	--version              # Show version info and exit.
