@@ -36,6 +36,6 @@ export extern "onefetch" [
 	--no-art                       # Hides the ascii art or image if provided
 	--output(-o): string           # Outputs Onefetch in a specific format [possible values: json, yaml]
 	--generate:string              # If provided, outputs the completion file for given SHELL [possible values: bash, elvish, fish, powershell, zsh]
-	-l, --languages(-l)            # Prints out supported languages
+	--languages(-l)                # Prints out supported languages
 	--package-managers(-p)         # Prints out supported package managers
 ]

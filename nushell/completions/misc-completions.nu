@@ -35,18 +35,34 @@ export extern "tig" [
 ]
 
 # log
-export extern "tig log" []
+export extern "tig log" [
+	--help(-h) # Show help message and exit
+]
 # show
-export extern "tig show" []
+export extern "tig show" [
+	--help(-h) # Show help message and exit
+]
 # Manage reflog information
-export extern "tig reflog" []
+export extern "tig reflog" [
+	--help(-h) # Show help message and exit
+]
 # blame
-export extern "tig blame" []
+export extern "tig blame" [
+	--help(-h) # Show help message and exit
+]
 # grep
-export extern "tig grep" []
+export extern "tig grep" [
+	--help(-h) # Show help message and exit
+]
 # Show references
-export extern "tig refs" []
+export extern "tig refs" [
+	--help(-h) # Show help message and exit
+]
 # stash
-export extern "tig stash" []
+export extern "tig stash" [
+	--help(-h) # Show help message and exit
+]
 # Show the working tree status
-export extern "tig status" []
+export extern "tig status" [
+	--help(-h) # Show help message and exit
+]
