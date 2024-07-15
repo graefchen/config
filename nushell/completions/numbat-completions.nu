@@ -7,11 +7,12 @@ def "nu-complete numbat pretty-print" [] {
 }
 
 def "nu-complete numbat intro-banner" [] {
-	["long" "short" "aoff"]
+	["long" "short" "off"]
 }
 
 # A statically typed programming language for scientific computations for scientific computations with first class support for physical dimensions and units.
 export extern "numbat" [
+	file?: string
 	--expression(-e): string                                 # Evaluate a single expression. Can be specified multiple times to evaluate several expressions in sequence
 	--inspect-interactively(-i)                              # Enter interactive session after running a numbat script or expression
 	--no-config                                              # Do not load the user configuration file
@@ -22,5 +23,4 @@ export extern "numbat" [
 	--generate-config                                        # Generate a default configuration file
 	--help(-h)                                               # Print help (see a summary with '-h')
 	--version(-V)                                            # Print version
-	...file@string
 ]
