@@ -26,3 +26,27 @@ export extern "k" []
 export extern "Io" [
 	file: path
 ]
+
+# tig (git text user interface)
+export extern "tig" [
+	--version(-v)   # Show version and exit
+	--help(-h)      # Show help message and exit
+	-C: path        # Start in <path>
+]
+
+# log
+export extern "tig log" []
+# show
+export extern "tig show" []
+# Manage reflog information
+export extern "tig reflog" []
+# blame
+export extern "tig blame" []
+# grep
+export extern "tig grep" []
+# Show references
+export extern "tig refs" []
+# stash
+export extern "tig stash" []
+# Show the working tree status
+export extern "tig status" []
