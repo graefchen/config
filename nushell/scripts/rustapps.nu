@@ -1,6 +1,6 @@
 # written by graefchen
 
-def list []: nothing -> table {
+def list []: nothing -> list<string> {
 	cargo install --list
 	| split row "\n"
 	| split column " "
@@ -16,6 +16,6 @@ export def string []: nothing -> string {
 	list | str join " "
 }
 
-export def main []: nothing -> table {
+export def main []: nothing -> list<string> {
 	list
 }

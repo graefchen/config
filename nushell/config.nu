@@ -916,6 +916,7 @@ source ./completions/yarn-v4-completions.nu
 
 # Using scripts...
 use ./scripts/walk.nu
-use ./scripts/setup.nu
+use ./scripts/goapps.nu
 use ./scripts/rustapps.nu
 use ./scripts/executables.nu
+use ./scripts/setup.nu
