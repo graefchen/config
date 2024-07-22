@@ -36,6 +36,15 @@ def rustapps []: nothing -> nothing {
 	print "Finished downloading rustapps..."
 }
 
+def goapps []: nothing -> nothing {
+	const goapps_list = ["github.com/Rosettea/bunnyfetch" "github.com/noahgorstein/jqp"]
+	print "Downloading Go Apps..."
+	for i in $goapps_list {
+		go install ($i | append "@latest" | str join "")
+	}
+	print "Finished donwloading goapps..."
+	}
+
 # for adding nupm later ... maybe
 # def modules []: nothing -> nothing {}
 
@@ -43,4 +52,5 @@ def rustapps []: nothing -> nothing {
 export def main []: {
 	completions
 	rustapps
+	goapps
 }
