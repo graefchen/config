@@ -22,9 +22,9 @@ return {
 				-- TODO: Add more servers...
 				ensure_installed = {
 					-- bashls (bash)
-					"bashls",
+					-- "bashls",
 					-- biome (json, js, ts)
-					"biome",
+					-- "biome",
 					-- clangd(c, c++)
 					"clangd",
 					-- cssls (css, scss, less)
@@ -34,17 +34,17 @@ return {
 					-- html (html)
 					"html",
 					-- hls (haskell)
-					"hls",
+					-- "hls",
 					-- lua_ls (lua)
 					"lua_ls",
 					-- jqls (jq)
-					"jqls",
+					-- "jqls",
 					-- marksman (md)
 					"marksman",
 					-- ols (odin)
 					"ols",
 					-- perlnavigator (perl)
-					"perlnavigator",
+					-- "perlnavigator",
 					-- purescriptls (ps)
 					"purescriptls",
 					-- r_language_server (r)
@@ -52,15 +52,15 @@ return {
 					-- rust_analyzer (rust)
 					"rust_analyzer",
 					-- tailwindcss (css) [specifically for tailwind classes]
-					"tailwindcss",
+					-- "tailwindcss",
 					-- taplo (toml)
 					"taplo",
 					-- texlab (latex)
 					"texlab",
 					-- tsserver (js, ts)
-					"tsserver",
+					-- "tsserver",
 					-- zls (zig)
-					"zls",
+					-- "zls",
 				},
 			})
 		end,
@@ -88,9 +88,6 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.jqls.setup({
-				capabilities = capabilities,
-			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
@@ -103,12 +100,6 @@ return {
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.tailwindcss.setup({
-				capabilities = capabilities,
-			})
-			-- lspconfig.tsserver.setup({
-			-- 	capabilities = capabilities,
-			-- })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
