@@ -1,5 +1,5 @@
 # Written by graefchen
-# Based on the deno 1.45.2
+# based on: deno 1.45.2
 # link: https://github.com/denoland/deno
 
 def "nu-complete deno run" [] {

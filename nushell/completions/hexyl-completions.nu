@@ -1,5 +1,5 @@
 # Written by graefchen
-# based on hexyl 0.14.0
+# based on: hexyl 0.14.0
 # link: https://github.com/sharkdp/hexyl
 
 def "nu-complete hexyl color" [] {

@@ -1,7 +1,8 @@
 # Written by graefchen
-# Lua 5.4.2
+# based on: Lua 5.4.2
 # link: https://www.lua.org
-# LuaJIT 2.1.0-beta
+# and
+# based on:LuaJIT 2.1.0-beta
 # link: https://luajit.org
 
 # lua

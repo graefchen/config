@@ -1,5 +1,5 @@
 # Written by graefchen
-# based on tokei version: 12.1.2
+# based on: tokei 12.1.2
 # link: https://github.com/XAMPPRocky/tokei
 
 def "nu-complete tokei format" [] {

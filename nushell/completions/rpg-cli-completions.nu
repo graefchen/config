@@ -2,16 +2,12 @@
 # based on: rpg-cli 1.0.1
 # link: https://github.com/facundoolano/rpg-cli
 
-def "nu-complete rpg-cli" [] {
-	[ "stat" "cd" "ls" "buy" "use" "todo" "reset" "class" "pwd" "battle" "help" ]
-}
-
 # Display stats for the given items. Defaults to displaying hero stats if no item is specified. [default]
 export extern "rpg-cli stat" [
-	--quiet(-q)   # Print succinct output when possible
-	--plain       # Print machine-readable output when possible
-	--help(-h)    # Print help
-	...items: string
+	--quiet(-q)      # Print succinct output when possible
+	--plain          # Print machine-readable output when possible
+	--help(-h)       # Print help
+	...items: string #
 ]
 
 # Moves the hero to the supplied destination, potentially initiating battles along the way
@@ -37,7 +33,7 @@ export extern "rpg-cli buy" [
 	--quiet(-q)      # Print succinct output when possible
 	--plain          # Print machine-readable output when possible
 	--help(-h)       # Print help
-	...items: string
+	...items: string #
 ]
 
 # Uses an item from the inventory
@@ -45,7 +41,7 @@ export extern "rpg-cli use" [
 	--quiet(-q)      # Print succinct output when possible
 	--plain          # Print machine-readable output when possible
 	--help(-h)       # Print help
-	...items: string
+	...items: string #
 ]
 
 # Prints the quest todo list
@@ -65,10 +61,10 @@ export extern "rpg-cli reset" [
 
 # Change the character class. If name is omitted lists the available character classes
 export extern "rpg-cli class" [
-	--quiet(-q)   # Print succinct output when possible
-	--plain       # Print machine-readable output when possible
-	--help(-h)    # Print help
-	class?: string
+	--quiet(-q)    # Print succinct output when possible
+	--plain        # Print machine-readable output when possible
+	--help(-h)     # Print help
+	class?: string #
 ]
 
 # Prints the hero's current location
@@ -87,9 +83,15 @@ export extern "rpg-cli battle" [
 	--help(-h)  # Print help
 ]
 
+
+def "nu-complete rpg-cli help" [] {
+	[ "stat" "cd" "ls" "buy" "use" "todo" "reset" "class" "pwd" "battle" "help" ]
+}
+
+
 # Print the help message or the help of the given subcommand(s)
 export extern "rpg-cli help" [
-	...command: string@"nu-complete rpg-cli" # Print help for the subcommand(s)
+	...command: string@"nu-complete rpg-cli help" # Print help for the subcommand(s)
 ]
 
 # Your filesystem as a dungeon!
