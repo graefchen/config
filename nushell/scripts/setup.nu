@@ -43,7 +43,7 @@ def goapps []: nothing -> nothing {
 		go install ($i | append "@latest" | str join "")
 	}
 	print "Finished donwloading goapps..."
-	}
+}
 
 # for adding nupm later ... maybe
 # def modules []: nothing -> nothing {}
