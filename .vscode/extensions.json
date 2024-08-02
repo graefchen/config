@@ -14,48 +14,67 @@
         // Markdown/Latex
         "James-Yu.latex-workshop",
         "bierner.github-markdown-preview",
-        // svg
+        // SVG
         "jock.svg",
         // C/C++
-        "ms-vscode.cpptools",
+        // "ms-vscode.cpptools",
         "llvm-vs-code-extensions.vscode-clangd",
         "vadimcn.vscode-lldb",
-        "surajbarkale.ninja",
+        // "surajbarkale.ninja",
         // Deno
         "denoland.vscode-deno",
         // "sastan.twind-intellisense",
         // Java
-        "redhat.java",
+        // "redhat.java",
         // Rust
         "rust-lang.rust-analyzer",
-        "serayuzgur.crates",
         "tamasfe.even-better-toml",
         // "PolyMeilex.wgsl",
         // Shell's
         // "ms-vscode.powershell",
-        "mads-hartmann.bash-ide-vscode",
+        // "mads-hartmann.bash-ide-vscode",
         "TheNuProjectContributors.vscode-nushell-lang",
         // Haskell
         // "haskell.haskell",
-        // lilypond
+        // Lilypond
         // "lhl2617.vslilypond",
-        // vim
-        "XadillaX.viml",
-        // awk
-        "beaglefoot.awk-ide-vscode",
-        // autohotkey
-        "cweijan.vscode-autohotkey-plus",
-        // perl
-        "bscan.perlnavigator",
+        // Vim
+        // "XadillaX.viml",
+        // Awk
+        // "beaglefoot.awk-ide-vscode",
+        // Autohotkey
+        // "cweijan.vscode-autohotkey-plus",
+        // Perl
+        // "bscan.perlnavigator",
         // "richterger.perl"
-        // lua
-        // "sumneko.lua",
+        // Lua
         "yinfei.luahelper",
+        // HTML
+        "tobermory.es6-string-html",
+        "ms-vscode.live-server",
+        "moalamri.inline-fold",
+        // CSS
+        "bradlc.vscode-tailwindcss",
+        // React
+        "dsznajder.es7-react-js-snippets",
+        // CSV
+        "mechatroner.rainbow-csv",
+        // Vento
+        "oscarotero.vento-syntax",
+        // Shader
+        "slevesque.shader",
+        // Odin
+        "danielgavin.ols",
+        // Python
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        // hex editor
+        "ms-vscode.hexeditor",
         // Themes I once used ...
         // Colour
         // "eliverlara.andromeda",
         "teabyii.ayu",
-        "ms-vscode.cpptools-themes",
+        // "ms-vscode.cpptools-themes",
         // "catppuccin.catppuccin-vs",
         // "github.github-vscode-theme",
         // "ykray.lightbulb",

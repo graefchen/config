@@ -35,10 +35,10 @@ export def --env add [
 	path: path = "9a59318f8704dd710a5604f80fef368f" # The path of the new bookmark
 ]: nothing -> nothing {
 	if $name == "c249b5de2ea666f161172e1810ca657a" {
-		$name = ($env.PWD | split row "\\" | last)
+		let $name = ($env.PWD | split row "\\" | last)
 	}
 	if $path == "9a59318f8704dd710a5604f80fef368f" {
-		$path = ($env.PWD)
+		let $path = ($env.PWD)
 	}
 
 	if (list | get name | where {|x| $x == $name} | is-empty) {

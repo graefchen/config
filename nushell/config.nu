@@ -909,6 +909,7 @@ source ./completions/pastel-completions.nu
 source ./completions/rg-completions.nu
 source ./completions/rustup-completions.nu
 source ./completions/scoop-completions.nu
+source ./completions/tig-completions.nu
 source ./completions/tokei-completions.nu
 source ./completions/uiua-completions.nu
 source ./completions/vscode-completions.nu

@@ -2,7 +2,7 @@
 # based on: ninja 1.11.1
 # link: https://github.com/ninja-build/ninja
 
-def "nu-completions ninja MODE" [] {
+def "nu-complete ninja MODE" [] {
 	[
 		{ value: "list", description: "list modes" },
 		{ value: "stats", description: "print operation counts/timing info" },
@@ -13,7 +13,7 @@ def "nu-completions ninja MODE" [] {
 	]
 }
 
-def "nu-completions ninja TOOL" [] {
+def "nu-complete ninja TOOL" [] {
 	[
 		{ value: "list", description: "list subtools" },
 		{ value: "browse", description: "browse dependency graph in a web browser" },
@@ -35,7 +35,7 @@ def "nu-completions ninja TOOL" [] {
 	]
 }
 
-def "nu-completions ninja FLAG" [] {
+def "nu-complete ninja FLAG" [] {
 	["list"]
 }
 
@@ -51,7 +51,7 @@ export extern "ninja" [
 	-k: number                             # keep going until N jobs fail (0 means infinity) [default=1]
 	-l: number                             # do not start new jobs if the load average is greater than N
 	-n                                     # dry run (don't run commands but act like they succeeded)
-	-d: string@"nu-completions ninja MODE" # enable debugging (use '-d list' to list modes)
-	-t: string@"nu-completions ninja TOOL" # run a subtool (use '-t list' to list subtools) terminates toplevel options; further flags are passed to the tool
-	-w: string@"nu-completions ninja FLAG" # adjust warnings (use '-w list' to list warnings)
+	-d: string@"nu-complete ninja MODE" # enable debugging (use '-d list' to list modes)
+	-t: string@"nu-complete ninja TOOL" # run a subtool (use '-t list' to list subtools) terminates toplevel options; further flags are passed to the tool
+	-w: string@"nu-complete ninja FLAG" # adjust warnings (use '-w list' to list warnings)
 ]

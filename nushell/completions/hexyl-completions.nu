@@ -2,23 +2,23 @@
 # based on hexyl 0.14.0
 # link: https://github.com/sharkdp/hexyl
 
-def "nu-completion hexyl color" [] {
+def "nu-complete hexyl color" [] {
 	["always" "auto" "never" "force"]
 }
 
-def "nu-completion hexyl border" [] {
+def "nu-complete hexyl border" [] {
 	["unicode" "ascii" "none"]
 }
 
-def "nu-completion hexyl character-table" [] {
+def "nu-complete hexyl character-table" [] {
 	["default" "ascii" "codepage-437"]
 }
 
-def "nu-completion hexyl endianness" [] {
+def "nu-complete hexyl endianness" [] {
 	["big" "little"]
 }
 
-def "nu-completion hexyl base" [] {
+def "nu-complete hexyl base" [] {
 	["binary" "octal" "decimal" "hexadecimal"]
 }
 
@@ -30,18 +30,18 @@ export extern "hexyl" [
 	--skip(-s): string                                              # Skip the first N bytes of the input.
 	--block-size:string                                             # Sets the size of the `block` unit to SIZE (default is 512).
 	--no-squeezing(-v)                                              # Displays all input data.
-	--color: string@"nu-completion hexyl color"                     # When to use colors.
-	--border: string@"nu-completion hexyl border"                   # Whether to draw a border with Unicode characters, ASCII characters, or none at all.
+	--color: string@"nu-complete hexyl color"                     # When to use colors.
+	--border: string@"nu-complete hexyl border"                   # Whether to draw a border with Unicode characters, ASCII characters, or none at all.
 	--no-characters                                                 # Do not show the character panel on the right.
 	--plain(-p)                                                     # Display output with --no-characters, --no-position, --border=none, and --color=never.
 	--characters(-C)                                                # Show the character panel on the right. This is the default, unless --no-characters has been specified.
-	--character-table: string@"nu-completion hexyl character-table" # Defines how bytes are mapped to characters.
+	--character-table: string@"nu-complete hexyl character-table" # Defines how bytes are mapped to characters.
 	--no-position(-P)                                               # Whether to display the position panel on the left.
 	--display-offset(-o): string                                    # Add N bytes to the displayed file position.
 	--panels: string                                                # Sets the number of hex data panels to be displayed.
 	--group-size(-g): number                                        # Number of bytes/octets that should be grouped together.
-	--endianness: string@"nu-completion hexyl endianness"           # Whether to print out groups in little-endian or big-endian format. 
-	--base(-b): string@"nu-completion hexyl base"                   # Sets the base used for the bytes.
+	--endianness: string@"nu-complete hexyl endianness"           # Whether to print out groups in little-endian or big-endian format. 
+	--base(-b): string@"nu-complete hexyl base"                   # Sets the base used for the bytes.
 	--terminal-width: number                                        # Sets the number of terminal columns to be displayed.
 	--help(-h)                                                      # Print help
 	--version(-V)                                                   # Print version

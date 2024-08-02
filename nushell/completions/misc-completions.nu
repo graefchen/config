@@ -20,49 +20,16 @@ export extern "jqp" [
 ]
 
 # kona(k3) programming language
-export extern "k" []
-
-# Io programmming language
-export extern "Io" [
-	file: path
+export extern "k" [
+	-h: int      # open an HTTP port
+	-i: int      # open an IPC port
+	-e: string   # execute a string
+	-x: string   # execute a string and print
+	file: string # execute a script
 ]
 
-# tig (git text user interface)
-export extern "tig" [
-	--version(-v)   # Show version and exit
-	--help(-h)      # Show help message and exit
-	-C: path        # Start in <path>
-]
-
-# log
-export extern "tig log" [
-	--help(-h) # Show help message and exit
-]
-# show
-export extern "tig show" [
-	--help(-h) # Show help message and exit
-]
-# Manage reflog information
-export extern "tig reflog" [
-	--help(-h) # Show help message and exit
-]
-# blame
-export extern "tig blame" [
-	--help(-h) # Show help message and exit
-]
-# grep
-export extern "tig grep" [
-	--help(-h) # Show help message and exit
-]
-# Show references
-export extern "tig refs" [
-	--help(-h) # Show help message and exit
-]
-# stash
-export extern "tig stash" [
-	--help(-h) # Show help message and exit
-]
-# Show the working tree status
-export extern "tig status" [
-	--help(-h) # Show help message and exit
-]
+# Commented out (outdated|unwanted) misc items
+# # Io programmming language
+# export extern "Io" [
+# 	file: path
+# ]
