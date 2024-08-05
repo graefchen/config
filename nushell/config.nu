@@ -899,6 +899,7 @@ source ./completions/fd-completions.nu
 source ./completions/gh-completions.nu
 source ./completions/git-completions.nu
 source ./completions/hexyl-completions.nu
+source ./completions/hyperfine-completions.nu
 source ./completions/jq-completions.nu
 source ./completions/lsd-completions.nu
 source ./completions/lua-completions.nu
