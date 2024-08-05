@@ -14,16 +14,26 @@ history.txt
 
 # Ignore all nushell completions files except those that I wrote
 /nushell/completions/*
+!/nushell/completions/cmake-completions.nu
 !/nushell/completions/deno-completions.nu
+!/nushell/completions/dart-completions.nu
+!/nushell/completions/fd-completions.nu
+!/nushell/completions/go-completions.nu
 !/nushell/completions/hexyl-completions.nu
+!/nushell/completions/hyperfine-completions.nu
+!/nushell/completions/jq-completions.nu
+!/nushell/completions/lsd-completions.nu
 !/nushell/completions/lua-completions.nu
 !/nushell/completions/luarocks-completions.nu
+!/nushell/completions/meson-completions.nu
 !/nushell/completions/misc-completions.nu
 !/nushell/completions/ninja-completions.nu
 !/nushell/completions/numbat-completions.nu
+!/nushell/completions/odin-completions.nu
 !/nushell/completions/onefetch-completions.nu
 !/nushell/completions/pastel-completions.nu
 !/nushell/completions/rpg-cli-completions.nu
+!/nushell/completions/starship-completions.nu
 !/nushell/completions/tig-completions.nu
 !/nushell/completions/tokei-completions.nu
 !/nushell/completions/uiua-completions.nu

@@ -895,6 +895,7 @@ use ~/.cache/starship/init.nu
 source ./completions/bat-completions.nu
 source ./completions/cargo-completions.nu
 source ./completions/deno-completions.nu
+source ./completions/fd-completions.nu
 source ./completions/gh-completions.nu
 source ./completions/git-completions.nu
 source ./completions/hexyl-completions.nu
