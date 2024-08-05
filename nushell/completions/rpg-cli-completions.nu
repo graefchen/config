@@ -12,13 +12,13 @@ export extern "rpg-cli stat" [
 
 # Moves the hero to the supplied destination, potentially initiating battles along the way
 export extern "rpg-cli cd" [
+	path?: string # Directory to move to [default: ~]
 	--run         # Attempt to avoid battles by running away
 	--bribe       # Attempt to avoid battles by bribing the enemy
 	--force(-f)   # Move the hero's to a different location without spawning enemies. Intended for scripts and shell integration
 	--quiet(-q)   # Print succinct output when possible
 	--plain       # Print machine-readable output when possible
 	--help(-h)    # Print help
-	path?: string # Directory to move to [default: ~]
 ]
 
 # Inspect the directory contents, possibly finding treasure chests and hero tombstones
@@ -61,10 +61,10 @@ export extern "rpg-cli reset" [
 
 # Change the character class. If name is omitted lists the available character classes
 export extern "rpg-cli class" [
+	class?: string # Class to change into
 	--quiet(-q)    # Print succinct output when possible
 	--plain        # Print machine-readable output when possible
 	--help(-h)     # Print help
-	class?: string #
 ]
 
 # Prints the hero's current location
