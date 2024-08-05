@@ -188,8 +188,37 @@ export extern "pastel textcolor" [
 	--help(-h)  # Print help information
 ]
 
+def "nu-complete pastel help" [] {
+	[
+		{ value: "color", description: "Display information about the given color" },
+		{ value: "list", description: "Show a list of available color names" },
+		{ value: "random", description: "Generate a list of random colors" },
+		{ value: "distinct", description: "Generate a set of visually distinct colors" },
+		{ value: "sort-by", description: "Sort colors by the given property" },
+		{ value: "pick", description: "Interactively pick a color from the screen (pipette)" },
+		{ value: "format", description: "Convert a color to the given format" },
+		{ value: "paint", description: "Print colored text using ANSI escape sequences" },
+		{ value: "gradient", description: "Generate an interpolating sequence of colors" },
+		{ value: "mix", description: "Mix two colors in the given colorspace" },
+		{ value: "colorblind", description: "Simulate a color under a certain colorblindness profile" },
+		{ value: "se", description: "Set a color property to a specific value" },
+		{ value: "saturate", description: "Increase color saturation by a specified amount" },
+		{ value: "desaturate", description: "Decrease color saturation by a specified amount" },
+		{ value: "lighten", description: "Lighten color by a specified amount" },
+		{ value: "darken", description: "Darken color by a specified amount" },
+		{ value: "rotate", description: "Rotate the hue channel by the specified angle" },
+		{ value: "complement", description: "Get the complementary color (hue rotated by 180°)" },
+		{ value: "gray", description: "Create a gray tone from a given lightness" },
+		{ value: "to-gray", description: "Completely desaturate a color (preserving luminance)" },
+		{ value: "textcolor", description: "Get a readable text color for the given background color" },
+		{ value: "help", description: "Print this message or the help of the given subcommand(s)" }
+	]
+}
+
 # Print the help of the given subcommand(s)
-export extern "pastel help" []
+export extern "pastel help" [
+	...subcommands: string@"nu-complete pastel help" # The subcommand whose help message to display
+]
 
 def "nu-complete pastel color-mode" [] {
 	["24bit" "8bit" "off" "auto"]

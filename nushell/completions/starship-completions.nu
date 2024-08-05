@@ -120,7 +120,21 @@ export extern "starship toggle" [
 ]
 
 def "nu-complete starship help" [] {
-	[ "bug-report" "completions" "config" "explain" "init" "module" "preset" "print-config" "prompt" "session" "timings" "toggle" "help" ]
+	[
+		{ value: "bug-report", description: "Create a pre-populated GitHub issue with information about your configuration" },
+		{ value: "completions", description: "Generate starship shell completions for your shell to stdout" },
+		{ value: "config", description: "Edit the starship configuration" },
+		{ value: "explain", description: "Explains the currently showing modules" },
+		{ value: "init", description: "Prints the shell function used to execute starship" },
+		{ value: "module", description: "Prints a specific prompt module" },
+		{ value: "preset", description: "Prints a preset config" },
+		{ value: "print-config", description: "Prints the computed starship configuration" },
+		{ value: "prompt", description: "Prints the full starship prompt" },
+		{ value: "session", description: "Generate random session key" },
+		{ value: "timings", description: "Prints timings of all active modules" },
+		{ value: "toggle", description: "Toggle a given starship module" },
+		{ value: "help", description: "Print this message or the help of the given subcommand(s)" }
+	]
 }
 
 # Print this message or the help of the given subcommand(s)

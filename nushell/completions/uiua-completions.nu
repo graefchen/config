@@ -85,8 +85,27 @@ export extern "uiua stand" [
 	--help(-h)         # Print help
 ]
 
+def "nu-complete uiua help" [] {
+	[
+		{ value: "init", description: "Initialize a new main.ua fil" },
+		{ value: "run", description: "Format and run a fil" },
+		{ value: "build", description: "Build an assembly (the .uasm format is currently unstable" },
+		{ value: "eval", description: "Evaluate an expression and print its outpu" },
+		{ value: "test", description: "Format and test a fil" },
+		{ value: "watch", description: "Run .ua files in the current directory when they change  " },
+		{ value: "fmt", description: "Format a Uiua file or all files in the current directory " },
+		{ value: "lsp", description: "Run the Language Serve" },
+		{ value: "repl", description: "Run the Uiua interpreter in a REP" },
+		{ value: "update", description: "Update Uiua by installing with Carg" },
+		{ value: "stand", description: "Create a standalone executabl" },
+		{ value: "help", description: "Print this message or the help of the given subcommand(s)" }
+	]
+}
+
 # Print this message or the help of the given subcommand(s)
-export extern "uiua help" []
+export extern "uiua help" [
+	...command: string@"nu-complete uiua help"
+]
 
 # A stack-based array programming language
 export extern "uiua" [

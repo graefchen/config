@@ -85,7 +85,19 @@ export extern "rpg-cli battle" [
 
 
 def "nu-complete rpg-cli help" [] {
-	[ "stat" "cd" "ls" "buy" "use" "todo" "reset" "class" "pwd" "battle" "help" ]
+	[
+		{ value: "stat", description: "Display stats for the given items. Defaults to displaying hero stats if no item is specified. [default]" },
+		{ value: "cd", description: "Moves the hero to the supplied destination, potentially initiating battles along the way" },
+		{ value: "ls", description: "Inspect the directory contents, possibly finding treasure chests and hero tombstones" },
+		{ value: "buy", description: "Buys an item from the shop. If name is omitted lists the items available for sale" },
+		{ value: "use", description: "Uses an item from the inventory" },
+		{ value: "todo", description: "Prints the quest todo list" },
+		{ value: "reset", description: "Resets the current game" },
+		{ value: "class", description: "Change the character class. If name is omitted lists the available character classes" },
+		{ value: "pwd", description: "Prints the hero's current location" },
+		{ value: "battle", description: "Potentially initiates a battle in the hero's current location" },
+		{ value: "help", description: "Print this message or the help of the given subcommand(s)" }
+	]
 }
 
 
