@@ -2,7 +2,7 @@
 # based on: Lua 5.4.2
 # link: https://www.lua.org
 # and
-# based on:LuaJIT 2.1.0-beta
+# based on: LuaJIT 2.1.0-beta
 # link: https://luajit.org
 
 # lua is the stand-alone Lua interpreter. It loads and executes Lua programs, either in textual source form or in precompiled binary form. 

@@ -1,5 +1,5 @@
 # Written by graefchen
-# based on luarocks 3.9.2
+# based on: luarocks 3.9.2
 # link: https://luarocks.org
 
 # Show help for commands.
