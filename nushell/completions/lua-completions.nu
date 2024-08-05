@@ -5,7 +5,7 @@
 # based on:LuaJIT 2.1.0-beta
 # link: https://luajit.org
 
-# lua
+# lua is the stand-alone Lua interpreter. It loads and executes Lua programs, either in textual source form or in precompiled binary form. 
 export extern "lua" [
 	script?: path
 	-e: string # execute string 'stat'
@@ -16,17 +16,17 @@ export extern "lua" [
 	-W         # turn warnings on
 ]
 
-# luac
+# luac is the Lua compiler. It translates programs written in the Lua programming language into binary files that can be later loaded and executed.
 export extern "luac" [
-	filenames?: list<string>
 	-l          # list (use -l -l for full listing)
 	-o: string  # output to file 'name' (default is "luac.out")
 	-p          # parse only
 	-s          # strip debug information
 	-v          # show version information
+	...filenames: string
 ]
 
-# luajit
+# Just-In-Time Compiler for the Lua Language
 export extern "luajit" [
 	script?: path
 	-e: string # Execute string 'chunk'.
