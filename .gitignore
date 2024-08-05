@@ -16,6 +16,7 @@ history.txt
 /nushell/completions/*
 !/nushell/completions/cmake-completions.nu
 !/nushell/completions/deno-completions.nu
+!/nushell/completions/elm-completions.nu
 !/nushell/completions/dart-completions.nu
 !/nushell/completions/fd-completions.nu
 !/nushell/completions/go-completions.nu
@@ -32,6 +33,7 @@ history.txt
 !/nushell/completions/odin-completions.nu
 !/nushell/completions/onefetch-completions.nu
 !/nushell/completions/pastel-completions.nu
+!/nushell/completions/purs-completions.nu
 !/nushell/completions/rpg-cli-completions.nu
 !/nushell/completions/starship-completions.nu
 !/nushell/completions/tig-completions.nu
