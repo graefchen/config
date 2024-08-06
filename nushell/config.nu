@@ -905,6 +905,7 @@ source ./completions/go-completions.nu
 source ./completions/hexyl-completions.nu
 source ./completions/hyperfine-completions.nu
 source ./completions/jq-completions.nu
+source ./completions/julia-completions.nu
 source ./completions/lsd-completions.nu
 source ./completions/lua-completions.nu
 source ./completions/luarocks-completions.nu

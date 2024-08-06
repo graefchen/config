@@ -37,8 +37,9 @@ export extern "k" [
 	file?: string # execute a script
 ]
 
+# Io programmming language
+export extern "io" [
+	...file: path
+]	
+
 # Commented out (outdated|unwanted) misc items
-# # Io programmming language
-# export extern "Io" [
-# 	file: path
-# ]

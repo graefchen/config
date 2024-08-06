@@ -23,6 +23,7 @@ history.txt
 !/nushell/completions/hexyl-completions.nu
 !/nushell/completions/hyperfine-completions.nu
 !/nushell/completions/jq-completions.nu
+!/nushell/completions/julia-completions.nu
 !/nushell/completions/lsd-completions.nu
 !/nushell/completions/lua-completions.nu
 !/nushell/completions/luarocks-completions.nu
