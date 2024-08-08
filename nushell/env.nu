@@ -72,3 +72,8 @@ alias nv = nvim
 
 # c compiler
 # alias clang = clang -Wall -Werror -pedantic -fsanitize=address
+
+# get du size and name
+export def --env s [] {
+    du | sort-by apparent | select path apparent | update path { path basename }
+}
