@@ -36,6 +36,8 @@ history.txt
 !/nushell/completions/pastel-completions.nu
 !/nushell/completions/purs-completions.nu
 !/nushell/completions/rpg-cli-completions.nu
+!/nushell/completions/serve-completions.nu
+!/nushell/completions/spago-completions.nu
 !/nushell/completions/starship-completions.nu
 !/nushell/completions/tig-completions.nu
 !/nushell/completions/tokei-completions.nu
