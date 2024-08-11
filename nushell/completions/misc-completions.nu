@@ -37,9 +37,12 @@ export extern "k" [
 	file?: string # execute a script
 ]
 
+# based on: Io 20110905
+# link: https://iolanguage.org
+
 # Io programmming language
 export extern "io" [
-	...file: path
+	file?: string
 ]	
 
 # Commented out (outdated|unwanted) misc items

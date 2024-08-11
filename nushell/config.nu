@@ -898,7 +898,9 @@ source ./completions/cmake-completions.nu
 source ./completions/dart-completions.nu
 source ./completions/deno-completions.nu
 source ./completions/elm-completions.nu
+source ./completions/erde-completions.nu
 source ./completions/fd-completions.nu
+source ./completions/fennel-completions.nu
 source ./completions/gh-completions.nu
 source ./completions/git-completions.nu
 source ./completions/go-completions.nu

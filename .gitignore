@@ -18,7 +18,9 @@ history.txt
 !/nushell/completions/deno-completions.nu
 !/nushell/completions/elm-completions.nu
 !/nushell/completions/dart-completions.nu
+!/nushell/completions/erde-completions.nu
 !/nushell/completions/fd-completions.nu
+!/nushell/completions/fennel-completions.nu
 !/nushell/completions/go-completions.nu
 !/nushell/completions/hexyl-completions.nu
 !/nushell/completions/hyperfine-completions.nu
