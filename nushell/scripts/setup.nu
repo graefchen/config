@@ -40,6 +40,7 @@ def goapps []: nothing -> nothing {
 	const goapps_list = ["github.com/Rosettea/bunnyfetch" "github.com/noahgorstein/jqp"]
 	print "Downloading Go Apps..."
 	for i in $goapps_list {
+		print $"-- ($i)"
 		go install ($i | append "@latest" | str join "")
 	}
 	print "Finished donwloading goapps..."

@@ -11,7 +11,6 @@ export extern "fennel" [
 	--load(-l): string          # Load the specified FILE before executing command
 	--no-compiler-sandbox       # Don't limit compiler environment to minimal sandbox
 	--compile-binary: string    # Compile FILE to standalone binary OUT
-	--compile-binary            # Display further help for compiling binaries
 	--add-package-path: string  # Add PATH to package.path for finding Lua modules
 	--add-package-cpath: string # Add PATH to package.cpath for finding Lua modules
 	--add-fennel-path: string   # Add PATH to fennel.path for finding Fennel modules

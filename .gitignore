@@ -47,3 +47,10 @@ history.txt
 
 # Ignore all nushell modules
 /nushell/modules/*
+
+
+# Ignore vim code for nvim
+/nvim/ftdetect
+/nvim/ftplugin
+/nvim/indent
+/nvim/syntax

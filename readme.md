@@ -8,9 +8,10 @@ Just my config files.
 - neovim config
 - vscode extensins i use
 - bash config
+- nushell config
 - [more will follow]
 
-## NeoVim setup:
+## nvim setup:
 
 - Language Server & Snippets
 - Color
@@ -24,3 +25,9 @@ Just my config files.
 
 - https://github.com/gorbit99/codewindow.nvim
 - https://github.com/iamcco/markdown-preview.nvim
+
+## vim syntax hightlighting files:
+
+- https://www.vim.org/scripts/script.php?script_id=2116
+- https://codeberg.org/ngn/k/src/branch/master/vim-k
+- https://github.com/erde-lang/vim-erde/
