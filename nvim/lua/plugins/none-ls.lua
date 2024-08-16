@@ -13,19 +13,21 @@ return {
 				-- More formatters can be found here: (https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/formatting)
 				-- [1] prettier
 				-- [2] lua
-				sources = {
-					null_ls.builtins.formatting.prettier,
-					null_ls.builtins.formatting.stylua,
-				},
+				sources = { null_ls.builtins.formatting.prettier, null_ls.builtins.formatting.stylua },
 				-- Attaching an function that fromats every time a file gets saved
 				on_attach = function(client, bufnr)
 					if client.supports_method("textDocument/formatting") then
-						vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+						vim.api.nvim_clear_autocmds({
+							group = augroup,
+							buffer = bufnr,
+						})
 						vim.api.nvim_create_autocmd("BufWritePre", {
 							group = augroup,
 							buffer = bufnr,
 							callback = function()
-								vim.lsp.buf.format({ async = false })
+								vim.lsp.buf.format({
+									async = false,
+								})
 							end,
 						})
 					end
@@ -44,8 +46,12 @@ return {
 			-- setting up Comment
 			require("Comment").setup({
 				-- Setting cmd and the # key (german keyboard) to comment line(s)
-				toggler = { line = "<C-\\>" },
-				opleader = { line = "<C-\\>" },
+				toggler = {
+					line = "<C-\\>",
+				},
+				opleader = {
+					line = "<C-\\>",
+				},
 			})
 		end,
 	},
