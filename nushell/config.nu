@@ -901,8 +901,10 @@ use ~/.cache/starship/init.nu
 source ./completions/bat-completions.nu
 source ./completions/cargo-completions.nu
 source ./completions/cmake-completions.nu
+source ./completions/curl-completions.nu
 source ./completions/dart-completions.nu
 source ./completions/deno-completions.nu
+source ./completions/dotnet-completions.nu
 source ./completions/elm-completions.nu
 source ./completions/erde-completions.nu
 source ./completions/fd-completions.nu
@@ -925,12 +927,15 @@ source ./completions/numbat-completions.nu
 source ./completions/odin-completions.nu
 source ./completions/onefetch-completions.nu
 source ./completions/pastel-completions.nu
+source ./completions/picat-completions.nu
 source ./completions/purs-completions.nu
 source ./completions/rg-completions.nu
 source ./completions/rpg-cli-completions.nu
 source ./completions/rustup-completions.nu
+source ./completions/sass-completions.nu
 source ./completions/serve-completions.nu
 source ./completions/spago-completions.nu
+source ./completions/ssh-completions.nu
 source ./completions/starship-completions.nu
 source ./completions/tig-completions.nu
 source ./completions/tokei-completions.nu

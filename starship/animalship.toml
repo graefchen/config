@@ -9,6 +9,9 @@ add_newline = false
 disabled = false
 show_always = true
 
+[shell]
+disabled = false
+
 # Made that also cpp is shown under this ... lol
 [c]
 symbol = "🦏 "
