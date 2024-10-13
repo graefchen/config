@@ -17,7 +17,7 @@ def download-completion [
 # downloads all the completions defined in the `completions_list` constant
 def completions []: nothing -> nothing {
 	const completions_list = [
-		"bat" "cargo" "gh" "git" "npm" "rg" "rustup" "vscode" "yarn-v4"
+		"bat" "cargo" "curl" "gh" "git" "npm" "rg" "rustup" "vscode" "yarn-v4"
 	]
 	print "Starting to download completions..."
 	for i in $completions_list {
