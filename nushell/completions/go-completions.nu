@@ -2,6 +2,8 @@
 # based on: go1.22.5
 # link: https://go.dev
 
+# TODO: Finish
+
 # start a bug report
 export extern "go bug" []
 

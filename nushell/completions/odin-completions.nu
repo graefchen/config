@@ -2,6 +2,8 @@
 # based on: odin version dev-2024-06-nightly
 # link: https://github.com/odin-lang/Odin
 
+# TODO: Finish
+
 # Compiles directory of .odin files, as an executable. One must contain the program's entry point, all must be in the same package.
 export extern "odin build" []
 

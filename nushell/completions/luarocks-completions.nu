@@ -2,6 +2,8 @@
 # based on: luarocks 3.9.2
 # link: https://luarocks.org
 
+# TODO: Finish
+
 # Show help for commands.
 export extern "luarocks help" []
 
