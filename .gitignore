@@ -54,3 +54,6 @@ history.txt
 /nvim/ftplugin
 /nvim/indent
 /nvim/syntax
+
+# Ignore Godot logs
+/Godot
