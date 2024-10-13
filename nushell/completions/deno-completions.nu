@@ -2,6 +2,8 @@
 # based on: deno 1.45.2
 # link: https://github.com/denoland/deno
 
+# TODO: Finish
+
 def "nu-complete deno run" [] {
 	ls
 	| get name
