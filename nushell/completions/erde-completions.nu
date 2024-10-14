@@ -2,8 +2,6 @@
 # based on: erde 1.0.0-1
 # link: https://erde-lang.github.io
 
-# TODO: Finish
-
 # Compile Erde files into Lua.
 export extern "erde compile" [
 	--outdir(-o): string     #Output directory for compiled files.

@@ -43,6 +43,6 @@ export extern "k" [
 # Io programmming language
 export extern "io" [
 	file?: string
-]	
+]
 
 # Commented out (outdated|unwanted) misc items
