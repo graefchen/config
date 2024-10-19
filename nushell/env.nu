@@ -75,5 +75,8 @@ alias nv = nvim
 
 # get du size and name
 export def --env s [] {
-    du | sort-by apparent | select path apparent | update path { path basename }
+    du --all | sort-by apparent | select path apparent | update path { path basename }
 }
+
+# alias for coreutils
+alias uu = coreutils
