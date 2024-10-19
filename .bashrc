@@ -88,11 +88,6 @@ alias cc='clang'
 # language logos in the correct colour
 export COLORTERM='truecolor'
 
-# Setting to allow nvim / (vim)
-# to use the .config folder as the
-# config home
-export XDG_CONFIG_HOME='C:\\Users\Graef\.config'
-
 # starship config
 # the default config of plain text will be choosen
 eval "$(starship init bash)"
