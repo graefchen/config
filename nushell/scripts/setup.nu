@@ -28,7 +28,10 @@ def completions []: nothing -> nothing {
 }
 
 def rustapps []: nothing -> nothing {
-	const rustapps_list = ["bat" "fd-find" "hexyl" "hyperfine" "lsd" "numbat-cli" "onefetch" "pastel" "ripgrep" "starship" "tokei" "uiua"]
+	const rustapps_list = [
+		"bat" "coreutils" "fd-find" "hexyl" "hyperfine" "lsd" "numbat-cli"
+		"onefetch" "pastel" "ripgrep" "rpg-cli" "starship" "tokei" "uiua"
+	]
 	print "Downloading Rust Apps..."
 	for i in $rustapps_list {
 		cargo install $i
@@ -37,7 +40,10 @@ def rustapps []: nothing -> nothing {
 }
 
 def goapps []: nothing -> nothing {
-	const goapps_list = ["github.com/Rosettea/bunnyfetch" "github.com/noahgorstein/jqp" "github.com/maaslalani/nap"]
+	const goapps_list = [
+		"github.com/Rosettea/bunnyfetch" "github.com/noahgorstein/jqp"
+		"github.com/maaslalani/nap" "github.com/charmbracelet/gum"
+	]
 	print "Downloading Go Apps..."
 	for i in $goapps_list {
 		print $"-- ($i)"
