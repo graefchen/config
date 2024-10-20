@@ -912,6 +912,7 @@ source ./completions/fennel-completions.nu
 source ./completions/gh-completions.nu
 source ./completions/git-completions.nu
 source ./completions/go-completions.nu
+source ./completions/gum-completions.nu
 source ./completions/hexyl-completions.nu
 source ./completions/hyperfine-completions.nu
 source ./completions/jq-completions.nu

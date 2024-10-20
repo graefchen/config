@@ -23,6 +23,7 @@ history.txt
 !/nushell/completions/fd-completions.nu
 !/nushell/completions/fennel-completions.nu
 !/nushell/completions/go-completions.nu
+!/nushell/completions/gum-completions.nu
 !/nushell/completions/hexyl-completions.nu
 !/nushell/completions/hyperfine-completions.nu
 !/nushell/completions/jq-completions.nu
