@@ -949,4 +949,4 @@ use ./scripts/goapps.nu
 use ./scripts/rustapps.nu
 use ./scripts/executables.nu
 use ./scripts/setup.nu
-use ./scripts/cc.nu
+use ./scripts/commit.nu
