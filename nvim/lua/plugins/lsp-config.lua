@@ -90,6 +90,9 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.html.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
@@ -100,6 +103,15 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.tailwindcss.setup({
+				capabilities = capabilities,
+			})
+			-- lspconfig.tsserver.setup({
+			--	capabilities = capabilities,
+			-- })
+			lspconfig.vls.setup({
 				capabilities = capabilities,
 			})
 
