@@ -31,6 +31,8 @@ return {
 					"cssls",
 					-- denols (js, ts)
 					"denols",
+					-- gopls (go)
+					"gopls",
 					-- html (html)
 					"html",
 					-- hls (haskell)
