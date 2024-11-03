@@ -3,6 +3,9 @@ secret.json
 
 *.yml
 
+# nuxtrc, removed because telemetry seed
+.nuxtrc
+
 # my scoop -- psssst
 /scoop
 
@@ -12,47 +15,11 @@ history.txt
 # Just a lot of repo bloat
 */.hyper_plugins
 
-# Ignore all nushell completions files except those that I wrote
-/nushell/completions/*
-!/nushell/completions/cmake-completions.nu
-!/nushell/completions/deno-completions.nu
-!/nushell/completions/elm-completions.nu
-!/nushell/completions/dart-completions.nu
-!/nushell/completions/dotnet-completions.nu
-!/nushell/completions/erde-completions.nu
-!/nushell/completions/fd-completions.nu
-!/nushell/completions/fennel-completions.nu
-!/nushell/completions/go-completions.nu
-!/nushell/completions/gum-completions.nu
-!/nushell/completions/hexyl-completions.nu
-!/nushell/completions/hyperfine-completions.nu
-!/nushell/completions/jq-completions.nu
-!/nushell/completions/julia-completions.nu
-!/nushell/completions/lsd-completions.nu
-!/nushell/completions/lua-completions.nu
-!/nushell/completions/luarocks-completions.nu
-!/nushell/completions/meson-completions.nu
-!/nushell/completions/misc-completions.nu
-!/nushell/completions/ninja-completions.nu
-!/nushell/completions/numbat-completions.nu
-!/nushell/completions/odin-completions.nu
-!/nushell/completions/onefetch-completions.nu
-!/nushell/completions/pastel-completions.nu
-!/nushell/completions/picat-completions.nu
-!/nushell/completions/purs-completions.nu
-!/nushell/completions/rpg-cli-completions.nu
-!/nushell/completions/sass-completions.nu
-!/nushell/completions/serve-completions.nu
-!/nushell/completions/spago-completions.nu
-!/nushell/completions/ssh-completions.nu
-!/nushell/completions/starship-completions.nu
-!/nushell/completions/tig-completions.nu
-!/nushell/completions/tokei-completions.nu
-!/nushell/completions/uiua-completions.nu
+# Ignore all nushell completions files that are extern
+/nushell/completions/extern
 
 # Ignore all nushell modules
 /nushell/modules/*
-
 
 # Ignore vim code for nvim
 /nvim/ftdetect

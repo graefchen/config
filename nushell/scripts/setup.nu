@@ -11,7 +11,7 @@ def download-completion [
 	name: path,
 ]: nothing -> nothing {
 	let correct_name = ($name | split row "-" | first)
-	download-file $"https://raw.githubusercontent.com/nushell/nu_scripts/main/custom-completions/($correct_name)/($name)-completions.nu" ($env.XDG_CONFIG_HOME | path join $'nushell/completions/($name)-completions.nu' )
+	download-file $"https://raw.githubusercontent.com/nushell/nu_scripts/main/custom-completions/($correct_name)/($name)-completions.nu" ($env.XDG_CONFIG_HOME | path join $'nushell/completions/extern/($name)-completions.nu' )
 }
 
 # downloads all the completions defined in the `completions_list` constant
