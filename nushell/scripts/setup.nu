@@ -43,6 +43,7 @@ def goapps []: nothing -> nothing {
 	const goapps_list = [
 		"github.com/Rosettea/bunnyfetch" "github.com/noahgorstein/jqp"
 		"github.com/maaslalani/nap" "github.com/charmbracelet/gum"
+		"github.com/boyter/scc/v3"
 	]
 	print "Downloading Go Apps..."
 	for i in $goapps_list {
