@@ -40,6 +40,30 @@ export extern "go list" []
 # module maintenance
 export extern "go mod" []
 
+# download modules to local cache
+export extern "go mod download" []
+
+# edit go.mod from tools or scripts
+export extern "go mod edit" []
+
+# print module requirement graph
+export extern "go mod graph" []
+
+# initialize new module in current directory
+export extern "go mod init" []
+
+# add missing and remove unused modules
+export extern "go mod tidy" []
+
+# make vendored copy of dependencies
+export extern "go mod vendor" []
+
+# verify dependencies have expected content
+export extern "go mod verify" []
+
+# explain why packages or modules are needed
+export extern "go mod why" []
+
 # workspace maintenance
 export extern "go work" []
 
