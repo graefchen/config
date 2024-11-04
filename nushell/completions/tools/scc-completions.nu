@@ -10,13 +10,13 @@ export extern "scc" [
 	--character(-m)               # calculate max and mean characters per line
 	--ci                          # enable CI output settings where stdout is ASCII
 	--cocomo-project-type: string # change COCOMO model type [organic, semi-detached, embedded, "custom,1,1,1,1"] (default "organic")
-	--count-as string             # count extension as language [e.g. jsp:htm,chead:"C Header" maps extension jsp to html and chead to C Header]
+	--count-as: string            # count extension as language [e.g. jsp:htm,chead:"C Header" maps extension jsp to html and chead to C Header]
 	--count-ignore                # set to allow .gitignore and .ignore files to be counted
 	--currency-symbol: string     # set currency symbol (default "$")
 	--debug                       # enable debug output
 	--dryness(-a)                 # calculate the DRYness of the project (implies --uloc)
-	--eaf float                   # the effort adjustment factor derived from the cost drivers (1.0 if rated nominal) (default 1)
-	--exclude-dir string          # directories to exclude (default [.git,.hg,.svn])
+	--eaf: float                  # the effort adjustment factor derived from the cost drivers (1.0 if rated nominal) (default 1)
+	--exclude-dir: string         # directories to exclude (default [.git,.hg,.svn])
 	--exclude-ext(-x): string     # ignore file extensions (overrides include-ext) [comma separated list: e.g. go,java,js]
 	--exclude-file(-n): string    # ignore files with matching names (default [package-lock.json,Cargo.lock,yarn.lock,pubspec.lock,Podfile.lock,pnpm-lock.yaml])
 	--file-gc-count: int          # number of files to parse before turning the GC on (default 10000)
@@ -45,9 +45,9 @@ export extern "scc" [
 	--no-min                      # ignore minified files in output (implies --min)
 	--no-min-gen                  # ignore minified or generated files in output (implies --min-gen)
 	--no-size                     # remove size calculation output
-	--not-match(-M): list<string> # ignore files and directories matching regular expression
+	--not-match(-M): string       # ignore files and directories matching regular expression
 	--output(-o): string          # output filename (default stdout)
-	--overhead float              # set the overhead multiplier for corporate overhead (facilities, equipment, accounting, etc.) (default 2.4)
+	--overhead: float             # set the overhead multiplier for corporate overhead (facilities, equipment, accounting, etc.) (default 2.4)
 	--percent(-p)                 # include percentage values in output
 	--remap-all: string           # inspect every file and remap by checking for a string and remapping the language [e.g. "-*- C++ -*-":"C Header"]
 	--remap-unknown: string       # inspect files of unknown type and remap by checking for a string and remapping the language [e.g. "-*- C++ -*-":"C Header"]
@@ -60,4 +60,5 @@ export extern "scc" [
 	--verbose(-v)                 # verbose output
 	--version                     # version for scc
 	--wide(-w)                    # wider output with additional statistics (implies --complexity)
+	path?: string                 # files or directories
 ]
