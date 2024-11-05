@@ -1,10 +1,12 @@
 # all the tool things
 
 source ./cmake-completions.nu
+source ./foto-completions.nu
 source ./gum-completions.nu
 source ./hexyl-completions.nu
 source ./hyperfine-completions.nu
 source ./meson-completions.nu
+source ./moul-completions.nu
 source ./ninja-completions.nu
 source ./onefetch-completions.nu
 source ./pastel-completions.nu
