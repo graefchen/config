@@ -45,4 +45,16 @@ export extern "io" [
 	file?: string
 ]
 
+# based on nap@latest
+# link: https://github.com/maaslalani/nap
+
+# Fuzzy find snippet.
+export extern "nap fuzzy" []
+
+# List snippets.
+export extern "nap list" []
+
+# Code snippets in your terminal
+export extern "nap" []
+
 # Commented out (outdated|unwanted) misc items
