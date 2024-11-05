@@ -16,7 +16,8 @@ history.txt
 */.hyper_plugins
 
 # Ignore all nushell completions files that are extern
-/nushell/completions/extern
+/nushell/completions/extern/*
+!/nushell/completions/extern/mod.nu
 
 # Ignore all nushell modules
 /nushell/modules/*
