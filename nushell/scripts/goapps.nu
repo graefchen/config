@@ -13,6 +13,7 @@ export def string []: nothing -> string {
 	list | str join " "
 }
 
+# print all go apps
 export def main [] nothing -> list<string> {
     list
 }
