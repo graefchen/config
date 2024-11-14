@@ -80,3 +80,10 @@ export def --env s [] {
 
 # alias for coreutils
 alias uu = coreutils
+
+$env.NAP_CONFIG = "~/.config/nap/config.yaml"
+$env.NAP_HOME = "~/.config/nap"
+$env.NAP_DEFAULT_LANGUAGE = "go"
+$env.NAP_THEME = "nord"
+
+$env.EDITOR = "nvim"
