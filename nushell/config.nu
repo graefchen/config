@@ -907,6 +907,7 @@ source ./completions/tools/mod.nu
 # Using scripts...
 use ./scripts/walk.nu
 use ./scripts/goapps.nu
+use ./scripts/rand.nu
 use ./scripts/rustapps.nu
 use ./scripts/executables.nu
 use ./scripts/setup.nu
