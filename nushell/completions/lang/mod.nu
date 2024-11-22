@@ -1,5 +1,6 @@
 # all the language things
 
+source ./cake-completions.nu
 source ./dart-completions.nu
 source ./deno-completions.nu
 source ./dotnet-completions.nu
@@ -10,7 +11,6 @@ source ./fennel-completions.nu
 source ./go-completions.nu
 source ./jq-completions.nu
 source ./julia-completions.nu
-source ./lsd-completions.nu
 source ./lua-completions.nu
 source ./numbat-completions.nu
 source ./odin-completions.nu

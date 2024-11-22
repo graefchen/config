@@ -5,6 +5,7 @@ source ./foto-completions.nu
 source ./gum-completions.nu
 source ./hexyl-completions.nu
 source ./hyperfine-completions.nu
+source ./lsd-completions.nu
 source ./meson-completions.nu
 source ./moul-completions.nu
 source ./ninja-completions.nu
