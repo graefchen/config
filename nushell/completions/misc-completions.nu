@@ -57,4 +57,18 @@ export extern "nap list" []
 # Code snippets in your terminal
 export extern "nap" []
 
+# Private binaries
+
+def "nu-complete fi" [] {
+	ls
+	| get name
+	| find --regex "\\.fos"
+}
+
+export extern "fi" [] {
+	...file:string@"nu-complete fi"
+}
+
+alias fa = fi ...(ls | get name | find --regex "\\.fos")
+
 # Commented out (outdated|unwanted) misc items

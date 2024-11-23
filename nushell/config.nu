@@ -905,10 +905,11 @@ source ./completions/package/mod.nu
 source ./completions/tools/mod.nu
 
 # Using scripts...
-use ./scripts/walk.nu
+use ./scripts/b.nu
+use ./scripts/commit.nu
+use ./scripts/executables.nu
 use ./scripts/goapps.nu
 use ./scripts/rand.nu
 use ./scripts/rustapps.nu
-use ./scripts/executables.nu
 use ./scripts/setup.nu
-use ./scripts/commit.nu
+use ./scripts/walk.nu
