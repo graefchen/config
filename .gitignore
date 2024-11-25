@@ -23,10 +23,10 @@ history.txt
 /nushell/modules/*
 
 # Ignore vim code for nvim
-/nvim/ftdetect
-/nvim/ftplugin
-/nvim/indent
-/nvim/syntax
+# /nvim/ftdetect
+# /nvim/ftplugin
+# /nvim/indent
+# /nvim/syntax
 
 # Ignore Godot logs
 /Godot
