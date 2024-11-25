@@ -63,15 +63,32 @@ export extern "io" [
 
 # Private binaries
 
+# fallout 4 save
+
 def "nu-complete fi" [] {
 	ls -la **/*.fos
 	| get name
 }
 
+# fallout 4 save inspector
 export extern "fi" [] {
 	...file:string@"nu-complete fi"
 }
 
 alias fa = fi ...(ls -la **/*.fos | get name)
+
+# skyrim save
+
+def "nu-complete si" [] {
+	ls -la **/*.ess
+	| get name
+}
+
+# skyrim save inspector
+export extern "si" [] {
+	...file:string@"nu-complete si"
+}
+
+alias sa = si ...(ls -la **/*.ess | get name)
 
 # Commented out (outdated|unwanted) misc items
