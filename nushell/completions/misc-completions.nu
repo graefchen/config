@@ -19,6 +19,7 @@ export extern "bunnyfetch" [
 def "nu-complete json" [] {
 	ls -la **/*.json
 	| get name
+	| sort -in
 }
 
 
@@ -37,6 +38,7 @@ export extern "jqp" [
 def "nu-complete k" [] {
 	ls -la **/*.k
 	| get name
+	| sort -in
 }
 
 # kona(k3) programming language
@@ -54,6 +56,7 @@ export extern "k" [
 def "nu-complete io" [] {
 	ls -la **/*.io
 	| get name
+	| sort -in
 }
 
 # Io programmming language
@@ -68,6 +71,7 @@ export extern "io" [
 def "nu-complete fi" [] {
 	ls -la **/*.fos
 	| get name
+	| sort -in
 }
 
 # fallout 4 save inspector
@@ -75,13 +79,14 @@ export extern "fi" [] {
 	...file:string@"nu-complete fi"
 }
 
-alias fa = fi ...(ls -la **/*.fos | get name)
+alias fa = fi ...(ls -la **/*.fos | get name | sort -in)
 
 # skyrim save
 
 def "nu-complete si" [] {
 	ls -la **/*.ess
 	| get name
+	| sort -in
 }
 
 # skyrim save inspector
@@ -89,6 +94,6 @@ export extern "si" [] {
 	...file:string@"nu-complete si"
 }
 
-alias sa = si ...(ls -la **/*.ess | get name)
+alias sa = si ...(ls -la **/*.ess | get name | sort -in)
 
 # Commented out (outdated|unwanted) misc items
