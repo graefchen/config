@@ -2,6 +2,7 @@
 
 source ./cmake-completions.nu
 source ./foto-completions.nu
+source ./glow-completions.nu
 source ./gum-completions.nu
 source ./hexyl-completions.nu
 source ./hyperfine-completions.nu
