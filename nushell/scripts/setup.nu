@@ -40,16 +40,24 @@ export def rustapps []: nothing -> nothing {
 }
 
 export def goapps []: nothing -> nothing {
+	# Having an different version for anyone is smart
+	# as "nap@latest" would simply not work in the up to date way
+	# furthermore it could be adjusted to use a specific version
+	# for reasons that aren't clear to me yet
 	const goapps_list = [
-		"github.com/Rosettea/bunnyfetch" "github.com/noahgorstein/jqp"
-		"github.com/maaslalani/nap" "github.com/charmbracelet/gum"
-		"github.com/boyter/scc/v3" "github.com/moulco/moul"
-		"github.com/waynezhang/foto" "github.com/charmbracelet/glow"
+		{ name: "github.com/Rosettea/bunnyfetch", version: "@latest" },
+		{ name: "github.com/noahgorstein/jqp", version: "@latest" },
+		{ name: "github.com/maaslalani/nap", version: "@main"},
+		{ name: "github.com/charmbracelet/gum", version: "@latest" },
+		{ name: "github.com/boyter/scc/v3", version: "@latest" },
+		{ name: "github.com/moulco/moul", version: "@latest" },
+		{ name: "github.com/waynezhang/foto", version: "@latest" },
+		{ name: "github.com/charmbracelet/glow", version: "@latest" }
 	]
 	print "Downloading Go Apps..."
 	for i in $goapps_list {
-		print $"-- ($i)"
-		go install ($i | append "@latest" | str join "")
+		print $"-- ($i.name)($i.version)"
+		go install ($i.name | append $i.version | str join "")
 	}
 	print "Finished donwloading goapps..."
 }

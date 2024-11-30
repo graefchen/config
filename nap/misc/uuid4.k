@@ -1,3 +1,4 @@
+/ works on the kone k interpreter
 uuid:{
   / The hex digits in order
   h:"0123456789abcdef"
