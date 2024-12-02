@@ -70,6 +70,9 @@ alias vi = nvim
 alias vim = nvim
 alias nv = nvim
 
+# tree alias
+alias tree = lsd --tree
+
 # c compiler
 # alias clang = clang -Wall -Werror -pedantic -fsanitize=address
 
