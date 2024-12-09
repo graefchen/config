@@ -90,3 +90,5 @@ $env.NAP_DEFAULT_LANGUAGE = "go"
 $env.NAP_THEME = "nord"
 
 $env.EDITOR = "nvim"
+
+$env.ZEIT_DB =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')

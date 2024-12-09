@@ -30,7 +30,7 @@ export def completions []: nothing -> nothing {
 export def rustapps []: nothing -> nothing {
 	const rustapps_list = [
 		"bat" "fd-find" "hexyl" "hyperfine" "lsd" "numbat-cli"
-		"onefetch" "pastel" "ripgrep" "starship" "tokei" "uiua"
+		"onefetch" "pastel" "ripgrep" "starship" "tokei" "uiua -F full"
 	]
 	print "Downloading Rust Apps..."
 	for i in $rustapps_list {

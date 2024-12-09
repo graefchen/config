@@ -20,4 +20,5 @@ source ./ssh-completions.nu
 source ./starship-completions.nu
 source ./tig-completions.nu
 source ./tokei-completions.nu
+source ./zeit-completions.nu
 source ./zola-completions.nu
