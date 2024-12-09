@@ -28,7 +28,7 @@ Just my config files.
 
 ## vim syntax hightlighting files:
 
-- https://www.vim.org/scripts/script.php?script_id=2116
-- https://codeberg.org/ngn/k/src/branch/master/vim-k
-- https://github.com/erde-lang/vim-erde/
-- https://github.com/sputnick1124/uiua.vim
+- IO: https://www.vim.org/scripts/script.php?script_id=2116
+- k: https://codeberg.org/ngn/k/src/branch/master/vim-k
+- Erde: https://github.com/erde-lang/vim-erde/
+- Uiua: https://github.com/sputnick1124/uiua.vim

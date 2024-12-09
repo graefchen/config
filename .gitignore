@@ -30,3 +30,6 @@ history.txt
 
 # Ignore Godot logs
 /Godot
+
+# Do not upload databases
+*.db
