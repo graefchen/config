@@ -18,4 +18,3 @@ source ./picat-completions.nu
 source ./purs-completions.nu
 source ./python-completions.nu
 source ./sass-completions.nu
-source ./uiua-completions.nu
