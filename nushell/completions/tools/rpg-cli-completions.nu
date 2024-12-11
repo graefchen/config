@@ -113,3 +113,5 @@ export extern "rpg-cli" [
 	--help(-h)    # Print help
 	--version(-V) # Print version
 ]
+
+export alias rpg = rpg-cli
