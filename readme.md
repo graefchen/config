@@ -5,29 +5,17 @@ Just my config files.
 ## What it includes:
 
 - starship prompt configs
-- neovim config
-- vscode extensins i use
-- bash config
-- nushell config
-- [more will follow]
+- (neo)vim config
+- vscode extensions i use
+- bash/nushell config
+- some [nap](https://github.com/maaslalani/nap) stuff
 
-## nvim setup:
+## (neo)vim:
 
-- Language Server & Snippets
-- Color
-- Formatting
-  - Lua
-- Sidebar/File Tree
-- Packet Manager
-- [more will follow]
-
-## Potential nvim plugins to be added:
-
-- https://github.com/gorbit99/codewindow.nvim
-- https://github.com/iamcco/markdown-preview.nvim
-
-## vim syntax hightlighting files:
-
-- IO: https://www.vim.org/scripts/script.php?script_id=2116
-- Erde: https://github.com/erde-lang/vim-erde/
-- Uiua: https://github.com/sputnick1124/uiua.vim
+- color:
+  - ayu [ref](https://github.com/ayu-theme/ayu-vim)
+- plugins:
+  - goyo [ref](https://github.com/junegunn/goyo.vim)
+  - rainbow parenthis [ref](https://github.com/junegunn/rainbow_parentheses.vim)
+  - vim you autocorrect [ref](https://github.com/sedm0784/vim-you-autocorrect)
+  - writegooder [ref](https://github.com/JKirchartz/writegooder.vim)

@@ -1,1 +1,0 @@
-au! bufread,bufnewfile *.io se ft=io
