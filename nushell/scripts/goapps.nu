@@ -1,6 +1,6 @@
 # written by graefchen
 
-def list [] nothing -> list<string> {
+def list []: nothing -> list<string> {
     ls ($env.GOPATH | path join "bin")
     | get name
     | split column "\\"
@@ -14,6 +14,6 @@ export def string []: nothing -> string {
 }
 
 # print all go apps
-export def main [] nothing -> list<string> {
+export def main []: nothing -> list<string> {
     list
 }

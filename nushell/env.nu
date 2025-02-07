@@ -76,11 +76,6 @@ alias tree = lsd --tree
 # c compiler
 # alias clang = clang -Wall -Werror -pedantic -fsanitize=address
 
-# get du size and name
-export def --env s [] {
-    du --all | sort-by apparent | select path apparent | update path { path basename }
-}
-
 # alias for coreutils
 alias uu = coreutils
 
@@ -92,3 +87,10 @@ $env.NAP_THEME = "nord"
 $env.EDITOR = "nvim"
 
 $env.ZEIT_DB =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')
+
+# command line games
+alias rpg = rpg-cli
+
+export def --env wordcount [] {
+    ls **/* | where type == file | each {|x| open $x.name | | str stats | insert name $x.name } | move name --before lines
+}

@@ -66,7 +66,7 @@ export def goapps []: nothing -> nothing {
 # def modules []: nothing -> nothing {}
 
 # An Script that tries to setup my environment ..
-export def main []: {
+export def main [] {
 	completions
 	rustapps
 	goapps
