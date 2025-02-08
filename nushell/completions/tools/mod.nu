@@ -1,6 +1,7 @@
 # all the tool things
 
 source ./cmake-completions.nu
+source ./fd-completions.nu
 source ./foto-completions.nu
 source ./glow-completions.nu
 source ./gum-completions.nu

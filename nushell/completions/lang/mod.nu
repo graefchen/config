@@ -6,7 +6,6 @@ source ./deno-completions.nu
 source ./dotnet-completions.nu
 source ./elm-completions.nu
 source ./erde-completions.nu
-source ./fd-completions.nu
 source ./fennel-completions.nu
 source ./go-completions.nu
 source ./jq-completions.nu
