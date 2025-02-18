@@ -50,7 +50,6 @@ $env.NU_PLUGIN_DIRS = [
 $env.COLORTERM = "truecolor"
 
 # Configuration for starship
-$env.STARSHIP_CONFIG =  ($env.XDG_CONFIG_HOME | path join 'starship\animalship.toml')
 mkdir ~/.cache/starship
 starship init nu | save -f "~/.cache/starship/init.nu"
 
@@ -92,5 +91,5 @@ $env.ZEIT_DB =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')
 alias rpg = rpg-cli
 
 export def --env wordcount [] {
-    ls **/* | where type == file | each {|x| open $x.name | | str stats | insert name $x.name } | move name --before lines
+    ls ...(glob **/*.{md,txt}) | where type == file | each {|x| open $x.name | | str stats | insert name $x.name } | move name --before lines
 }

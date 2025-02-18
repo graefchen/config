@@ -50,7 +50,7 @@ Features:~
     Enable highlighting.
 
 -------------------------------------------------------------------------------
-:WritegooderDisable                                           *:WritegooderDisable* 
+:WritegooderDisable                                           *:WritegooderDisable*
     Disable highlighting.
 
 ===============================================================================
@@ -98,3 +98,6 @@ You should have received a copy of the GNU General Public License
 along with this program; see the file COPYING.  If not, write to
 the Free Software Foundation, Inc., 51 Franklin Street, Fifth
 Floor, Boston, MA 02110-1301, USA.
+
+===============================================================================
+vim:tw=82:sw=2:ts=2:ft=help:norl:nowrap:

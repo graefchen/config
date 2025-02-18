@@ -5,59 +5,89 @@
 
 add_newline = false
 
-[character]
-success_symbol = "[>](bold green)"
-error_symbol = "[x](bold red)"
-# vicmd_symbol = "[<](bold green)"
-
 [username]
+disabled = false
 show_always = true
 
-[git_commit]
-tag_symbol = " tag "
+[shell]
+disabled = false
 
-[git_status]
-ahead = ">"
-behind = "<"
-diverged = "<>"
-renamed = "r"
-deleted = "x"
-
+# Made that also cpp is shown under this ... lol
 [c]
-symbol = "C "
+symbol = "🦏 "
 # the commands of the Tiny C Compiler
 # commands = [["tcc", "-vv"]]
+commands = [["clang", "--version"]]
+detect_extensions = ["c", "h", "cc", "hh", "cpp", "hpp", "c++", "h++"]
+# detects the .clangd file => LSP for clang
+detect_files = [".clangd"]
 
-[directory]
-read_only = "ro "
+[cmake]
+symbol = "🐐 "
+
+[dart]
+symbol = "🦔 "
 
 [deno]
-symbol = "deno "
+symbol = "🦕 "
 
-[git_branch]
-symbol = "git "
+[dotnet]
+symbol = "🦑 "
+
+[golang]
+symbol = "🐹 "
 
 [git_metrics]
 disabled = false
 
-[golang]
-symbol = "go "
+[haskell]
+symbol = "🦈 "
 
-[hostname]
-ssh_only = false
+[java]
+symbol = "🐈 "
+
+[julia]
+symbol = "🦗 "
+
+[kotlin]
+symbol = "🐙 "
 
 [lua]
-symbol = "lua "
+symbol = "🐜 "
 detect_folders = [""]
 
 [nodejs]
-symbol = "nodejs "
+symbol = "🐝 "
 
-[package]
-symbol = "pkg "
+[odin]
+symbol = "🐇 "
+
+[perl]
+symbol = "🐪 "
+
+[php]
+symbol = "🐘 "
 
 [purescript]
-symbol = "purs "
+symbol = "🦚"
+
+[python]
+symbol = "🐍 "
+
+[rlang]
+symbol = "🦉 "
+
+[ruby]
+symbol = "🦙 "
 
 [rust]
-symbol = "rs "
+symbol = "🦀 "
+
+[scala]
+symbol = "🦟 "
+
+[vlang]
+symbol = "🦦 "
+
+[zig]
+symbol = "🦎 "

@@ -2,7 +2,7 @@
 
 Just my config files.
 
-## What it includes:
+## What it includes
 
 - starship prompt configs
 - (neo)vim config
@@ -10,9 +10,9 @@ Just my config files.
 - bash/nushell config
 - some [nap](https://github.com/maaslalani/nap) stuff
 
-## nushell:
+## nushell
 
-### completions:
+### completions
 
 - extern
   - [bat](https://github.com/sharkdp/bat) -- a cat alternative
@@ -73,7 +73,7 @@ Just my config files.
   - [zola](https://www.getzola.org) -- a static site engine
 - misc -- all my miscellaneous small completions for small command line apps
 
-### scripts:
+### scripts
 
 - b -- move/rename many files
 - commit -- like commitzen
@@ -84,13 +84,23 @@ Just my config files.
 - setup -- seting up
 - walk -- a bookmarking script
 
-## (neo)vim:
+## (neo)vim
 
 - color:
+  - atlas [ref](https://github.com/huyvohcmc/atlas.vim)
   - ayu [ref](https://github.com/ayu-theme/ayu-vim)
+  - hemisu [ref](https://github.com/noahfrederick/vim-hemisu)
+  - jcs [ref](https://github.com/jcs/dotfiles/blob/master/.vim/colors/jcs.vim)
+  - monochrome [ref](https://github.com/fxn/vim-monochrome)
+  - off [ref](https://github.com/pbrisbin/vim-colors-off)
+  - paramount [ref](https://github.com/owickstrom/vim-colors-paramount)
+  - pencil [ref](https://github.com/preservim/vim-colors-pencil)
+  - preto [ref](https://github.com/ewilazarus/preto)
+  - pushcx [ref](https://gist.github.com/pushcx/8f9fe335f7812a31b51d552b268e2cbc)
+  - sunbather [ref](https://github.com/nikolvs/vim-sunbather)
 - plugins:
   - goyo [ref](https://github.com/junegunn/goyo.vim)
   - rainbow csv [ref](https://github.com/mechatroner/rainbow_csv)
-  - rainbow parenthis [ref](https://github.com/junegunn/rainbow_parentheses.vim)
+  - rainbow parenthesis [ref](https://github.com/junegunn/rainbow_parentheses.vim)
   - vim you autocorrect [ref](https://github.com/sedm0784/vim-you-autocorrect)
   - writegooder [ref](https://github.com/JKirchartz/writegooder.vim)
