@@ -13,7 +13,20 @@ set wildmode=longest,list
 " setting the colorscheme
 set termguicolors
 " let ayucolor="dark"
+" colorscheme ayu
 colorscheme atlas
 " setting the background to be invisible
 hi Normal guibg=NONE ctermbg=NONE
-set colorcolumn=80
+" enable Autocorrect
+augroup ILoveCorrections
+	autocmd!
+	autocmd BufEnter * EnableAutocorrect
+augroup END
+" enable writegooder
+augroup WriteGooder
+	autocmd!
+	" enable writegooder for everything
+	" autocmd BufEnter * WritegooderEnable
+	" enabling writegooder only for non data and programming files
+	autocmd FileType markdown,tex,text WritegooderEnable
+augroup END

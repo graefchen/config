@@ -16,7 +16,7 @@ Just my config files.
 
 - extern
   - [bat](https://github.com/sharkdp/bat) -- a cat alternative
-  - [cargo](https://www.rust-lang.org) -- the rust languagr
+  - [cargo](https://www.rust-lang.org) -- the rust language
   - [curl](https://curl.se) -- a fetch tool
   - [gh](https://cli.github.com) -- the github cli
   - [git](https://git-scm.com) -- the git version controll system

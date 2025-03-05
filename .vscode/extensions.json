@@ -59,7 +59,7 @@
         // CSV
         "mechatroner.rainbow-csv",
         // Vento
-        "oscarotero.vento-syntax",
+        // "oscarotero.vento-syntax",
         // Shader
         "slevesque.shader",
         // Odin
@@ -87,7 +87,7 @@
         // "ftsamoyed.theme-pink-cat-boo",
         // "enkia.tokyo-night",
         // Icons
-        // "helgardrichard.helium-icon-theme",
+        "helgardrichard.helium-icon-theme",
         "vscode-icons-team.vscode-icons"
     ]
 }
