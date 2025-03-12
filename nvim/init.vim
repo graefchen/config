@@ -6,6 +6,8 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set smarttab
+" setting wrap and linebreak so that wrapping does not seem random
+set wrap linebreak
 " activating syntax
 syntax on
 set mouse=a
@@ -20,7 +22,9 @@ hi Normal guibg=NONE ctermbg=NONE
 " enable Autocorrect
 augroup ILoveCorrections
 	autocmd!
-	autocmd BufEnter * EnableAutocorrect
+	" autocmd BufEnter * EnableAutocorrect
+	" enabling autocorrect only for non data and programming files
+	autocmd FileType markdown,tex,text EnableAutocorrect
 augroup END
 " enable writegooder
 augroup WriteGooder
