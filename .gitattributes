@@ -1,3 +1,4 @@
-nushell/completions/* linguist-documentation
+nushell/completions/** linguist-documentation
 nushell/config.nu linguist-documentation
 nushell/env.nu linguist-documentation
+nvim/** linguist-documentation
