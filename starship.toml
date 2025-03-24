@@ -9,6 +9,7 @@ add_newline = false
 disabled = false
 show_always = true
 
+# show which shell I am using (bash,nu,powershell,etc...)
 [shell]
 disabled = false
 
@@ -16,9 +17,9 @@ disabled = false
 [c]
 symbol = "🦏 "
 # the commands of the Tiny C Compiler
-# commands = [["tcc", "-vv"]]
-commands = [["clang", "--version"]]
-detect_extensions = ["c", "h", "cc", "hh", "cpp", "hpp", "c++", "h++"]
+# commands = [["tcc", "-v"]]
+commands = [["clang", "--version"], ["tcc", "-v"]]
+detect_extensions = ["c", "h", "cats", "cc", "hh", "cpp", "hpp", "c++", "h++"]
 # detects the .clangd file => LSP for clang
 detect_files = [".clangd"]
 
@@ -30,6 +31,16 @@ symbol = "🦔 "
 
 [deno]
 symbol = "🦕 "
+detect_files = [
+	"deno.json",
+	"deno.jsonc",
+	"deno.lock",
+	"mod.ts",
+	"deps.ts",
+	"mod.js",
+	"deps.js",
+	"jsr.json",
+]
 
 [dotnet]
 symbol = "🦑 "
@@ -54,7 +65,7 @@ symbol = "🐙 "
 
 [lua]
 symbol = "🐜 "
-detect_folders = [""]
+detect_folders = ["lua"]
 
 [nodejs]
 symbol = "🐝 "
@@ -85,9 +96,6 @@ symbol = "🦀 "
 
 [scala]
 symbol = "🦟 "
-
-[vlang]
-symbol = "🦦 "
 
 [zig]
 symbol = "🦎 "

@@ -2,6 +2,15 @@
 
 Just my config files.
 
+## table of contents
+
+- [table of contents](#table%20of%20contents)
+- [What it includes](#what%20it%20includes)
+- [nushell](#nushell)
+  - [completions](#completions)
+  - [scripts](#scripts)
+- [vim](#vim)
+
 ## What it includes
 
 - starship prompt configs
@@ -14,7 +23,7 @@ Just my config files.
 
 ### completions
 
-- extern
+- extern -- extern ressources that I inport from [nushell/nu_scripts](https://github.com/nushell/nu_scripts)
   - [bat](https://github.com/sharkdp/bat) -- a cat alternative
   - [cargo](https://www.rust-lang.org) -- the rust language
   - [curl](https://curl.se) -- a fetch tool
@@ -25,7 +34,7 @@ Just my config files.
   - [rustup](https://www.rust-lang.org) -- the rust init tool
   - [vs-code](https://code.visualstudio.com) -- vscode
   - [yarn](https://yarnpkg.com) -- the yarn package manager
-- lang
+- lang -- all programmming languages I use
   - [cake](https://github.com/thradams/cake) -- a c23 frontend
   - [dart](https://dart.dev) -- the dart language
   - [deno](https://deno.com) -- the deno js runtime
@@ -34,24 +43,24 @@ Just my config files.
   - [erde](https://github.com/erde-lang/erde) -- the erde language
   - [fennel](https://github.com/bakpakin/Fennel) -- the fennel language
   - [go](https://go.dev) -- the go language
-  - [jq](https://jqlang.org) -- the ja language
+  - [jq](https://jqlang.org) -- the jq language
   - [julia](https://julialang.org) -- the julia language
   - [lua](https://www.lua.org) -- the lua language
   - [numbat](https://numbat.dev) -- the numbat language
   - [odin](https://odin-lang.org) -- the odin language
   - [picat](https://picat-lang.org) -- the picat language
   - [purs](https://www.purescript.org) -- the purescript language
-  - [python](https://www.python.org) -- th pyton language
+  - [python](https://www.python.org) -- the pyton language
   - [sass](https://sass-lang.com) -- the sass language
-- package
+- package -- all package managers I use
   - [luarocks](https://luarocks.org) -- the lua package manager
   - [pip](https://pypi.org/project/pip/) -- the python package manager
   - [spago](https://github.com/purescript/spago) -- the purescript package manager
-- tools
+- tools -- all tools I use
   - [cmake](https://cmake.org) -- a c build system
   - [fd](https://github.com/sharkdp/fd) -- a find alternative
   - [foto](https://github.com/waynezhang/foto) -- a photo publishing tool
-  - [glow](https://github.com/charmbracelet/glow) -- a markdown rendere
+  - [glow](https://github.com/charmbracelet/glow) -- a markdown renderer
   - [gum](https://github.com/charmbracelet/gum) -- a tool for glamorous scripts
   - [hexyl](https://github.com/sharkdp/hexyl) -- a hex viewer
   - [hyperfine](https://github.com/sharkdp/hyperfine) -- a benchmarking tool
@@ -81,10 +90,10 @@ Just my config files.
 - goapps -- see all go apps
 - rand -- a small script that returns a string out of a list of strings
 - rustapps -- see all rust apps
-- setup -- seting up
+- setup -- setting up command line apps and more stuff I like
 - walk -- a bookmarking script
 
-## (neo)vim
+## vim
 
 - color:
   - atlas [ref](https://github.com/huyvohcmc/atlas.vim)
