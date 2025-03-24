@@ -907,4 +907,6 @@ use ./scripts/goapps.nu
 use ./scripts/rand.nu
 use ./scripts/rustapps.nu
 use ./scripts/setup.nu
+use ./scripts/toc.nu
+use ./scripts/viginere.nu
 use ./scripts/walk.nu

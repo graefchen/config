@@ -90,18 +90,18 @@ $env.ZEIT_DB =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')
 # command line games
 alias rpg = rpg-cli
 
-# get the wordcount of all md and txt files in your current location
+# get the wordcount of all md, org and txt files in your current location
 export def --env wordcount [] {
-    ls ...(glob **/*.{md,txt})
+    ls ...(glob --depth 4 **/*.{md,org,txt})
     | where type == file
     | each {|x| open $x.name | str stats | insert name $x.name }
     | move name --before lines
+    | update name { $in | str replace $"(pwd)" "."}
 }
 
 # getting the current disk space
 export def --env ds [] {
     du --max-depth 8
     | sort-by apparent
-    | select path apparent
     | update path { path basename }
 }
