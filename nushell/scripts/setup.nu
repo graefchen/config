@@ -29,7 +29,19 @@ export def completions []: nothing -> nothing {
 
 export def rustapps []: nothing -> nothing {
 	const rustapps_list = [
-		"bat" "coreutils" "fd-find" "hexyl" "hyperfine" "lsd" "numbat-cli" "onefetch" "pastel" "ripgrep" "starship" "tokei"
+		bat
+		coreutils
+		fd-find
+		hexyl
+		hyperfine
+		jotdown
+		lsd
+		numbat-cli
+		onefetch
+		pastel
+		ripgrep
+		starship
+		tokei
 	]
 	print "Downloading Rust Apps..."
 	for i in $rustapps_list {
@@ -51,7 +63,7 @@ export def goapps []: nothing -> nothing {
 		{ name: "github.com/noahgorstein/jqp", version: "@latest" },
 		{ name: "github.com/moulco/moul", version: "@latest" },
 		{ name: "github.com/maaslalani/nap", version: "@main"},
-		{ name: "github.com/boyter/scc/v3", version: "@latest" },
+		{ name: "github.com/boyter/scc/v3", version: "@latest" }
 	]
 	print "Downloading Go Apps..."
 	for i in $goapps_list {

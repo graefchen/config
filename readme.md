@@ -58,6 +58,7 @@ Just my config files.
   - [spago](https://github.com/purescript/spago) -- the purescript package manager
 - tools -- all tools I use
   - [cmake](https://cmake.org) -- a c build system
+  - [djot](https://djot.net) -- the djot light markup language ([djot](https://github.com/jgm/djot.lua), [jotdown](https://github.com/hellux/jotdown))
   - [fd](https://github.com/sharkdp/fd) -- a find alternative
   - [foto](https://github.com/waynezhang/foto) -- a photo publishing tool
   - [glow](https://github.com/charmbracelet/glow) -- a markdown renderer
@@ -91,6 +92,7 @@ Just my config files.
 - rand -- a small script that returns a string out of a list of strings
 - rustapps -- see all rust apps
 - setup -- setting up command line apps and more stuff I like
+- toc -- creates a table of contents from a markdown file
 - walk -- a bookmarking script
 
 ## vim

@@ -1,3 +1,4 @@
+#!/bin/bash
 # my .bashrc file
 # that is loaded from the ~/.bashrc file
 # with the help of source
