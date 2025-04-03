@@ -908,4 +908,24 @@ use ./scripts/rand.nu
 use ./scripts/rustapps.nu
 use ./scripts/setup.nu
 use ./scripts/toc.nu
+use ./scripts/vdf.nu
 use ./scripts/walk.nu
+
+
+# adding support for `open` for the shorthand file extension version of the
+# MessagePack and brotli-compressed MessagePack
+# be aware that nushell writes this comment when using `help ftom mpk(z)`
+
+# same as `from msgpack`
+export def "from mpk" [] { from msgpack }
+# same as `from msgpackz`
+export def "from mpkz" [] { from msgpackz }
+
+# Parse text as .vdf and create a record.
+# 
+# While it works ... it is also (when purely writen in nushell and in the way
+# it is written now) super slow.
+# Should be only used for data formats that are at best only multiple kb big.
+export def "from vdf" []: string -> record {
+    $in | vdf
+}

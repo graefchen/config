@@ -105,12 +105,3 @@ export def --env ds [] {
     | sort-by apparent
     | update path { path basename }
 }
-
-# adding support for `open` for the shorthand file extension version of the
-# MessagePack and brotli-compressed MessagePack
-# be aware that nushell writes this comment when using `help ftom mpk(z)`
-
-# same as `from msgpack`
-export def "from mpk" [] { from msgpack }
-# same as `from mshpackz`
-export def "from mpkz" [] { from msgpackz }

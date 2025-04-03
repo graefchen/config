@@ -93,6 +93,7 @@ Just my config files.
 - rustapps -- see all rust apps
 - setup -- setting up command line apps and more stuff I like
 - toc -- creates a table of contents from a markdown file
+- vdf -- parse the Valve Data Format
 - walk -- a bookmarking script
 
 ## vim
