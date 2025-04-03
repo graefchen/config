@@ -1,5 +1,5 @@
 # Returns a random argument out of the argument list
-export def main [...args: string]: list<string> -> string, nothing -> string {
+export def main [...args: string]: list<any> -> any, nothing -> any {
 	let $input = $in
 	if ($input | is-not-empty) == true {
 		let max = $input | length
