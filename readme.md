@@ -111,8 +111,9 @@ Just my config files.
   - pushcx [ref](https://gist.github.com/pushcx/8f9fe335f7812a31b51d552b268e2cbc)
   - sunbather [ref](https://github.com/nikolvs/vim-sunbather)
 - plugins:
+  - djot [ref](https://github.com/jgm/djot)
   - goyo [ref](https://github.com/junegunn/goyo.vim)
   - rainbow csv [ref](https://github.com/mechatroner/rainbow_csv)
-  - rainbow parenthesis [ref](https://github.com/junegunn/rainbow_parentheses.vim)
+  - rainbow parentheses [ref](https://github.com/junegunn/rainbow_parentheses.vim)
   - vim you autocorrect [ref](https://github.com/sedm0784/vim-you-autocorrect)
   - writegooder [ref](https://github.com/JKirchartz/writegooder.vim)
