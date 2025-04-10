@@ -21,80 +21,83 @@ Just my config files.
 
 ## nushell
 
+[nushell](https://www.nushell.sh) is the main shell that I use for interacting with my computer.
+I like this shell for multiple good reasons.
+
 ### completions
 
-- extern -- extern ressources that I inport from [nushell/nu_scripts](https://github.com/nushell/nu_scripts)
-  - [bat](https://github.com/sharkdp/bat) -- a cat alternative
-  - [cargo](https://www.rust-lang.org) -- the rust language
-  - [curl](https://curl.se) -- a fetch tool
-  - [gh](https://cli.github.com) -- the github cli
-  - [git](https://git-scm.com) -- the git version controll system
-  - [npm](https://nodejs.org/en) -- the package manager of node
-  - [rg](https://github.com/BurntSushi/ripgrep) -- a grep alternative
-  - [rustup](https://www.rust-lang.org) -- the rust init tool
-  - [vs-code](https://code.visualstudio.com) -- vscode
-  - [yarn](https://yarnpkg.com) -- the yarn package manager
-- lang -- all programmming languages I use
-  - [cake](https://github.com/thradams/cake) -- a c23 frontend
-  - [dart](https://dart.dev) -- the dart language
-  - [deno](https://deno.com) -- the deno js runtime
-  - [dotnet](https://dotnet.microsoft.com/en-us/) -- the dotnet framework
-  - [elm](https://elm-lang.org) -- the elm language
-  - [erde](https://github.com/erde-lang/erde) -- the erde language
-  - [fennel](https://github.com/bakpakin/Fennel) -- the fennel language
-  - [go](https://go.dev) -- the go language
-  - [jq](https://jqlang.org) -- the jq language
-  - [julia](https://julialang.org) -- the julia language
-  - [lua](https://www.lua.org) -- the lua language
-  - [numbat](https://numbat.dev) -- the numbat language
-  - [odin](https://odin-lang.org) -- the odin language
-  - [picat](https://picat-lang.org) -- the picat language
-  - [purs](https://www.purescript.org) -- the purescript language
-  - [python](https://www.python.org) -- the pyton language
-  - [sass](https://sass-lang.com) -- the sass language
-- package -- all package managers I use
-  - [luarocks](https://luarocks.org) -- the lua package manager
-  - [pip](https://pypi.org/project/pip/) -- the python package manager
-  - [spago](https://github.com/purescript/spago) -- the purescript package manager
-- tools -- all tools I use
-  - [cmake](https://cmake.org) -- a c build system
-  - [djot](https://djot.net) -- the djot light markup language ([djot](https://github.com/jgm/djot.lua), [jotdown](https://github.com/hellux/jotdown))
-  - [fd](https://github.com/sharkdp/fd) -- a find alternative
-  - [foto](https://github.com/waynezhang/foto) -- a photo publishing tool
-  - [glow](https://github.com/charmbracelet/glow) -- a markdown renderer
-  - [gum](https://github.com/charmbracelet/gum) -- a tool for glamorous scripts
-  - [hexyl](https://github.com/sharkdp/hexyl) -- a hex viewer
-  - [hyperfine](https://github.com/sharkdp/hyperfine) -- a benchmarking tool
-  - [lsd](https://github.com/lsd-rs/lsd) -- a next gen ls command
-  - [meson](https://mesonbuild.com) -- a c build system
-  - [moul](https://github.com/moul-co/moul) -- a minimal photo publishing tool
-  - [nap](https://github.com/maaslalani/nap) -- a code snippet tool
-  - [ninja](https://ninja-build.org) -- a build system
-  - [onefetch](https://github.com/o2sh/onefetch) -- a git info tool
-  - [pastel](https://github.com/sharkdp/pastel) -- a tool to for colour
-  - [rgp-cli](https://github.com/facundoolano/rpg-cli) -- a small cli game
-  - [scc](https://github.com/boyter/scc) -- a line of code counter
-  - [serve](https://github.com/vercel/serve) -- a static file server
-  - [ssh](https://www.openssh.com) -- a secure shell
-  - [starship](https://starship.rs) -- a cross shell prompt
-  - [tig](https://github.com/jonas/tig) -- a text-mode interface for git
-  - [tokei](https://github.com/XAMPPRocky/tokei) -- a line of code counter
-  - [zeit](https://github.com/mrusme/zeit) -- a time tracker
-  - [zola](https://www.getzola.org) -- a static site engine
-- misc -- all my miscellaneous small completions for small command line apps
+- extern &mdash; extern ressources that I inport from [nushell/nu_scripts](https://github.com/nushell/nu_scripts)
+  - [bat](https://github.com/sharkdp/bat) &mdash; a cat alternative
+  - [cargo](https://www.rust-lang.org) &mdash; the rust language
+  - [curl](https://curl.se) &mdash; a fetch tool
+  - [gh](https://cli.github.com) &mdash; the github cli
+  - [git](https://git-scm.com) &mdash; the git version controll system
+  - [npm](https://nodejs.org/en) &mdash; the package manager of node
+  - [rg](https://github.com/BurntSushi/ripgrep) &mdash; a grep alternative
+  - [rustup](https://www.rust-lang.org) &mdash; the rust init tool
+  - [vs-code](https://code.visualstudio.com) &mdash; vscode
+  - [yarn](https://yarnpkg.com) &mdash; the yarn package manager
+- lang &mdash; all programmming languages I use
+  - [cake](https://github.com/thradams/cake) &mdash; a c23 frontend
+  - [dart](https://dart.dev) &mdash; the dart language
+  - [deno](https://deno.com) &mdash; the deno js runtime
+  - [dotnet](https://dotnet.microsoft.com/en-us/) &mdash; the dotnet framework
+  - [elm](https://elm-lang.org) &mdash; the elm language
+  - [erde](https://github.com/erde-lang/erde) &mdash; the erde language
+  - [fennel](https://github.com/bakpakin/Fennel) &mdash; the fennel language
+  - [go](https://go.dev) &mdash; the go language
+  - [jq](https://jqlang.org) &mdash; the jq language
+  - [julia](https://julialang.org) &mdash; the julia language
+  - [lua](https://www.lua.org) &mdash; the lua language
+  - [numbat](https://numbat.dev) &mdash; the numbat language
+  - [odin](https://odin-lang.org) &mdash; the odin language
+  - [picat](https://picat-lang.org) &mdash; the picat language
+  - [purs](https://www.purescript.org) &mdash; the purescript language
+  - [python](https://www.python.org) &mdash; the pyton language
+  - [sass](https://sass-lang.com) &mdash; the sass language
+- package &mdash; all package managers I use
+  - [luarocks](https://luarocks.org) &mdash; the lua package manager
+  - [pip](https://pypi.org/project/pip/) &mdash; the python package manager
+  - [spago](https://github.com/purescript/spago) &mdash; the purescript package manager
+- tools &mdash; all tools I use
+  - [cmake](https://cmake.org) &mdash; a c build system
+  - [djot](https://djot.net) &mdash; the djot light markup language
+  - [fd](https://github.com/sharkdp/fd) &mdash; a find alternative
+  - [foto](https://github.com/waynezhang/foto) &mdash; a photo publishing tool
+  - [glow](https://github.com/charmbracelet/glow) &mdash; a markdown renderer
+  - [gum](https://github.com/charmbracelet/gum) &mdash; a tool for glamorous scripts
+  - [hexyl](https://github.com/sharkdp/hexyl) &mdash; a hex viewer
+  - [hyperfine](https://github.com/sharkdp/hyperfine) &mdash; a benchmarking tool
+  - [lsd](https://github.com/lsd-rs/lsd) &mdash; a next gen ls command
+  - [meson](https://mesonbuild.com) &mdash; a c build system
+  - [moul](https://github.com/moul-co/moul) &mdash; a minimal photo publishing tool
+  - [nap](https://github.com/maaslalani/nap) &mdash; a code snippet tool
+  - [ninja](https://ninja-build.org) &mdash; a build system
+  - [onefetch](https://github.com/o2sh/onefetch) &mdash; a git info tool
+  - [pastel](https://github.com/sharkdp/pastel) &mdash; a tool to for colour
+  - [rgp-cli](https://github.com/facundoolano/rpg-cli) &mdash; a small cli game
+  - [scc](https://github.com/boyter/scc) &mdash; a line of code counter
+  - [serve](https://github.com/vercel/serve) &mdash; a static file server
+  - [ssh](https://www.openssh.com) &mdash; a secure shell
+  - [starship](https://starship.rs) &mdash; a cross shell prompt
+  - [tig](https://github.com/jonas/tig) &mdash; a text-mode interface for git
+  - [tokei](https://github.com/XAMPPRocky/tokei) &mdash; a line of code counter
+  - [zeit](https://github.com/mrusme/zeit) &mdash; a time tracker
+  - [zola](https://www.getzola.org) &mdash; a static site engine
+- misc &mdash; all my miscellaneous small completions for small command line apps
 
 ### scripts
 
-- b -- move/rename many files
-- commit -- like commitzen
-- executables -- see all executables in the path
-- goapps -- see all go apps
-- rand -- a small script that returns a string out of a list of strings
-- rustapps -- see all rust apps
-- setup -- setting up command line apps and more stuff I like
-- toc -- creates a table of contents from a markdown file
-- vdf -- parse the Valve Data Format
-- walk -- a bookmarking script
+- b &mdash; move/rename many files
+- commit &mdash; like commitzen
+- executables &mdash; see all executables in the path
+- goapps &mdash; see all go apps
+- rand &mdash; a small script that returns a string out of a list of strings
+- rustapps &mdash; see all rust apps
+- setup &mdash; setting up command line apps and more stuff I like
+- toc &mdash; creates a table of contents from a markdown file
+- vdf &mdash; parse the Valve Data Format
+- walk &mdash; a bookmarking script
 
 ## vim
 
