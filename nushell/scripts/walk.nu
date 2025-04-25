@@ -16,12 +16,12 @@ def save_bookmarks []: any -> nothing {
 
 # creating a bookmark list for custom completion
 def bookmarks []: nothing -> nothing {
-	list
+	walk list
 	| each {|r| { value: $r.name, description: $r.path }}
 }
 
 # List all bookmarks
-export def list []: nothing -> any, nothing -> table {
+export def "walk list" []: nothing -> any, nothing -> table {
 	let pth = (get_bookmarks)
 	if (not ($pth | path exists)) {
 		[] | save $pth
@@ -30,18 +30,20 @@ export def list []: nothing -> any, nothing -> table {
 }
 
 # Creating an new bookmark
-export def --env add [
-	name: string = "c249b5de2ea666f161172e1810ca657a" # The name of the new bookmark
-	path: path = "9a59318f8704dd710a5604f80fef368f" # The path of the new bookmark
+export def --env "walk add" [
+	name?: string # The name of the new bookmark
+	path?: path # The path of the new bookmark
 ]: nothing -> nothing {
-	if $name == "c249b5de2ea666f161172e1810ca657a" {
-		let $name = ($env.PWD | split row "\\" | last)
+	mut name = $name
+	mut path = $path
+	if ($name | is-empty) {
+		$name = ($env.PWD | split row "\\" | last)
 	}
-	if $path == "9a59318f8704dd710a5604f80fef368f" {
-		let $path = ($env.PWD)
+	if ($path | is-empty) {
+		$path = ($env.PWD)
 	}
 
-	if (list | get name | where {|x| $x == $name} | is-empty) {
+	if (walk list | get name | where {|x| $x == $name} | is-empty) {
 		if (($path | path type) == "dir") and ($path | path exists) {
 			list
 			| append {name: ($name), path: ($path) }
@@ -53,7 +55,7 @@ export def --env add [
 }
 
 # Deleting an bookmark
-export def remove [
+export def "walk remove" [
 	name: string@bookmarks # The bookmarks to delete
 ]: nothing -> nothing {
 	list
@@ -61,15 +63,15 @@ export def remove [
 	| save_bookmarks
 }
 
-# Renames a boolmark
-export def rename [
+# Renames a bookmark
+export def "walk rename" [
 	old_name: string@bookmarks # The bookmark to rename
 	new_name: string # The new name for the bookmark
 ]: nothing -> nothing {
-	if (list | is-empty) {
+	if (walk list | is-empty) {
 		print "You can not change a name, because there are no bookmarks."
 	} else {
-		if (list | get name | where {|x| $x == $new_name} | is-empty) {
+		if (walk list | get name | where {|x| $x == $new_name} | is-empty) {
 			list
 			| update cells -c ["name"] {|v|if $v == $old_name {$new_name} else {$v}}
 			| save_bookmarks
@@ -80,33 +82,26 @@ export def rename [
 }
 
 # Reset all bookmarks
-export def reset []: nothing -> nothing {
+export def "walk reset" []: nothing -> nothing {
 	(rm -f (get_bookmarks))
 }
 
-# An simple and opinionated bookmark-like module to get around your system fast.
-export def --env main [
-	name: string@bookmarks = "31230bb0f6c85deb56a950845515b39e"
+# A simple and opinionated bookmark-like module to get around your system fast.
+export def --env walk [
+	name: string@bookmarks
 ]: nothing -> nothing {
-	if $name != "31230bb0f6c85deb56a950845515b39e" {
-		list
-		| where {|r| $r.name == $name}
-		| get path
-		| get 0
-		| cd $in
+	if ($name | is-not-empty) {
+		let list = (walk list)
+		if ($name in $list) {
+			$list
+			| where {|r| $r.name == $name}
+			| get path
+			| get 0
+			| cd $in
+		} else {
+			print $"The bookmark: \"(ansi yellow)($name)(ansi reset)\" does not exists."
+		}
 	} else {
-		print ([
-			"walk is an simple and opinionated bookmark-like module to get around your system fast."
-			""
-			$"(ansi green)Usage: (ansi blue)walk [SUBCOMMAND] [bookmark]:(ansi reset)"
-			""
-			$"(ansi green)Subcommands:(ansi reset)"
-			$"    (ansi blue)add    (ansi reset) Add a new bookmark"
-			$"    (ansi blue)list   (ansi reset) List all bookmarks"
-			$"    (ansi blue)remove (ansi reset) Remove a bookmark"
-			$"    (ansi blue)reset  (ansi reset) Reset all bookmarks \(All bookmarks get deleted)"
-			$"    (ansi blue)rename (ansi reset) Rename a bookmark"
-		]
-		| str join "\n")
+		help walk
 	}
 }

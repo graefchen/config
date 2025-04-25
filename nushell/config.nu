@@ -904,13 +904,17 @@ use ./scripts/b.nu
 use ./scripts/commit.nu
 use ./scripts/executables.nu
 use ./scripts/goapps.nu
-use ./scripts/rand.nu
 use ./scripts/rustapps.nu
 use ./scripts/setup.nu
-use ./scripts/toc.nu
 use ./scripts/vdf.nu
-use ./scripts/walk.nu
 
+source ./scripts/ceasar.nu
+source ./scripts/neocities.nu
+source ./scripts/rand.nu
+source ./scripts/srcom.nu
+source ./scripts/toc.nu
+source ./scripts/viginere.nu
+source ./scripts/walk.nu
 
 # adding support for `open` for the shorthand file extension version of the
 # MessagePack and brotli-compressed MessagePack

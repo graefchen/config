@@ -64,7 +64,14 @@ def parse-text [
 }
 
 def levels [] {
-	[1 2 3 4 5 6]
+	[
+		{value: 1, description: "#"},
+		{value: 2, description: "##"},
+		{value: 3, description: "###"},
+		{value: 4, description: "####"},
+		{value: 5, description: "#####"},
+		{value: 6, description: "######"}
+	]
 }
 
 # toc - table of contents - generate a table of contents from a markdown file
@@ -75,10 +82,10 @@ def levels [] {
 # Or when the argument min is bigger than 6.
 # Additionally failes when the given (markdown) file does not exist.
 # Or when the give path/file is not a file.
-export def main [
-	--file(-f): string        # The file
-	--min(-m): int@levels = 2 # The minimum, between 1 and 6
-	--max(-x): int@levels = 3 # The maximum, between 1 and 6
+export def toc [
+	--file(-f): string        # The markdown file that is used to generate its table of contents
+	--min(-m): int@levels = 2 # The minimum heading, between 1 and 6
+	--max(-x): int@levels = 3 # The maximum heading, between 1 and 6
 ]: nothing -> string, string -> string {
 	let $input = $in
 	if ($input | is-empty) and ($file | is-empty) {

@@ -17,7 +17,17 @@ def download-completion [
 # downloads all the completions defined in the `completions_list` constant
 export def completions []: nothing -> nothing {
 	const completions_list = [
-		"bat" "cargo" "curl" "gh" "git" "npm" "rg" "rustup" "vscode" "yarn-v4"
+		"bat"
+		"cargo"
+		"curl"
+		"gh"
+		"git"
+		"npm"
+		"rg"
+		"rustup"
+		"vscode"
+		"winget"
+		"yarn-v4"
 	]
 	print "Starting to download completions..."
 	for i in $completions_list {
@@ -70,14 +80,14 @@ export def goapps []: nothing -> nothing {
 		print $"-- ($i.name)($i.version)"
 		go install ($i.name | append $i.version | str join "")
 	}
-	print "Finished donwloading goapps..."
+	print "Finished downloading goapps..."
 }
 
 # for adding nupm later ... maybe
 # def modules []: nothing -> nothing {}
 
 # An Script that tries to setup my environment ..
-export def main [] {
+export def main []: nothing -> nothing {
 	completions
 	rustapps
 	goapps

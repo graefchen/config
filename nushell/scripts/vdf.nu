@@ -3,7 +3,7 @@
 # nearly 1 to 1 translation from:
 # => https://github.com/RoyalBingBong/vdfplus
 
-# TODO: REwrite as nushell plugin(?)
+# TODO: Rewrite as nushell plugin(?)
 
 def _parse [line: int]: string -> record {
 	let text = $in
@@ -113,7 +113,7 @@ def _parse [line: int]: string -> record {
 						# be aware that this is very very very slow
 						# so when reworking ... this might be changes.
 						# one option is to simply append with "{" a new string
-						# to a list that generates the record name that nsuhell
+						# to a list that generates the record name that nushell
 						# hopefully can understand and work with
 						let value = $currentValue | _parse $line
 
@@ -170,11 +170,11 @@ def _parse [line: int]: string -> record {
 
 	if ($globalBrackets > 0) {
 		let bracket = if ($globalBrackets > 1) { "brakets" } else { "bracket" }
-		print $"VDF seems to be malformed. Found ($globalBrackets) unclosd ($bracket)."
+		print $"VDF seems to be malformed. Found ($globalBrackets) unclosed ($bracket)."
 	}
 	if ($globalQuotes > 0) {
 		let quote = if ($globalQuotes > 1) { "quotes" } else { "quote" }
-		print $"VDF seems to be malformed. Found ($globalQuotes) unclosd ($quote)."
+		print $"VDF seems to be malformed. Found ($globalQuotes) unclosed ($quote)."
 	}
 
 	return $result
