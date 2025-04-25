@@ -14,13 +14,17 @@ show_always = true
 disabled = false
 
 # Made that also cpp is shown under this ... lol
+# mostly for clang (while I use tcc for c)
+# I also could add the msvc (cl) version ... but that seems complicated
 [c]
 symbol = "🦏 "
 # the commands of the Tiny C Compiler
 # commands = [["tcc", "-v"]]
 commands = [["clang", "--version"], ["tcc", "-v"]]
+# detecting some c and cpp files, also cats because it is funny
+# (and is accepted as a c file extension on github)
 detect_extensions = ["c", "h", "cats", "cc", "hh", "cpp", "hpp", "c++", "h++"]
-# detects the .clangd file => LSP for clang
+# detects the .clangd file => LSP(Language Server Protocol) for clang
 detect_files = [".clangd"]
 
 [cmake]
@@ -31,19 +35,17 @@ symbol = "🦔 "
 
 [deno]
 symbol = "🦕 "
-detect_files = [
-	"deno.json",
-	"deno.jsonc",
-	"deno.lock",
-	"mod.ts",
-	"deps.ts",
-	"mod.js",
-	"deps.js",
-	"jsr.json",
-]
+# just detecting strict deno files (or deno related files)
+detect_files = ["deno.json", "deno.jsonc", "deno.lock", "jsr.json"]
 
 [dotnet]
 symbol = "🦑 "
+
+[elm]
+symbol = "🦌 "
+
+[fennel]
+symbol = "🐁 "
 
 [golang]
 symbol = "🐹 "
@@ -53,19 +55,29 @@ disabled = false
 
 [haskell]
 symbol = "🦈 "
+detect_extensions = ["hs", "cabal", "hs-boot", "hsc"]
 
 [java]
 symbol = "🐈 "
+detect_extensions = ["java", "class", "jar", "gradle", "clj", "cljc", "jav"]
 
 [julia]
 symbol = "🦗 "
 
 [kotlin]
 symbol = "🐙 "
+detect_extensions = ["kt", "kts", "ktm"]
 
 [lua]
 symbol = "🐜 "
-detect_folders = ["lua"]
+# appart from lua we also want to detect luarocks
+# it would probably be better to have this in [package]
+# also detect other files that are detected as lua files by github
+detect_extensions = ["lua", "fgci", "nse", "p8", "rbxs", "rockspec", "wlua"]
+detect_folders = ["lua", "lua_modules", ".luarocks"]
+
+[meson]
+symbol = "🐏 "
 
 [nodejs]
 symbol = "🐝 "
@@ -75,9 +87,11 @@ symbol = "🐇 "
 
 [perl]
 symbol = "🐪 "
+detect_extensions = ["pl", "al", "cgi", "fcgi", "perl", "ph", "pm", "pod"]
 
 [php]
 symbol = "🐘 "
+detect_extensions = ["php", "aw", "ctp", "php3", "php4", "php5", "phps", "phps"]
 
 [purescript]
 symbol = "🦚"
@@ -87,15 +101,18 @@ symbol = "🐍 "
 
 [rlang]
 symbol = "🦉 "
+detect_extensions = ["R", "Rd", "Rmd", "Rproj", "Rsx", "r", "rd", "rsx"]
 
 [ruby]
 symbol = "🦙 "
+detect_extensions = ["rb", "builder", "gemspec", "rbw", "rbx", "rb", "ruby"]
 
 [rust]
 symbol = "🦀 "
 
 [scala]
 symbol = "🦟 "
+detect_extensions = ["sbt", "scala", "kojo", "sc"]
 
 [zig]
 symbol = "🦎 "
