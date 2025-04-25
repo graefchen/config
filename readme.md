@@ -82,6 +82,7 @@ I like this shell for multiple good reasons.
   - [starship](https://starship.rs) &mdash; a cross shell prompt
   - [tig](https://github.com/jonas/tig) &mdash; a text-mode interface for git
   - [tokei](https://github.com/XAMPPRocky/tokei) &mdash; a line of code counter
+  - [webp](https://developers.google.com/speed/webp) &mdash; the webp image compression
   - [zeit](https://github.com/mrusme/zeit) &mdash; a time tracker
   - [zola](https://www.getzola.org) &mdash; a static site engine
 - misc &mdash; all my miscellaneous small completions for small command line apps

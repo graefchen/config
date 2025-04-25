@@ -7,4 +7,5 @@ source ./npm-completions.nu
 source ./rg-completions.nu
 source ./rustup-completions.nu
 source ./vscode-completions.nu
+source ./winget-completions.nu
 source ./yarn-v4-completions.nu
