@@ -1,7 +1,6 @@
 # written by graefchen
 
-# encrypt based on message, key, and alphabet
-export def "viginere encrypt" [
+export def encrypt [
 	message: string # The message to encrypt
 	key: string # The key to encrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
@@ -23,17 +22,7 @@ export def "viginere encrypt" [
 	} | str join ""
 }
 
-# encrypt contents of a file by key and alphabet
-export def "viginere encrypt file" [
-	file: string # The file to encrypt
-	key: string # The key to encrypt
-	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
-]: nothing -> string {
-	viginere encrypt (open $file --raw) $key $alphabet
-}
-
-# decrypt based on cipher, key, and alphabet
-export def "viginere decrypt" [
+export def decrypt [
 	cipher: string # The cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
@@ -55,13 +44,59 @@ export def "viginere decrypt" [
 	} | str join ""
 }
 
-# decrypt contents of a file by key and alphabet
+# viginere encrypt
+export def "viginere encrypt" [
+	--message(-m): string # The message to encrypt
+	key: string # The key to decrypt
+	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
+]: string -> string {
+	let $input = $in
+	if (($input | is-empty) or ($message | is-empty)) {
+		echo "No input given."
+	} else {
+		mut msg = $message
+		if ($input | is-not-empty) { $msg = $input }
+		encrypt $msg $key $alphabet
+	}
+}
+
+# viginere encrypt a file
+export def "viginere encrypt file" [
+	file: string # The file to encrypt
+	key: string # The key to encrypt
+	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
+]: nothing -> string {
+	encrypt (open $file --raw) $key $alphabet
+	| save -f $file
+
+		echo $"encrypted ($file)"
+}
+
+# viginere decrypt
+export def "viginere decrypt" [
+	key: string # The key to decrypt
+	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
+]: string -> string {
+	let $input = $in
+	if (($input | is-empty) or ($message | is-empty)) {
+		echo "No input given."
+	} else {
+		mut msg = $message
+		if ($input | is-not-empty) { $msg = $input }
+		encrypt $msg $key $alphabet
+	}
+}
+
+# viginere decrypt a file
 export def "viginere decrypt file" [
 	file: string # The cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
 ]: nothing -> string {
-	viginere decrypt (open $file --raw) $key $alphabet
+	decrypt (open $file --raw) $key $alphabet
+	| save -f $file
+
+	echo $"decrypted ($file)"
 }
 
 # encrypt and decrypt messeges with the Vigenère cipher
