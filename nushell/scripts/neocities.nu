@@ -1,8 +1,20 @@
-# written by grafchen
+# written by graefchen
 # the neocities developer api (https://neocities.org/api)
 # minimal and only works for me, not general
 # DO NO USE WHEN YOU DO NOT KNOW WHAT YOU DO!
 # TODO: Overwork and make it generally usable.
+
+const MSG = $"
+It seems like you have not an neocities key in your (ansi yellow)$HOME/.config/secret.json(ansi reset) file.
+When you do not have any API key from neocities, then you can either generate
+one in the https://neocities.org website or use the following command:
+(ansi cyan)neocities key(ansi blue) -u(ansi green) YOURUSER(ansi blue) -p(ansi green) YOURPASS(ansi reset)
+
+And the command will return your key.
+The API key should be put inside the (ansi yellow)\"neocities\"(ansi reset) object with the name of (ansi yellow)\"api_key\"(ansi reset), it should look like this:
+\"(ansi blue)neocities(ansi reset)\": {
+	\"(ansi blue)api_key(ansi reset)\": \"(ansi green)YOUR-API-KEY(ansi reset)\"
+}"
 
 def get-api-key []: nothing -> string {
 	if (not ("~/.config/secret.json" | path exists)) {
@@ -26,7 +38,9 @@ def get-header []: nothing -> list<string>, nothing -> nothing {
 	return ["Authorization" $"Bearer ($key)"]
 }
 
-# Uploads files to your site.
+# Uploads files to neocities
+#
+# Upload a single file at a time.
 export def "neocities upload" [
 	file: string # the name of the file to upload
 	--user(-u): string     # Your Username
@@ -36,12 +50,16 @@ export def "neocities upload" [
 		return (http post --allow-errors --content-type multipart/form-data --user $user --password $password https://neocities.org/api/upload { $file: (open -r $file | into binary) })
 	} else {
 		let header = (get-header)
-		if ($header | is-empty) { return }
+		if ($header | is-empty) { return $MSG }
 		return (http post --allow-errors --content-type multipart/form-data --headers ($header) https://neocities.org/api/upload { $file: (open -r $file | into binary) })
 	}
 }
 
-# Deletes files from your site.
+# Deletes files from neocities
+#
+# *BE CAREFULL WITH IT*
+# All files except "index.html" can be deleted with it.
+# And this command only deletes one file at a time.
 export def "neocities delete" [
 	name: string # the name of the file to delete
 	--user(-u): string     # Your Username
@@ -51,12 +69,15 @@ export def "neocities delete" [
 		return (http post --allow-errors --user $user --password $password https://neocities.org/api/delete $"filenames[]=($name | url encode)")
 	} else {
 		let header = (get-header)
-		if ($header | is-empty) { return }
+		if ($header | is-empty) { return $MSG }
 		return (http post --allow-errors --headers ($header) https://neocities.org/api/delete $"filenames[]=($name | url encode)")
 	}
 }
 
-# List all files for your site.
+# List all files for your neocities site
+#
+# When given an path, it will only look up the files for the path
+# else it would list all files from your site.
 export def "neocities list" [
 	path?: string = ""     # The path from which you want to get the list
 	--user(-u): string     # Your Username
@@ -66,25 +87,38 @@ export def "neocities list" [
 		return (http get --allow-errors --user $user --password $password $"https://neocities.org/api/list?path=($path)")
 	} else {
 		let header = (get-header)
-		if ($header | is-empty) { return }
+		if ($header | is-empty) { return $MSG }
 		return (http get --allow-errors --headers ($header) $"https://neocities.org/api/list?path=($path)")
 	}
 }
 
-# Retreive information about a web site.
+# Retreive information about a neocities web site
+#
+# When given a name, then it looks up the the informations for the given site,
+# else it looks up your websites information, if the api-key or username and
+# password are given.
 export def "neocities info" [
-	name?: string # The name of the website
+	name?: string          # The name of the website
+	--user(-u): string     # Your Username
+	--password(-p): string # Your Password
 ] {
 	if ($name | is-not-empty) {
 		return (http get --allow-errors $"https://neocities.org/api/info?sitename=($name)")
 	} else {
-		let header = (get-header)
-		if ($header | is-empty) { return }
-		return (http get --allow-errors --headers ($header) https://neocities.org/api/info)
+		if (($user | is-not-empty) and ($password | is-not-empty)) {
+			return (http get --allow-errors --user $user --password $password https://neocities.org/api/info)
+		} else {
+			let header = (get-header)
+			if ($header | is-empty) { return $MSG }
+			return (http get --allow-errors --headers ($header) https://neocities.org/api/info)
+		}
 	}
 }
 
+# Returns an neocities API key
+#
 # Returns an API key that you can use for the API instead of login credentials.
+# It will automatically generate a new API key if one doesn't exist yet for your site.
 export def "neocities key" [
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
@@ -93,7 +127,7 @@ export def "neocities key" [
 		return (http get --allow-errors --user $user --password $password https://neocities.org/api/key)
 	} else {
 		let header = (get-header)
-		if ($header | is-empty) { return }
+		if ($header | is-empty) { return $MSG }
 		return (http get --allow-errors --headers ($header) https://neocities.org/api/key)
 	}
 }

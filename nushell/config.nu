@@ -911,6 +911,7 @@ use ./scripts/vdf.nu
 source ./scripts/ceasar.nu
 source ./scripts/neocities.nu
 source ./scripts/rand.nu
+source ./scripts/spark.nu
 source ./scripts/srcom.nu
 source ./scripts/toc.nu
 source ./scripts/viginere.nu
