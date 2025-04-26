@@ -1,36 +1,32 @@
-const upper_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const lower_alphabet = "abcdefghijklmnopqrstuvwxyz"
+# written by graefchen
 
 def direction [
 	number: int
 	message: string
+	alphabet: string
 ]: string -> string, nothing -> string {
 	let chars = ($message | split chars)
-	let upper_alphabet_chars = ($upper_alphabet | split chars)
-	let lower_alphabet_chars = ($lower_alphabet | split chars)
-	let upper_length = ($upper_alphabet | str length)
-	let lower_length = ($lower_alphabet | str length)
+	let alphabet_chars = ($alphabet | split chars)
+	let length = ($alphabet | str length)
 
 	($chars | enumerate) | each {|x|
-		let upper_index = $upper_alphabet | str index-of $x.item
-		let lower_index = $lower_alphabet | str index-of $x.item
-		if $upper_index != -1 {
-			return ($upper_alphabet_chars | get (($upper_index + $number) mod $upper_length))
-		} else if $lower_index != -1 {
-			return ($lower_alphabet_chars | get (($lower_index + $number) mod $lower_length))
+		let index = $alphabet | str index-of $x.item
+		if $index != -1 {
+			return ($alphabet_chars | get (($index + $number) mod $length))
 		} else {
 			return $x.item
 		}
-	} | str join ""
+	} | str join
 }
 
 # small ceasar cipher command
 #
-# only works for standard english alphabet, but for capital and lower-case letters.
+# skips all letters that aren't in the alphabet
 export def ceasar [
 	--decrypt(-d) # decypt 
 	--encrypt(-e) # encrypt
 	--number(-n): int = 3 # the amount by which the message is rotated
+	--alphabet(-a): string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # the usabel alphabet
 	message?: string # the message to encrypt/decrypt
 ]: string -> string, nothing -> string {
 	mut msg = $message
@@ -40,9 +36,9 @@ export def ceasar [
 	}
 
 	if $decrypt {
-		return (direction ($number) $msg)
+		return (direction ($number) $msg $alphabet)
 	} else if $encrypt {
-		return (direction (0 - $number) $msg)
+		return (direction (0 - $number) $msg $alphabet)
 	} else {
 		help ceasar
 	}

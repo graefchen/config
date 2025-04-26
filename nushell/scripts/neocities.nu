@@ -45,7 +45,7 @@ export def "neocities upload" [
 	file: string # the name of the file to upload
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
-] {
+]: nothing -> any {
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
 		return (http post --allow-errors --content-type multipart/form-data --user $user --password $password https://neocities.org/api/upload { $file: (open -r $file | into binary) })
 	} else {
@@ -64,7 +64,7 @@ export def "neocities delete" [
 	name: string # the name of the file to delete
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
-] {
+]: nothing -> any {
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
 		return (http post --allow-errors --user $user --password $password https://neocities.org/api/delete $"filenames[]=($name | url encode)")
 	} else {
@@ -82,7 +82,7 @@ export def "neocities list" [
 	path?: string = ""     # The path from which you want to get the list
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
-] {
+]: nothing -> any {
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
 		return (http get --allow-errors --user $user --password $password $"https://neocities.org/api/list?path=($path)")
 	} else {
@@ -101,7 +101,7 @@ export def "neocities info" [
 	name?: string          # The name of the website
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
-] {
+]: nothing -> any {
 	if ($name | is-not-empty) {
 		return (http get --allow-errors $"https://neocities.org/api/info?sitename=($name)")
 	} else {
@@ -122,7 +122,7 @@ export def "neocities info" [
 export def "neocities key" [
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
-] {
+]: nothing -> any {
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
 		return (http get --allow-errors --user $user --password $password https://neocities.org/api/key)
 	} else {
@@ -133,6 +133,6 @@ export def "neocities key" [
 }
 
 # a small neofetch command line tool to upload, delete, list, etc.
-export def neocities [] {
+export def neocities []: nothing -> any {
 	help neocities
 }

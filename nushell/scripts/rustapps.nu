@@ -12,11 +12,7 @@ def list []: nothing -> list<string> {
 	| reverse
 }
 
-export def string []: nothing -> string {
-	list | str join " "
-}
-
 # print all rust apps
-export def main []: nothing -> list<string> {
+export def rustapps []: nothing -> list<string> {
 	list
 }

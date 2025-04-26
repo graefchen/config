@@ -9,11 +9,7 @@ def list []: nothing -> list<string> {
     | get column1
 }
 
-export def string []: nothing -> string {
-	list | str join " "
-}
-
 # print all go apps
-export def main []: nothing -> list<string> {
+export def goapps []: nothing -> list<string> {
     list
 }

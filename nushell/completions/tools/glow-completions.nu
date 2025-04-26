@@ -3,15 +3,15 @@
 # link: https://github.com/charmbracelet/glow
 
 # Edit the glow config file
-export extern " glow config" [
+export extern "glow config" [
 	--help(-h) # help for confi
 ]
 
 # Help about any command
-export extern " glow help" []
+export extern "glow help" []
 
 # Stash a markdown
-export extern " glow stash" [
+export extern "glow stash" [
 	--help(-h)          # help for stash
 	--memo(-m):string   # memo/note for stashing
 ]

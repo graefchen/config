@@ -1,3 +1,5 @@
+# written by graefchen
+
 # Returns a random argument out of the argument list
 # or out of the given input
 export def rand [

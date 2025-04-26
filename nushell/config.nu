@@ -900,31 +900,31 @@ source ./completions/package/mod.nu
 source ./completions/tools/mod.nu
 
 # Using scripts...
-use ./scripts/b.nu
-use ./scripts/commit.nu
-use ./scripts/executables.nu
-use ./scripts/goapps.nu
-use ./scripts/rustapps.nu
-use ./scripts/setup.nu
-use ./scripts/vdf.nu
-
+source ./scripts/b.nu
 source ./scripts/ceasar.nu
+source ./scripts/commit.nu
+source ./scripts/executables.nu
+source ./scripts/goapps.nu
 source ./scripts/neocities.nu
 source ./scripts/rand.nu
+source ./scripts/rustapps.nu
 source ./scripts/spark.nu
+source ./scripts/setup.nu
 source ./scripts/srcom.nu
 source ./scripts/toc.nu
+source ./scripts/vdf.nu
 source ./scripts/viginere.nu
 source ./scripts/walk.nu
+
 
 # adding support for `open` for the shorthand file extension version of the
 # MessagePack and brotli-compressed MessagePack
 # be aware that nushell writes this comment when using `help ftom mpk(z)`
 
 # same as `from msgpack`
-export def "from mpk" [] { from msgpack }
+export def "from mpk" [] { $in | from msgpack }
 # same as `from msgpackz`
-export def "from mpkz" [] { from msgpackz }
+export def "from mpkz" [] { $in | from msgpackz }
 
 # Parse text as .vdf and create a record.
 # 

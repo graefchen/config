@@ -3,7 +3,7 @@
 export def encrypt [
 	message: string # The message to encrypt
 	key: string # The key to encrypt
-	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
+	alphabet: string # The used Alphabet
 ]: nothing -> string {
 	let chars = ($message | split chars)
 	let key_chars = ($key | split chars)
@@ -25,7 +25,7 @@ export def encrypt [
 export def decrypt [
 	cipher: string # The cipher to decrypt
 	key: string # The key to decrypt
-	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
+	alphabet: string # The used Alphabet
 ]: nothing -> string {
 	let chars = ($cipher | split chars)
 	let key_chars = ($key | split chars)
