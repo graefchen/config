@@ -1,0 +1,297 @@
+name	location	item drop	summons	new game	health points	poise	souls	part	standard	strike	slash	thrust	magic	fire	lightning	dark	bleed	poison	frost
+Iudex Gundyr	Cementery of Ash	Coildes Sword	None	0	1037	185	3000	Main	15%	12%	18%	16%	5%	2%	-14%	38%	Susceptible	Immune	Susceptible
+Iudex Gundyr	Cementery of Ash	Coildes Sword	None	1	3561	185	15000	Main	15%	12%	18%	16%	5%	2%	-14%	38%	Susceptible	Immune	Susceptible
+Iudex Gundyr	Cementery of Ash	Coildes Sword	None	2	3914	194.73	16500	Main	15%	12%	18%	16%	5%	2%	-14%	38%	Susceptible	Immune	Susceptible
+Iudex Gundyr	Cementery of Ash	Coildes Sword	None	3	4095	205.55	16875	Main	15%	12%	18%	16%	5%	2%	-14%	38%	Susceptible	Immune	Susceptible
+Iudex Gundyr	Cementery of Ash	Coildes Sword	None	4	4273	217.64	18000	Main	15%	12%	18%	16%	5%	2%	-14%	38%	Susceptible	Immune	Susceptible
+Iudex Gundyr	Cementery of Ash	Coildes Sword	None	5	4629	231.25	18375	Main	15%	12%	18%	16%	5%	2%	-14%	38%	Susceptible	Immune	Susceptible
+Iudex Gundyr	Cementery of Ash	Coildes Sword	None	6	4807	264.28	18750	Main	15%	12%	18%	16%	5%	2%	-14%	38%	Susceptible	Immune	Susceptible
+Iudex Gundyr	Cementery of Ash	Coildes Sword	None	7	4985	308.33	19125	Main	15%	12%	18%	16%	5%	2%	-14%	38%	Susceptible	Immune	Susceptible
+Vordt of the Boreal Valley	High Wall of Lothric	Sould of Boreal Valley Vordt	Lion Knight Albert, Sword Master	0	1328	200	3000	Main	35%	18%	38%	36%	24%	18%	15%	-27%	Immune	Immune	Immune
+Vordt of the Boreal Valley	High Wall of Lothric	Sould of Boreal Valley Vordt	Lion Knight Albert, Sword Master	1	4146	200	15000	Main	35%	18%	38%	36%	24%	18%	15%	-27%	Immune	Immune	Immune
+Vordt of the Boreal Valley	High Wall of Lothric	Sould of Boreal Valley Vordt	Lion Knight Albert, Sword Master	2	4560	210.52	16500	Main	35%	18%	38%	36%	24%	18%	15%	-27%	Immune	Immune	Immune
+Vordt of the Boreal Valley	High Wall of Lothric	Sould of Boreal Valley Vordt	Lion Knight Albert, Sword Master	3	4768	222.22	16875	Main	35%	18%	38%	36%	24%	18%	15%	-27%	Immune	Immune	Immune
+Vordt of the Boreal Valley	High Wall of Lothric	Sould of Boreal Valley Vordt	Lion Knight Albert, Sword Master	4	4975	235.29	18000	Main	35%	18%	38%	36%	24%	18%	15%	-27%	Immune	Immune	Immune
+Vordt of the Boreal Valley	High Wall of Lothric	Sould of Boreal Valley Vordt	Lion Knight Albert, Sword Master	5	5389	250	18375	Main	35%	18%	38%	36%	24%	18%	15%	-27%	Immune	Immune	Immune
+Vordt of the Boreal Valley	High Wall of Lothric	Sould of Boreal Valley Vordt	Lion Knight Albert, Sword Master	6	5597	285.71	18750	Main	35%	18%	38%	36%	24%	18%	15%	-27%	Immune	Immune	Immune
+Vordt of the Boreal Valley	High Wall of Lothric	Sould of Boreal Valley Vordt	Lion Knight Albert, Sword Master	7	5804	333.33	19125	Main	35%	18%	38%	36%	24%	18%	15%	-27%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	0	5405	inf	7000	Egg Sacs	44%	-20%	30%	30%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	1	15444	inf	35000	Egg Sacs	44%	-20%	30%	30%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	2	16988	inf	38500	Egg Sacs	44%	-20%	30%	30%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	3	17761	inf	39375	Egg Sacs	44%	-20%	30%	30%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	4	18533	inf	42000	Egg Sacs	44%	-20%	30%	30%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	5	20077	inf	42875	Egg Sacs	44%	-20%	30%	30%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	6	20849	inf	43750	Egg Sacs	44%	-20%	30%	30%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	7	21622	inf	44625	Egg Sacs	44%	-20%	30%	30%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	0	5405	inf	7000	Between Legs	30%	-20%	12.5%	12.5%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	1	15444	inf	35000	Between Legs	30%	-20%	12.5%	12.5%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	2	16988	inf	38500	Between Legs	30%	-20%	12.5%	12.5%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	3	17761	inf	39375	Between Legs	30%	-20%	12.5%	12.5%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	4	18533	inf	42000	Between Legs	30%	-20%	12.5%	12.5%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	5	20077	inf	42875	Between Legs	30%	-20%	12.5%	12.5%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	6	20849	inf	43750	Between Legs	30%	-20%	12.5%	12.5%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	7	21622	inf	44625	Between Legs	30%	-20%	12.5%	12.5%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	0	5405	inf	7000	  White Hand	-40%	-20%	-75%	-75%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	1	15444	inf	35000	White Hand	-40%	-20%	-75%	-75%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	2	16988	inf	38500	White Hand	-40%	-20%	-75%	-75%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	3	17761	inf	39375	White Hand	-40%	-20%	-75%	-75%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	4	18533	inf	42000	White Hand	-40%	-20%	-75%	-75%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	5	20077	inf	42875	White Hand	-40%	-20%	-75%	-75%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	6	20849	inf	43750	White Hand	-40%	-20%	-75%	-75%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Curse-Rotted Greatwood	Undead Settlement	Transposing Kiln, Soul of Rotted Greatwood	None	7	21622	inf	44625	White Hand	-40%	-20%	-75%	-75%	-14%	-110%	-20%	-20%	Immune	Immune	Immune
+Crystal Sage	Road of Sacrifies	Soul of a Crystal Sage	Eygon of Carim	0	2723	0	8000	Main	-20%	-19%	-22%	-20%	40%	0%	2%	0%	Susceptible	Susceptible	Susceptible
+Crystal Sage	Road of Sacrifies	Soul of a Crystal Sage	Eygon of Carim	1	6413	0	40000	Main	-20%	-19%	-22%	-20%	40%	0%	2%	0%	Susceptible	Susceptible	Susceptible
+Crystal Sage	Road of Sacrifies	Soul of a Crystal Sage	Eygon of Carim	2	7054	0	44000	Main	-20%	-19%	-22%	-20%	40%	0%	2%	0%	Susceptible	Susceptible	Susceptible
+Crystal Sage	Road of Sacrifies	Soul of a Crystal Sage	Eygon of Carim	3	7375	0	45000	Main	-20%	-19%	-22%	-20%	40%	0%	2%	0%	Susceptible	Susceptible	Susceptible
+Crystal Sage	Road of Sacrifies	Soul of a Crystal Sage	Eygon of Carim	4	7696	0	48000	Main	-20%	-19%	-22%	-20%	40%	0%	2%	0%	Susceptible	Susceptible	Susceptible
+Crystal Sage	Road of Sacrifies	Soul of a Crystal Sage	Eygon of Carim	5	8337	0	49000	Main	-20%	-19%	-22%	-20%	40%	0%	2%	0%	Susceptible	Susceptible	Susceptible
+Crystal Sage	Road of Sacrifies	Soul of a Crystal Sage	Eygon of Carim	6	8658	0	50000	Main	-20%	-19%	-22%	-20%	40%	0%	2%	0%	Susceptible	Susceptible	Susceptible
+Crystal Sage	Road of Sacrifies	Soul of a Crystal Sage	Eygon of Carim	7	8978	0	51000	Main	-20%	-19%	-22%	-20%	40%	0%	2%	0%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	0	4099	0	13000	Royce	-20%	-19%	-23%	-21%	46%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	1	8796	0	52000	Royce	-20%	-19%	-23%	-21%	46%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	2	9676	0	57200	Royce	-20%	-19%	-23%	-21%	46%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	3	10116	0	58500	Royce	-20%	-19%	-23%	-21%	46%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	4	10556	0	62401	Royce	-20%	-19%	-23%	-21%	46%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	5	11435	0	63700	Royce	-20%	-19%	-23%	-21%	46%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	6	11875	0	65000	Royce	-20%	-19%	-23%	-21%	46%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	7	12314	0	66300	Royce	-20%	-19%	-23%	-21%	46%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	0	292	0	13000	Normal	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	1	628	0	52000	Normal	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	2	691	0	57200	Normal	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	3	722	0	58500	Normal	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	4	754	0	62401	Normal	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	5	816	0	63700	Normal	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	6	848	0	65000	Normal	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	7	879	0	66300	Normal	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	0	456	0	13000	Tall	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	1	978	0	52000	Tall	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	2	1076	0	57200	Tall	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	3	1125	0	58500	Tall	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	4	1174	0	62401	Tall	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	5	1272	0	63700	Tall	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	6	1321	0	65000	Tall	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	7	1370	0	66300	Tall	-20%	-19%	-23%	-21%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	0	609	45	13000	Fat	-20%	18%	-23%	-34%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	1	1308	45	52000	Fat	-20%	18%	-23%	-34%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	2	1439	47.36	57200	Fat	-20%	18%	-23%	-34%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	3	1504	50	58500	Fat	-20%	18%	-23%	-34%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	4	1569	52.49	62401	Fat	-20%	18%	-23%	-34%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	5	1700	56.25	63700	Fat	-20%	18%	-23%	-34%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	6	1766	64.28	65000	Fat	-20%	18%	-23%	-34%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Deacons of the Deep	Cathedral of the Deep	Small Doll, Soul of the Deacons of the Deep	Anri of Astora, Horace the Hushed, Sirris of the Sunless Reals	7	1831	75	66300	Fat	-20%	18%	-23%	-34%	44%	0%	-2%	44%	Susceptible	Susceptible	Susceptible
+Abyss Watchers	Farron Keep	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	0	1548	0	18000	Main	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Keep	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	1	3250	0	72000	Main	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	2	3575	0	79200	Main	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	3	3738	0	81000	Main	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	4	3901	0	86400	Main	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	5	4226	0	88200	Main	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	6	4388	0	90000	Main	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	7	4551	0	91800	Main	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Keep	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	0	365	0	18000	Non Boss	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Keep	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	1	771	0	72000	Non Boss	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	2	848	0	79200	Non Boss	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	3	887	0	81000	Non Boss	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	4	925	0	86400	Non Boss	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	5	1003	0	88200	Non Boss	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	6	1041	0	90000	Non Boss	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	7	1080	0	91800	Non Boss	15%	14%	18%	16%	10%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Keep	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	0	1548	0	18000	Phase 2	15%	14%	18%	16%	5%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Keep	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	1	3250	0	72000	Phase 2	15%	14%	18%	16%	5%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	2	3575	0	79200	Phase 2	15%	14%	18%	16%	5%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	3	3738	0	81000	Phase 2	15%	14%	18%	16%	5%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	4	3901	0	86400	Phase 2	15%	14%	18%	16%	5%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	5	4226	0	88200	Phase 2	15%	14%	18%	16%	5%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	6	4388	0	90000	Phase 2	15%	14%	18%	16%	5%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Abyss Watchers	Farron Kee1	Cinder of the Lord (Abyss Watchers), Soul of the Blood of the World	Sirris of the Sunless Reals, Yellowfinger Heysel, Black Hand Gotthard, Londor Pale Shade	7	4551	0	91800	Phase 2	15%	14%	18%	16%	5%	8%	-12%	35%	Susceptible	Immune	Susceptible
+Hight Lord Wolnir	Catacombs of Carthus	Soul of High Lord Wolnir	None	0	15041	150	22000	Main	32%	9%	34%	36%	24%	28%	40%	70%	Immune	Immune	Immune
+Hight Lord Wolnir	Catacombs of Carthus	Soul of High Lord Wolnir	None	1	27752	150	88000	Main	32%	9%	34%	36%	24%	28%	40%	70%	Immune	Immune	Immune
+Hight Lord Wolnir	Catacombs of Carthus	Soul of High Lord Wolnir	None	2	30527	157.89	96800	Main	32%	9%	34%	36%	24%	28%	40%	70%	Immune	Immune	Immune
+Hight Lord Wolnir	Catacombs of Carthus	Soul of High Lord Wolnir	None	3	31915	166.66	99000	Main	32%	9%	34%	36%	24%	28%	40%	70%	Immune	Immune	Immune
+Hight Lord Wolnir	Catacombs of Carthus	Soul of High Lord Wolnir	None	4	33302	176.47	105601	Main	32%	9%	34%	36%	24%	28%	40%	70%	Immune	Immune	Immune
+Hight Lord Wolnir	Catacombs of Carthus	Soul of High Lord Wolnir	None	5	36078	187.5	107800	Main	32%	9%	34%	36%	24%	28%	40%	70%	Immune	Immune	Immune
+Hight Lord Wolnir	Catacombs of Carthus	Soul of High Lord Wolnir	None	6	37465	214.24	110000	Main	32%	9%	34%	36%	24%	28%	40%	70%	Immune	Immune	Immune
+Hight Lord Wolnir	Catacombs of Carthus	Soul of High Lord Wolnir	None	7	38853	250	112200	Main	32%	9%	34%	36%	24%	28%	40%	70%	Immune	Immune	Immune
+Old Demon King	Smouldering Lake	Soul of the Old Demon King	Great Swamp Cuclus, Knight Slyer Tsorig	0	5301	170	25000	Main	0%	-2%	2%	0%	5%	78%	4%	0%	Immune	Susceptible	Immune
+Old Demon King	Smouldering Lake	Soul of the Old Demon King	Great Swamp Cuclus, Knight Slyer Tsorig	1	7745	170	75000	Main	0%	-2%	2%	0%	5%	78%	4%	0%	Immune	Susceptible	Immune
+Old Demon King	Smouldering Lake	Soul of the Old Demon King	Great Swamp Cuclus, Knight Slyer Tsorig	2	8520	178.94	82501	Main	0%	-2%	2%	0%	5%	78%	4%	0%	Immune	Susceptible	Immune
+Old Demon King	Smouldering Lake	Soul of the Old Demon King	Great Swamp Cuclus, Knight Slyer Tsorig	3	8907	188.88	84375	Main	0%	-2%	2%	0%	5%	78%	4%	0%	Immune	Susceptible	Immune
+Old Demon King	Smouldering Lake	Soul of the Old Demon King	Great Swamp Cuclus, Knight Slyer Tsorig	4	9294	200	90000	Main	0%	-2%	2%	0%	5%	78%	4%	0%	Immune	Susceptible	Immune
+Old Demon King	Smouldering Lake	Soul of the Old Demon King	Great Swamp Cuclus, Knight Slyer Tsorig	5	10069	312.5	91876	Main	0%	-2%	2%	0%	5%	78%	4%	0%	Immune	Susceptible	Immune
+Old Demon King	Smouldering Lake	Soul of the Old Demon King	Great Swamp Cuclus, Knight Slyer Tsorig	6	10456	242.85	93750	Main	0%	-2%	2%	0%	5%	78%	4%	0%	Immune	Susceptible	Immune
+Old Demon King	Smouldering Lake	Soul of the Old Demon King	Great Swamp Cuclus, Knight Slyer Tsorig	7	10843	283.33	95625	Main	0%	-2%	2%	0%	5%	78%	4%	0%	Immune	Susceptible	Immune
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	0	5106	150	28000	Main	0%	2%	-3%	-20%	12%	8%	5%	5%	Susceptible	Susceptible	Susceptible
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	1	7777	150	84000	Main	0%	2%	-3%	-20%	12%	8%	5%	5%	Susceptible	Susceptible	Susceptible
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	2	8554	157.89	92401	Main	0%	2%	-3%	-20%	12%	8%	5%	5%	Susceptible	Susceptible	Susceptible
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	3	8943	166.66	94500	Main	0%	2%	-3%	-20%	12%	8%	5%	5%	Susceptible	Susceptible	Susceptible
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	4	9332	176.47	100801	Main	0%	2%	-3%	-20%	12%	8%	5%	5%	Susceptible	Susceptible	Susceptible
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	5	10110	187.5	102901	Main	0%	2%	-3%	-20%	12%	8%	5%	5%	Susceptible	Susceptible	Susceptible
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	6	10499	214.28	105000	Main	0%	2%	-3%	-20%	12%	8%	5%	5%	Susceptible	Susceptible	Susceptible
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	7	10887	150	107100	Main	0%	2%	-3%	-20%	12%	8%	5%	5%	Susceptible	Susceptible	Susceptible
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	0	408	84	28000	Clone	50%	50%	50%	50%	5%	0%	0%	0%	Immune	Immune	Immune
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	1	621	84	84000	Clone	50%	50%	50%	50%	5%	0%	0%	0%	Immune	Immune	Immune
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	2	683	88.42	92401	Clone	50%	50%	50%	50%	5%	0%	0%	0%	Immune	Immune	Immune
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	3	714	93.33	94500	Clone	50%	50%	50%	50%	5%	0%	0%	0%	Immune	Immune	Immune
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	4	745	98.82	100801	Clone	50%	50%	50%	50%	5%	0%	0%	0%	Immune	Immune	Immune
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	5	807	15	102901	Clone	50%	50%	50%	50%	5%	0%	0%	0%	Immune	Immune	Immune
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	6	839	120	105000	Clone	50%	50%	50%	50%	5%	0%	0%	0%	Immune	Immune	Immune
+Pontiff Sulyvahn	Irithyll of the Boreal Valley	Soul of Pontiff Sulyvahn	Anri of Astora, Black Hand Gotthard, Londor Pale Shade	7	870	140	107100	Clone	50%	50%	50%	50%	5%	0%	0%	0%	Immune	Immune	Immune
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	0	4727	285.71	50000	Main	30%	31.4%	28.6%	27.9%	75.5%	21.6%	30%	82.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	1	6126	285.71	150000	Main	30%	31.4%	28.6%	27.9%	75.5%	21.6%	30%	82.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	2	6739	300.75	165001	Main	30%	31.4%	28.6%	27.9%	75.5%	21.6%	30%	82.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	3	7045	317.46	168750	Main	30%	31.4%	28.6%	27.9%	75.5%	21.6%	30%	82.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	4	7352	336.13	180000	Main	30%	31.4%	28.6%	27.9%	75.5%	21.6%	30%	82.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	5	7964	357.14	183751	Main	30%	31.4%	28.6%	27.9%	75.5%	21.6%	30%	82.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	6	8271	408.16	187500	Main	30%	31.4%	28.6%	27.9%	75.5%	21.6%	30%	82.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	7	8577	476.19	191250	Main	30%	31.4%	28.6%	27.9%	75.5%	21.6%	30%	82.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	0	4727	200	50000	Main	0%	2%	-2%	-3%	65%	-12%	0%	75%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	1	6126	200	150000	Main	0%	2%	-2%	-3%	65%	-12%	0%	75%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	2	6739	210.52	165001	Main	0%	2%	-2%	-3%	65%	-12%	0%	75%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	3	7045	222.22	168750	Main	0%	2%	-2%	-3%	65%	-12%	0%	75%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	4	7352	235.29	180000	Main	0%	2%	-2%	-3%	65%	-12%	0%	75%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	5	7964	250	183751	Main	0%	2%	-2%	-3%	65%	-12%	0%	75%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	6	8271	285.71	187500	Main	0%	2%	-2%	-3%	65%	-12%	0%	75%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	7	8577	333.33	191250	Main	0%	2%	-2%	-3%	65%	-12%	0%	75%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	0	4727	133.33	50000	Main	-50%	-47%	-53%	-54%	47.5%	-68%	-50%	62.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	1	6126	133.33	150000	Main	-50%	-47%	-53%	-54%	47.5%	-68%	-50%	62.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	2	6739	140.35	165001	Main	-50%	-47%	-53%	-54%	47.5%	-68%	-50%	62.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	3	7045	148.35	168750	Main	-50%	-47%	-53%	-54%	47.5%	-68%	-50%	62.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	4	7352	156.86	180000	Main	-50%	-47%	-53%	-54%	47.5%	-68%	-50%	62.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	5	7964	166.66	183751	Main	-50%	-47%	-53%	-54%	47.5%	-68%	-50%	62.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	6	8271	190.47	187500	Main	-50%	-47%	-53%	-54%	47.5%	-68%	-50%	62.5%	Susceptible	Immune	Susceptible
+Aldrich, Devourer of Gods	Anor Londo	Cinder of a Lord (Aldrich), Soul of Aldrich	None	7	8577	222.22	191250	Main	-50%	-47%	-53%	-54%	47.5%	-68%	-50%	62.5%	Susceptible	Immune	Susceptible
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	0	27822	218.74	36000	Head	-36%	-52%	-32.8%	-36%	-52%	100%	-79.2%	-60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	1	41149	218.74	108000	Head	-36%	-52%	-32.8%	-36%	-52%	100%	-79.2%	-60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	2	45264	230.26	118801	Head	-36%	-52%	-32.8%	-36%	-52%	100%	-79.2%	-60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	3	47322	243.05	121500	Head	-36%	-52%	-32.8%	-36%	-52%	100%	-79.2%	-60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	4	49379	257.35	129601	Head	-36%	-52%	-32.8%	-36%	-52%	100%	-79.2%	-60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	5	53494	273.43	132300	Head	-36%	-52%	-32.8%	-36%	-52%	100%	-79.2%	-60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	6	55552	312.49	135000	Head	-36%	-52%	-32.8%	-36%	-52%	100%	-79.2%	-60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	7	57609	364.58	137000	Head	-36%	-52%	-32.8%	-36%	-52%	100%	-79.2%	-60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	0	27822	583.32	36000	Torse	49%	43%	50.2%	49%	43%	100%	32.8%	40%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	1	41149	583.32	108000	Torse	49%	43%	50.2%	49%	43%	100%	32.8%	40%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	2	45264	614.03	118801	Torse	49%	43%	50.2%	49%	43%	100%	32.8%	40%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	3	47322	648.14	121500	Torse	49%	43%	50.2%	49%	43%	100%	32.8%	40%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	4	49379	648.27	129601	Torse	49%	43%	50.2%	49%	43%	100%	32.8%	40%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	5	53494	729.16	132300	Torse	49%	43%	50.2%	49%	43%	100%	32.8%	40%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	6	55552	833.33	135000	Torse	49%	43%	50.2%	49%	43%	100%	32.8%	40%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	7	57609	972.22	137000	Torse	49%	43%	50.2%	49%	43%	100%	32.8%	40%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	0	27822	350	36000	Arms	15%	5%	17%	15%	5%	100%	-12%	0%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	1	41149	350	108000	Arms	15%	5%	17%	15%	5%	100%	-12%	0%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	2	45264	368.42	118801	Arms	15%	5%	17%	15%	5%	100%	-12%	0%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	3	47322	388.33	121500	Arms	15%	5%	17%	15%	5%	100%	-12%	0%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	4	49379	411.76	129601	Arms	15%	5%	17%	15%	5%	100%	-12%	0%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	5	53494	437.5	132300	Arms	15%	5%	17%	15%	5%	100%	-12%	0%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	6	55552	500	135000	Arms	15%	5%	17%	15%	5%	100%	-12%	0%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	7	57609	583.33	137000	Arms	15%	5%	17%	15%	5%	100%	-12%	0%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	0	27822	874.99	36000	Legs	66%	62%	66.8%	66%	62%	100%	55.2%	60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	1	41149	874.99	108000	Legs	66%	62%	66.8%	66%	62%	100%	55.2%	60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	2	45264	921.05	118801	Legs	66%	62%	66.8%	66%	62%	100%	55.2%	60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	3	47322	972.22	121500	Legs	66%	62%	66.8%	66%	62%	100%	55.2%	60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	4	49379	1029.41	129601	Legs	66%	62%	66.8%	66%	62%	100%	55.2%	60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	5	53494	1093.74	132300	Legs	66%	62%	66.8%	66%	62%	100%	55.2%	60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	6	55552	1249.99	135000	Legs	66%	62%	66.8%	66%	62%	100%	55.2%	60%	Immune	Immune	Immune
+Yhrom the Giant	Profaned Capital	Cinder of a Lord (Yhrom the Giant), Soul of Yhorm the Giant	None	7	57609	1458.33	137000	Legs	66%	62%	66.8%	66%	62%	100%	55.2%	60%	Immune	Immune	Immune
+Dancer of the Boreal Valley	Lothric Castle	Soul of the Dancer	Sword Master	0	5111	170	60000	Main	20%	19%	22%	20%	18%	18%	17%	-26%	Susceptible	Immune	Immune
+Dancer of the Boreal Valley	Lothric Castle	Soul of the Dancer	Sword Master	1	6625	170	140000	Main	20%	19%	22%	20%	18%	18%	17%	-26%	Susceptible	Immune	Immune
+Dancer of the Boreal Valley	Lothric Castle	Soul of the Dancer	Sword Master	2	7287	178.94	198001	Main	20%	19%	22%	20%	18%	18%	17%	-26%	Susceptible	Immune	Immune
+Dancer of the Boreal Valley	Lothric Castle	Soul of the Dancer	Sword Master	3	7618	188.88	202500	Main	20%	19%	22%	20%	18%	18%	17%	-26%	Susceptible	Immune	Immune
+Dancer of the Boreal Valley	Lothric Castle	Soul of the Dancer	Sword Master	4	7950	200	216001	Main	20%	19%	22%	20%	18%	18%	17%	-26%	Susceptible	Immune	Immune
+Dancer of the Boreal Valley	Lothric Castle	Soul of the Dancer	Sword Master	5	8612	212.5	220501	Main	20%	19%	22%	20%	18%	18%	17%	-26%	Susceptible	Immune	Immune
+Dancer of the Boreal Valley	Lothric Castle	Soul of the Dancer	Sword Master	6	8943	242.85	225000	Main	20%	19%	22%	20%	18%	18%	17%	-26%	Susceptible	Immune	Immune
+Dancer of the Boreal Valley	Lothric Castle	Soul of the Dancer	Sword Master	7	9275	283.33	229500	Main	20%	19%	22%	20%	18%	18%	17%	-26%	Susceptible	Immune	Immune
+Oceiros, the Comsumed King	Consumed King's Garden	Soul of Consumed Oceiros	Hawkwood the Deserter	0	8087	120	58000	Main	20%	18%	22%	15%	40%	20%	-40%	22%	Susceptible	Immune	Susceptible
+Oceiros, the Comsumed King	Consumed King's Garden	Soul of Consumed Oceiros	Hawkwood the Deserter	1	9632	120	116000	Main	20%	18%	22%	15%	40%	20%	-40%	22%	Susceptible	Immune	Susceptible
+Oceiros, the Comsumed King	Consumed King's Garden	Soul of Consumed Oceiros	Hawkwood the Deserter	2	10595	126.31	127000	Main	20%	18%	22%	15%	40%	20%	-40%	22%	Susceptible	Immune	Susceptible
+Oceiros, the Comsumed King	Consumed King's Garden	Soul of Consumed Oceiros	Hawkwood the Deserter	3	11077	133.33	130500	Main	20%	18%	22%	15%	40%	20%	-40%	22%	Susceptible	Immune	Susceptible
+Oceiros, the Comsumed King	Consumed King's Garden	Soul of Consumed Oceiros	Hawkwood the Deserter	4	11559	141.17	139200	Main	20%	18%	22%	15%	40%	20%	-40%	22%	Susceptible	Immune	Susceptible
+Oceiros, the Comsumed King	Consumed King's Garden	Soul of Consumed Oceiros	Hawkwood the Deserter	5	12522	150	142100	Main	20%	18%	22%	15%	40%	20%	-40%	22%	Susceptible	Immune	Susceptible
+Oceiros, the Comsumed King	Consumed King's Garden	Soul of Consumed Oceiros	Hawkwood the Deserter	6	13004	171.42	145000	Main	20%	18%	22%	15%	40%	20%	-40%	22%	Susceptible	Immune	Susceptible
+Oceiros, the Comsumed King	Consumed King's Garden	Soul of Consumed Oceiros	Hawkwood the Deserter	7	13485	200	147900	Main	20%	18%	22%	15%	40%	20%	-40%	22%	Susceptible	Immune	Susceptible
+Champion Gundyr	Untended Graves	Soul of Champion Gundyr	Sword Master	0	4956	185	60000	Main	18%	15%	21%	19%	12%	10%	-12%	5%	Susceptible	Susceptible	Susceptible
+Champion Gundyr	Untended Graves	Soul of Champion Gundyr	Sword Master	1	6265	185	120000	Main	18%	15%	21%	19%	12%	10%	-12%	5%	Susceptible	Susceptible	Susceptible
+Champion Gundyr	Untended Graves	Soul of Champion Gundyr	Sword Master	2	6891	194.73	132000	Main	18%	15%	21%	19%	12%	10%	-12%	5%	Susceptible	Susceptible	Susceptible
+Champion Gundyr	Untended Graves	Soul of Champion Gundyr	Sword Master	3	7204	205.55	135000	Main	18%	15%	21%	19%	12%	10%	-12%	5%	Susceptible	Susceptible	Susceptible
+Champion Gundyr	Untended Graves	Soul of Champion Gundyr	Sword Master	4	7518	217.64	144000	Main	18%	15%	21%	19%	12%	10%	-12%	5%	Susceptible	Susceptible	Susceptible
+Champion Gundyr	Untended Graves	Soul of Champion Gundyr	Sword Master	5	8144	231.25	147000	Main	18%	15%	21%	19%	12%	10%	-12%	5%	Susceptible	Susceptible	Susceptible
+Champion Gundyr	Untended Graves	Soul of Champion Gundyr	Sword Master	6	8457	264.28	150000	Main	18%	15%	21%	19%	12%	10%	-12%	5%	Susceptible	Susceptible	Susceptible
+Champion Gundyr	Untended Graves	Soul of Champion Gundyr	Sword Master	7	8771	308.33	153000	Main	18%	15%	21%	19%	12%	10%	-12%	5%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	0	7873	inf	70000	Main	66%	66%	68%	56%	54%	80%	5%	48%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	1	7881	inf	140000	Main	66%	66%	68%	56%	54%	80%	5%	48%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	2	8669	inf	154000	Main	66%	66%	68%	56%	54%	80%	5%	48%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	3	9063	inf	157000	Main	66%	66%	68%	56%	54%	80%	5%	48%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	4	9457	inf	168000	Main	66%	66%	68%	56%	54%	80%	5%	48%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	5	10245	inf	171500	Main	66%	66%	68%	56%	54%	80%	5%	48%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	6	10639	inf	175000	Main	66%	66%	68%	56%	54%	80%	5%	48%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	7	11034	inf	178500	Main	66%	66%	68%	56%	54%	80%	5%	48%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	0	7873	inf	70000	Main	80%	80.4%	79.6%	79.4%	93%	77.6%	80%	95%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	1	7881	inf	140000	Main	80%	80.4%	79.6%	79.4%	93%	77.6%	80%	95%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	2	8669	inf	154000	Main	80%	80.4%	79.6%	79.4%	93%	77.6%	80%	95%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	3	9063	inf	157000	Main	80%	80.4%	79.6%	79.4%	93%	77.6%	80%	95%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	4	9457	inf	168000	Main	80%	80.4%	79.6%	79.4%	93%	77.6%	80%	95%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	5	10245	inf	171500	Main	80%	80.4%	79.6%	79.4%	93%	77.6%	80%	95%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	6	10639	inf	175000	Main	80%	80.4%	79.6%	79.4%	93%	77.6%	80%	95%	Susceptible	Susceptible	Susceptible
+Ancient Wyvern	Archdragon Peak	Dragon Head Stone	None	7	11034	inf	178500	Main	80%	80.4%	79.6%	79.4%	93%	77.6%	80%	95%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	0	4577	inf	80000	King of the Storm	-4%	-6.6%	-2.7%	-2.4%	-17%	15.5%	-70.3%	-30%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	1	4582	inf	160000	King of the Storm	-4%	-6.6%	-2.7%	-2.4%	-17%	15.5%	-70.3%	-30%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	2	5040	inf	176000	King of the Storm	-4%	-6.6%	-2.7%	-2.4%	-17%	15.5%	-70.3%	-30%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	3	5269	inf	180000	King of the Storm	-4%	-6.6%	-2.7%	-2.4%	-17%	15.5%	-70.3%	-30%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	4	5498	inf	192000	King of the Storm	-4%	-6.6%	-2.7%	-2.4%	-17%	15.5%	-70.3%	-30%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	5	5956	inf	196000	King of the Storm	-4%	-6.6%	-2.7%	-2.4%	-17%	15.5%	-70.3%	-30%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	6	6186	inf	200000	King of the Storm	-4%	-6.6%	-2.7%	-2.4%	-17%	15.5%	-70.3%	-30%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	7	6415	inf	204000	King of the Storm	-4%	-6.6%	-2.7%	-2.4%	-17%	15.5%	-70.3%	-30%	Susceptible	Susceptible	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	0	7100	215	80000	Nameless King	21%	19%	22%	20%	24%	23%	83%	-8%	Susceptible	Immune	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	1	7108	215	160000	Nameless King	21%	19%	22%	20%	24%	23%	83%	-8%	Susceptible	Immune	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	2	7818	226.31	176000	Nameless King	21%	19%	22%	20%	24%	23%	83%	-8%	Susceptible	Immune	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	3	8174	226.31	180000	Nameless King	21%	19%	22%	20%	24%	23%	83%	-8%	Susceptible	Immune	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	4	8529	252.94	192000	Nameless King	21%	19%	22%	20%	24%	23%	83%	-8%	Susceptible	Immune	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	5	9240	268.75	196000	Nameless King	21%	19%	22%	20%	24%	23%	83%	-8%	Susceptible	Immune	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	6	9595	307.14	200000	Nameless King	21%	19%	22%	20%	24%	23%	83%	-8%	Susceptible	Immune	Susceptible
+The Nameless King	Archdragon Peak	Soul of Nameless King	None	7	9951	358.33	204000	Nameless King	21%	19%	22%	20%	24%	23%	83%	-8%	Susceptible	Immune	Susceptible
+Dragonslayer Armour	Lothric Castle	Soul of Dragonslayer Armour	Eygon of Carim, Sirris of the Sunless Realms	0	4581	300	64000	Main	32%	25%	35%	35%	24%	20%	72%	60%	Immune	Immune	Susceptible
+Dragonslayer Armour	Lothric Castle	Soul of Dragonslayer Armour	Eygon of Carim, Sirris of the Sunless Realms	1	5456	300	128000	Main	32%	25%	35%	35%	24%	20%	72%	60%	Immune	Immune	Susceptible
+Dragonslayer Armour	Lothric Castle	Soul of Dragonslayer Armour	Eygon of Carim, Sirris of the Sunless Realms	2	6002	315.78	140800	Main	32%	25%	35%	35%	24%	20%	72%	60%	Immune	Immune	Susceptible
+Dragonslayer Armour	Lothric Castle	Soul of Dragonslayer Armour	Eygon of Carim, Sirris of the Sunless Realms	3	6275	333.33	144000	Main	32%	25%	35%	35%	24%	20%	72%	60%	Immune	Immune	Susceptible
+Dragonslayer Armour	Lothric Castle	Soul of Dragonslayer Armour	Eygon of Carim, Sirris of the Sunless Realms	4	6548	352.94	153600	Main	32%	25%	35%	35%	24%	20%	72%	60%	Immune	Immune	Susceptible
+Dragonslayer Armour	Lothric Castle	Soul of Dragonslayer Armour	Eygon of Carim, Sirris of the Sunless Realms	5	7093	375	156800	Main	32%	25%	35%	35%	24%	20%	72%	60%	Immune	Immune	Susceptible
+Dragonslayer Armour	Lothric Castle	Soul of Dragonslayer Armour	Eygon of Carim, Sirris of the Sunless Realms	6	7366	428.57	160000	Main	32%	25%	35%	35%	24%	20%	72%	60%	Immune	Immune	Susceptible
+Dragonslayer Armour	Lothric Castle	Soul of Dragonslayer Armour	Eygon of Carim, Sirris of the Sunless Realms	7	7639	500	163200	Main	32%	25%	35%	35%	24%	20%	72%	60%	Immune	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	0	4298	210	85000	Lorian Phase 1	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	1	4328	210	170000	Lorian Phase 1	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	2	4761	221	187000	Lorian Phase 1	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	3	4978	233.33	191250	Lorian Phase 1	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	4	5194	247.05	204001	Lorian Phase 1	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	5	5627	262.5	208250	Lorian Phase 1	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	6	5843	300	212500	Lorian Phase 1	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	7	6060	350	216750	Lorian Phase 1	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	0	3436	210	85000	Lorian Phase 2	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	1	3463	210	170000	Lorian Phase 2	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	2	3810	221	187000	Lorian Phase 2	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	3	3983	233.33	191250	Lorian Phase 2	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	4	4156	247.05	204001	Lorian Phase 2	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	5	4503	262.5	208250	Lorian Phase 2	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	6	4676	300	212500	Lorian Phase 2	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	7	4849	350	216750	Lorian Phase 2	20%	18%	22%	20%	5%	2%	-20%	70%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	0	5799	inf	85000	Lothric	-20%	-18%	-22%	-20%	47%	2%	4%	73%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	1	5845	inf	170000	Lothric	-20%	-18%	-22%	-20%	47%	2%	4%	73%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	2	6430	inf	187000	Lothric	-20%	-18%	-22%	-20%	47%	2%	4%	73%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	3	6722	inf	191250	Lothric	-20%	-18%	-22%	-20%	47%	2%	4%	73%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	4	7014	inf	204001	Lothric	-20%	-18%	-22%	-20%	47%	2%	4%	73%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	5	7599	inf	208250	Lothric	-20%	-18%	-22%	-20%	47%	2%	4%	73%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	6	7891	inf	212500	Lothric	-20%	-18%	-22%	-20%	47%	2%	4%	73%	Susceptible	Immune	Susceptible
+The Twin Princes	Grand Archives	Cinders of a Lord (Prince Lothric), Soul of the Twin Princes	Sirris of the Sunless Realms, Orbeck of Vinheim	7	8183	inf	216750	Lothric	-20%	-18%	-22%	-20%	47%	2%	4%	73%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	0	6557	170	100000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	1	6655	170	200000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	2	7321	178	220000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	3	7653	188.88	225000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	4	7986	200	240000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	5	8652	212.85	245000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	6	8985	242.85	250000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	7	9317	283.33	255000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	0	4209	170	100000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	1	4272	170	200000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	2	4700	178	220000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	3	4913	188.88	225000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	4	5127	200	240000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	5	5554	212.85	245000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	6	5768	242.85	250000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible
+Soul of Cinder	Kiln of the First Flame	Soul of the Lords	Yuria of Londor, Londor Pale Shade	7	5982	283.33	255000	Phase 1	15%	12%	17%	17%	19%	35%	5%	15%	Susceptible	Immune	Susceptible

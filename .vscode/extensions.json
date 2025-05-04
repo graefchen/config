@@ -50,8 +50,6 @@
         "yinfei.luahelper",
         // HTML
         "tobermory.es6-string-html",
-        // "ms-vscode.live-server",
-        "moalamri.inline-fold",
         // CSS
         "bradlc.vscode-tailwindcss",
         // React

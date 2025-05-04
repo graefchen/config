@@ -14,5 +14,4 @@ export extern cwebp [
 	-z: int   # activates lossless preset with given level in [0:fast, ..., 9:slowest]
 	-m: int   # compression method (0=fast, 6=slowest), default=4
 	-v        # verbose, e.g. print encoding/decoding times
-
 ]

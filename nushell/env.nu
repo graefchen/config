@@ -91,8 +91,8 @@ $env.ZEIT_DB =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')
 alias rpg = rpg-cli
 
 # get the wordcount of all md, org and txt files in your current location
-export def --env wordcount [] {
-    ls ...(glob --depth 4 **/*.{md,org,txt})
+export def --env wordcount [--depth(-d): int = 4] {
+    ls --threads ...(glob --depth $depth **/*.{md,org,txt})
     | where type == file
     | each {|x| open $x.name | str stats | insert name $x.name }
     | move name --before lines

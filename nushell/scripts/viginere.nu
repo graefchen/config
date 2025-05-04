@@ -49,9 +49,9 @@ export def "viginere encrypt" [
 	--message(-m): string # The message to encrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
-]: string -> string {
+]: nothing -> string, string -> string {
 	let $input = $in
-	if (($input | is-empty) or ($message | is-empty)) {
+	if (($input | is-empty) and ($message | is-empty)) {
 		echo "No input given."
 	} else {
 		mut msg = $message
@@ -74,14 +74,15 @@ export def "viginere encrypt file" [
 
 # viginere decrypt
 export def "viginere decrypt" [
+	--cipher(-c): string # the cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
-]: string -> string {
+]: nothing -> string, string -> string {
 	let $input = $in
-	if (($input | is-empty) or ($message | is-empty)) {
+	if (($input | is-empty) and ($cipher | is-empty)) {
 		echo "No input given."
 	} else {
-		mut msg = $message
+		mut msg = $cipher
 		if ($input | is-not-empty) { $msg = $input }
 		encrypt $msg $key $alphabet
 	}

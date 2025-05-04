@@ -74,16 +74,17 @@ def levels [] {
 	]
 }
 
-# toc - table of contents - generate a table of contents from a markdown file
+# toc - table of contents - generate a table of contents from a markdown(-like) file
 #
-# We assume that the input is always a correct markdown file failes on multiple occasions.
+# We assume that the input is always a correct markdown file-
+# Failes on multiple occasions.
 # For example if the argument `min` or max is smaller than 0.
 # Or when the argument min is bigger than max.
 # Or when the argument min is bigger than 6.
 # Additionally failes when the given (markdown) file does not exist.
 # Or when the give path/file is not a file.
 export def toc [
-	--file(-f): string        # The markdown file that is used to generate its table of contents
+	--file(-f): string        # The markdown(-like) file that is used to generate its table of contents
 	--min(-m): int@levels = 2 # The minimum heading, between 1 and 6
 	--max(-x): int@levels = 3 # The maximum heading, between 1 and 6
 ]: nothing -> string, string -> string {

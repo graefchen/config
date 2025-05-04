@@ -4,18 +4,29 @@ Just my config files.
 
 ## table of contents
 
-- [table of contents](#table%20of%20contents)
-- [What it includes](#what%20it%20includes)
+- [table of contents](#table-of-contents)
+- [What it includes](#what-it-includes)
 - [nushell](#nushell)
   - [completions](#completions)
   - [scripts](#scripts)
 - [vim](#vim)
+- [data](#data)
+  - [anno1404](#anno1404)
+    - [military_camps](#military_camps)
+    - [ships](#ships)
+  - [bosses](#bosses)
+  - [ds3](#ds3)
+    - [bosses](#bosses)
+    - [classes](#classes)
+    - [data table](#data-table)
+- [content](#content)
+  - [haiku](#haiku)
 
 ## What it includes
 
 - starship prompt configs
 - (neo)vim config
-- vscode extensions i use
+- vscode extensions I use
 - bash/nushell config
 - some [nap](https://github.com/maaslalani/nap) stuff
 
@@ -74,7 +85,7 @@ I like this shell for multiple good reasons.
   - [nap](https://github.com/maaslalani/nap) &mdash; a code snippet tool
   - [ninja](https://ninja-build.org) &mdash; a build system
   - [onefetch](https://github.com/o2sh/onefetch) &mdash; a git info tool
-  - [pastel](https://github.com/sharkdp/pastel) &mdash; a tool to for colour
+  - [pastel](https://github.com/sharkdp/pastel) &mdash; a tool for colour information
   - [rgp-cli](https://github.com/facundoolano/rpg-cli) &mdash; a small cli game
   - [scc](https://github.com/boyter/scc) &mdash; a line of code counter
   - [serve](https://github.com/vercel/serve) &mdash; a static file server
@@ -89,15 +100,23 @@ I like this shell for multiple good reasons.
 
 ### scripts
 
-- b &mdash; move/rename many files
-- commit &mdash; like commitzen
+- b &mdash; move files into the binary folder (fast way for me to add executable to the path)
+- ceasar &mdash; the Ceasar cipher
+- commit &mdash; like commitzen, but as a shellscript (with the help og [gum](https://github.com/charmbracelet/gum))
+- depth &mdash; see the maximum depth of the folder
 - executables &mdash; see all executables in the path
+- fcount &mdash; count of all the file extensions in you folder
 - goapps &mdash; see all go apps
+- is-url &mdash; check if a string is an url
+- neocitie &mdash; neocities api command
 - rand &mdash; a small script that returns a string out of a list of strings
 - rustapps &mdash; see all rust apps
 - setup &mdash; setting up command line apps and more stuff I like
+- spark &mdash; sparkline command
+- srcom &mdash; speedrun.com api command (unfinished)
 - toc &mdash; creates a table of contents from a markdown file
-- vdf &mdash; parse the Valve Data Format
+- vdf &mdash; parse the Valve Data Format (it is very very slow)
+- viginere &mdash; the Viginere cipher
 - walk &mdash; a bookmarking script
 
 ## vim
@@ -121,3 +140,56 @@ I like this shell for multiple good reasons.
   - rainbow parentheses [ref](https://github.com/junegunn/rainbow_parentheses.vim)
   - vim you autocorrect [ref](https://github.com/sedm0784/vim-you-autocorrect)
   - writegooder [ref](https://github.com/JKirchartz/writegooder.vim)
+
+## data
+
+A directory with some data that I play with.
+
+### anno1404
+
+#### military_camps
+
+#### ships
+
+> ANNODOMINIFOURTEENOFOURISAVERYGOODGAME
+>
+> _something_
+
+### bosses
+
+Started with (which is now simple_bosses.csv):
+
+```csv
+name,game
+Iudex Gundyr,Dark Souls III
+High Lord Wolnir,Dark Souls III
+Gravelord Nito,Dark Souls
+Seath the Scaleless,Dark Souls
+"Gwyn, Lord of Cynder",Dark Souls
+Old King Allant,Demon Souls
+Rom,Bloodborne
+Genichiro Ashina,Sekiro
+Naaslaarum,The Elder Scrolls V: Skyrim
+Voslaarum,The Elder Scrolls V: Skyrim
+```
+
+### ds3
+
+#### bosses
+
+A csv file about stats from the Game Dark Souls 3
+
+**Sources:**
+
+1. http://darksouls3.wikidot.com/bosses
+2. https://darksouls3.wiki.fextralife.com/Bosses
+
+#### classes
+
+#### data table
+
+## content
+
+### haiku
+
+a "database" of _hopefully copyright free_ (english) haiku

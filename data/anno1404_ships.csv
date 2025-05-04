@@ -1,0 +1,12 @@
+ship type,construction cost,ship limit,maintainance,prerequisite,cargo holds,sockets,hit points,attack power,attack range,vision radius
+"Flagship","3500 gold",0," 0 gold","Citizens",4,2,600,6,15,40
+"Small trading ship","1500 gold, 15 wood, 20 ropes",1,"15 gold","240 Citizens",3,1,400,0,0,20
+"Small warship","2000 gold, 30 wood, 30 ropes, 20 weapons",1,"30 gold","Patricians",1,1,500,6,10,20
+"Large trading ship","4000 gold, 60 wood, 60 ropes",2,"50 gold","Patricians",6,1,1000,0,0,30
+"Large warship","4500 gold, 70 wood, 70 ropes, 20 cannons",2,"60 gold","950 Nobleman",2,1,1200,14,15,30
+"Caravel","2500 gold, 30 wood, 20 ropes",1,"10 gold","440 Nomads, The Sheik's Ally",3,2,400,0,0,30
+"Large Oriental trading ship","4000 gold, 50 wood, 50 ropes, 15 cannons",2,"50 gold","1040 Envoys, The Grand Vizier's Advisor",5,2,800,6,15,30
+"Large Oriental warship","4500 gold, 80 wood, 80 ropes, 30 war machines",2,"60 gold","1070 Envoys, The Sultan's Confident",2,2,1000,10,15,30
+"Small Trademen's Cog","2500 gold, 25 wood, 20 ropes",1,"40 gold","240 Citizens, Venetian Shipbuilding 1",4,2,400,0,0,20
+"Large Trademen's Cog","4000 gold, 80 wood, 60 ropes, 15 cannons",2,"80 gold","950 Nobleman, Venetian Shipbuilding 2",6,2,1000,8,15,40
+"Corsair ship","11700 gold",1,"25 gold","Trade treaty with Corsairs",2,2,500,7,15,20

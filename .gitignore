@@ -33,3 +33,10 @@ history.txt
 
 # Do not upload databases
 *.db
+
+# Ignore my bookmarks (it is in the MessagePack format)
+# it is also a binary file
+bm.msgpack
+
+# Ignore nushell plugins
+/nushell/plugins

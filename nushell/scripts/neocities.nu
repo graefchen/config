@@ -2,7 +2,6 @@
 # the neocities developer api (https://neocities.org/api)
 # minimal and only works for me, not general
 # DO NO USE WHEN YOU DO NOT KNOW WHAT YOU DO!
-# TODO: Overwork and make it generally usable.
 
 const MSG = $"
 It seems like you have not an neocities key in your (ansi yellow)$HOME/.config/secret.json(ansi reset) file.
@@ -42,35 +41,48 @@ def get-header []: nothing -> list<string>, nothing -> nothing {
 #
 # Upload a single file at a time.
 export def "neocities upload" [
-	file: string # the name of the file to upload
+	...files: string # the names of the files to upload
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
 ]: nothing -> any {
+	# how neocity expects the push to go
+	# {name_on_server: <file_object>}
+	if ($files | is-empty) { return }
+	mut obj = {}
+	for $file in $files {
+		$obj = $obj | insert ($file | str replace "\\" "/") (open -r $file | into binary)
+	}
+
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
-		return (http post --allow-errors --content-type multipart/form-data --user $user --password $password https://neocities.org/api/upload { $file: (open -r $file | into binary) })
+		return (http post --allow-errors --content-type multipart/form-data --user $user --password $password https://neocities.org/api/upload $obj)
 	} else {
 		let header = (get-header)
 		if ($header | is-empty) { return $MSG }
-		return (http post --allow-errors --content-type multipart/form-data --headers ($header) https://neocities.org/api/upload { $file: (open -r $file | into binary) })
+		return (http post --allow-errors --content-type multipart/form-data --headers ($header) https://neocities.org/api/upload $obj)
 	}
 }
 
-# Deletes files from neocities
+# Deletes files from neocities - BE CAREFULL WITH IT
 #
-# *BE CAREFULL WITH IT*
 # All files except "index.html" can be deleted with it.
 # And this command only deletes one file at a time.
 export def "neocities delete" [
-	name: string # the name of the file to delete
+	...names: string # the name of the file to delete
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
 ]: nothing -> any {
+	let fn = (
+		{'filenames[]': ($names | str replace "\\" "/")}
+		| url build-query
+		| url decode
+	)
+
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
-		return (http post --allow-errors --user $user --password $password https://neocities.org/api/delete $"filenames[]=($name | url encode)")
+		return (http post --allow-errors --user $user --password $password https://neocities.org/api/delete $fn)
 	} else {
 		let header = (get-header)
 		if ($header | is-empty) { return $MSG }
-		return (http post --allow-errors --headers ($header) https://neocities.org/api/delete $"filenames[]=($name | url encode)")
+		return (http post --allow-errors --headers ($header) https://neocities.org/api/delete $fn)
 	}
 }
 
@@ -83,12 +95,14 @@ export def "neocities list" [
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
 ]: nothing -> any {
+	let query = ({"path": $path} | url build-query)
+
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
-		return (http get --allow-errors --user $user --password $password $"https://neocities.org/api/list?path=($path)")
+		return (http get --allow-errors --user $user --password $password $"https://neocities.org/api/list?($query)")
 	} else {
 		let header = (get-header)
 		if ($header | is-empty) { return $MSG }
-		return (http get --allow-errors --headers ($header) $"https://neocities.org/api/list?path=($path)")
+		return (http get --allow-errors --headers ($header) $"https://neocities.org/api/list?($query)")
 	}
 }
 
@@ -132,7 +146,7 @@ export def "neocities key" [
 	}
 }
 
-# a small neofetch command line tool to upload, delete, list, etc.
+# a small neocities command line tool to upload, delete, list, etc.
 export def neocities []: nothing -> any {
 	help neocities
 }

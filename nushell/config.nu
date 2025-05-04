@@ -903,8 +903,11 @@ source ./completions/tools/mod.nu
 source ./scripts/b.nu
 source ./scripts/ceasar.nu
 source ./scripts/commit.nu
+source ./scripts/depth.nu
 source ./scripts/executables.nu
+source ./scripts/fcount.nu
 source ./scripts/goapps.nu
+source ./scripts/is-url.nu
 source ./scripts/neocities.nu
 source ./scripts/rand.nu
 source ./scripts/rustapps.nu
@@ -915,7 +918,6 @@ source ./scripts/toc.nu
 source ./scripts/vdf.nu
 source ./scripts/viginere.nu
 source ./scripts/walk.nu
-
 
 # adding support for `open` for the shorthand file extension version of the
 # MessagePack and brotli-compressed MessagePack
