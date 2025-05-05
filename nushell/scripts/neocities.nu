@@ -40,7 +40,7 @@ def get-header []: nothing -> list<string>, nothing -> nothing {
 # Uploads files to neocities
 #
 # Upload a single file at a time.
-export def "neocities upload" [
+def "neocities upload" [
 	...files: string # the names of the files to upload
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
@@ -66,7 +66,7 @@ export def "neocities upload" [
 #
 # All files except "index.html" can be deleted with it.
 # And this command only deletes one file at a time.
-export def "neocities delete" [
+def "neocities delete" [
 	...names: string # the name of the file to delete
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
@@ -90,7 +90,7 @@ export def "neocities delete" [
 #
 # When given an path, it will only look up the files for the path
 # else it would list all files from your site.
-export def "neocities list" [
+def "neocities list" [
 	path?: string = ""     # The path from which you want to get the list
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
@@ -111,7 +111,7 @@ export def "neocities list" [
 # When given a name, then it looks up the the informations for the given site,
 # else it looks up your websites information, if the api-key or username and
 # password are given.
-export def "neocities info" [
+def "neocities info" [
 	name?: string          # The name of the website
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
@@ -133,7 +133,7 @@ export def "neocities info" [
 #
 # Returns an API key that you can use for the API instead of login credentials.
 # It will automatically generate a new API key if one doesn't exist yet for your site.
-export def "neocities key" [
+def "neocities key" [
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
 ]: nothing -> any {
@@ -147,6 +147,6 @@ export def "neocities key" [
 }
 
 # a small neocities command line tool to upload, delete, list, etc.
-export def neocities []: nothing -> any {
+def neocities []: nothing -> any {
 	help neocities
 }

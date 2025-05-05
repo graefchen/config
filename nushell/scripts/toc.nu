@@ -83,7 +83,7 @@ def levels [] {
 # Or when the argument min is bigger than 6.
 # Additionally failes when the given (markdown) file does not exist.
 # Or when the give path/file is not a file.
-export def toc [
+def toc [
 	--file(-f): string        # The markdown(-like) file that is used to generate its table of contents
 	--min(-m): int@levels = 2 # The minimum heading, between 1 and 6
 	--max(-x): int@levels = 3 # The maximum heading, between 1 and 6

@@ -13,6 +13,6 @@ def list []: nothing -> list<string> {
 }
 
 # print all rust apps
-export def rustapps []: nothing -> list<string> {
+def rustapps []: nothing -> list<string> {
 	list
 }

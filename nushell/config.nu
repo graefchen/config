@@ -924,15 +924,15 @@ source ./scripts/walk.nu
 # be aware that nushell writes this comment when using `help ftom mpk(z)`
 
 # same as `from msgpack`
-export def "from mpk" [] { $in | from msgpack }
+def "from mpk" [] { $in | from msgpack }
 # same as `from msgpackz`
-export def "from mpkz" [] { $in | from msgpackz }
+def "from mpkz" [] { $in | from msgpackz }
 
 # Parse text as .vdf and create a record.
 # 
 # While it works ... it is also (when purely writen in nushell and in the way
 # it is written now) super slow.
 # Should be only used for data formats that are at best only multiple kb big.
-export def "from vdf" []: string -> record {
+def "from vdf" []: string -> record {
     $in | vdf
 }

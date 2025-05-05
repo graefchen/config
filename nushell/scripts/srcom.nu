@@ -33,7 +33,7 @@ const BASE_LINK = "https://www.speedrun.com/api/v1/"
 #
 # as of 26.04.2025 there are 1126 games
 # need to work with offset and max
-export def "srcom engines" [
+def "srcom engines" [
 	--offset(-O): int
 	--max(-M): int
 	--bulk(-B)
@@ -50,7 +50,7 @@ export def "srcom engines" [
 }
 
 # get information about a engine by its id
-export def "srcom engines id" [
+def "srcom engines id" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)engine/($id)"
@@ -69,7 +69,7 @@ export def "srcom engines id" [
 # technically games/{id}
 # to get a game you need to use `srcom games -n *NAMEOFTHEGAME*`
 # to get the id of the game
-export def "srcom games id" [
+def "srcom games id" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)"
@@ -77,7 +77,7 @@ export def "srcom games id" [
 	return (http get $request)
 }
 
-export def "srcom games category" [
+def "srcom games category" [
 	id: string
 	--miscellanious(-m) # filter out miscellanious
 ] {
@@ -86,7 +86,7 @@ export def "srcom games category" [
 	return (http get $request)
 }
 
-export def "srcom games levels" [
+def "srcom games levels" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/levels"
@@ -94,7 +94,7 @@ export def "srcom games levels" [
 	return (http get $request)
 }
 
-export def "srcom games variables" [
+def "srcom games variables" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/variables"
@@ -102,7 +102,7 @@ export def "srcom games variables" [
 	return (http get $request)
 }
 
-export def "srcom games derived-games" [
+def "srcom games derived-games" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/derived-games"
@@ -110,7 +110,7 @@ export def "srcom games derived-games" [
 	return (http get $request)
 }
 
-export def "srcom games records" [
+def "srcom games records" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/records"
@@ -119,7 +119,7 @@ export def "srcom games records" [
 }
 
 # get info about a speedrun.com game
-export def "srcom games" [
+def "srcom games" [
 	--name(-n): string
 	--abbreviation(-a): string
 	--released(-r): int
@@ -202,6 +202,6 @@ export def "srcom games" [
 
 
 # the speedrun.com api
-export def srcom [] {
+def srcom [] {
 
 }

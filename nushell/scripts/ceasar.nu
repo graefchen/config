@@ -22,7 +22,7 @@ def direction [
 # small ceasar cipher command
 #
 # skips all letters that aren't in the alphabet
-export def ceasar [
+def ceasar [
 	--decrypt(-d) # decypt 
 	--encrypt(-e) # encrypt
 	--number(-n): int = 3 # the amount by which the message is rotated

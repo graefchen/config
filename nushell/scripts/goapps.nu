@@ -10,6 +10,6 @@ def list []: nothing -> list<string> {
 }
 
 # print all go apps
-export def goapps []: nothing -> list<string> {
+def goapps []: nothing -> list<string> {
     list
 }

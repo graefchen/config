@@ -1,6 +1,6 @@
 # written by graefchen
 
-export def encrypt [
+def encrypt [
 	message: string # The message to encrypt
 	key: string # The key to encrypt
 	alphabet: string # The used Alphabet
@@ -22,7 +22,7 @@ export def encrypt [
 	} | str join ""
 }
 
-export def decrypt [
+def decrypt [
 	cipher: string # The cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string # The used Alphabet
@@ -45,7 +45,7 @@ export def decrypt [
 }
 
 # viginere encrypt
-export def "viginere encrypt" [
+def "viginere encrypt" [
 	--message(-m): string # The message to encrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
@@ -61,7 +61,7 @@ export def "viginere encrypt" [
 }
 
 # viginere encrypt a file
-export def "viginere encrypt file" [
+def "viginere encrypt file" [
 	file: string # The file to encrypt
 	key: string # The key to encrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
@@ -73,7 +73,7 @@ export def "viginere encrypt file" [
 }
 
 # viginere decrypt
-export def "viginere decrypt" [
+def "viginere decrypt" [
 	--cipher(-c): string # the cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
@@ -89,7 +89,7 @@ export def "viginere decrypt" [
 }
 
 # viginere decrypt a file
-export def "viginere decrypt file" [
+def "viginere decrypt file" [
 	file: string # The cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
@@ -104,6 +104,6 @@ export def "viginere decrypt file" [
 #
 # It shall be noted that this skips all the unknown letters in the
 # message/cipher and key and returns those unknown letters.
-export def viginere [] {
+def viginere [] {
 	print -n (help viginere)
 }

@@ -1,7 +1,7 @@
 # written by graefchen
 
 # prints ALL executables
-export def executables [] {
+def executables [] {
 	$env.Path
 	# | filter { |x| ($x | str contains "WINDOWS") == false }
 	| each { |x|

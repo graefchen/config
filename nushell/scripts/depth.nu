@@ -1,7 +1,7 @@
 # written by graefchen
 
 # get the maximum depth of the current folder
-export def --env depth []: nothing -> int {
+def --env depth []: nothing -> int {
     # 1.1 list all files in this and all following folder
     # 1.2 get all directorys
     # 2.1 check if is empty, else goto 3
