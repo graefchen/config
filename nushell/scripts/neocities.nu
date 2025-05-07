@@ -62,12 +62,19 @@ def "neocities upload" [
 	}
 }
 
+def "nu-completion-neocities-delete" [] {
+	neocities list
+	| get files
+	| where is_directory == false
+	| each { |f| return {value:$f.path, description:$f.created_at}}
+}
+
 # Deletes files from neocities - BE CAREFULL WITH IT
 #
 # All files except "index.html" can be deleted with it.
 # And this command only deletes one file at a time.
 def "neocities delete" [
-	...names: string # the name of the file to delete
+	...names: string@"nu-completion-neocities-delete" # the name of the file to delete
 	--user(-u): string     # Your Username
 	--password(-p): string # Your Password
 ]: nothing -> any {

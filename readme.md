@@ -21,6 +21,7 @@ Just my config files.
     - [data table](#data-table)
 - [content](#content)
   - [haiku](#haiku)
+- [footnotes](#footnotes)
 
 ## What it includes
 
@@ -108,6 +109,7 @@ I like this shell for multiple good reasons.
 - fcount &mdash; count of all the file extensions in you folder
 - goapps &mdash; see all go apps
 - is-url &mdash; check if a string is an url
+- monster &mdash; how much is something worth ... in monster energy drinks!!!
 - neocitie &mdash; neocities api command
 - rand &mdash; a small script that returns a string out of a list of strings
 - rustapps &mdash; see all rust apps
@@ -145,15 +147,22 @@ I like this shell for multiple good reasons.
 
 A directory with some data that I play with.
 
+> [!note] TSV vs. CSV
+> Why?
+
 ### anno1404
+
+**Source:**
+
+1. [fandom wiki](https://anno1404.fandom.com/wiki/Anno_1404_Wiki)
 
 #### military_camps
 
+All Statistics about the military camps.
+
 #### ships
 
-> ANNODOMINIFOURTEENOFOURISAVERYGOODGAME
->
-> _something_
+All Statistics about the ships.
 
 ### bosses
 
@@ -177,19 +186,42 @@ Voslaarum,The Elder Scrolls V: Skyrim
 
 #### bosses
 
-A csv file about stats from the Game Dark Souls 3
+A tsv file about stats from the Game Dark Souls 3
+
+> [!note]
+> I am trying to use db normalisation to make it quite smaller and try to
+> create multiple tables with it (that I can hopefully import into an db)
 
 **Sources:**
 
-1. http://darksouls3.wikidot.com/bosses
-2. https://darksouls3.wiki.fextralife.com/Bosses
+1. [wikikdot](http://darksouls3.wikidot.com/bosses)
+2. [fextralive](https://darksouls3.wiki.fextralife.com/Bosses)
 
 #### classes
 
+**Sources:**
+
+1. [wikidot](http://darksouls3.wikidot.com/classes)
+2. [fextralive](https://darksouls3.wiki.fextralife.com/Classes)
+
 #### data table
+
+A data table about every weapon, shield and spell's.
+
+This data only shows base (+0) versions of the Items.
+
+**Sources:**
+
+1. [wikidot data-table p.1](http://darksouls3.wikidot.com/data-table)
+2. [wikidot data-table p.2](http://darksouls3.wikidot.com/data-table/p/2)
+3. [wikidot data-table p.3](http://darksouls3.wikidot.com/data-table/p/3)
 
 ## content
 
 ### haiku
 
 a "database" of _hopefully copyright free_ (english) haiku
+
+## footnotes
+
+_todo_
