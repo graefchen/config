@@ -87,6 +87,11 @@ $env.EDITOR = "nvim"
 
 $env.ZEIT_DB =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')
 
+def alp [-b]: nothing -> string {
+    if ($b) { return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" }
+    return "abcdefghijklmnopqrstuvwxyz"
+}
+
 # command line games
 alias rpg = rpg-cli
 

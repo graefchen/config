@@ -908,6 +908,7 @@ source ./scripts/executables.nu
 source ./scripts/fcount.nu
 source ./scripts/goapps.nu
 source ./scripts/is-url.nu
+source ./scripts/leet.nu
 source ./scripts/monster.nu
 source ./scripts/neocities.nu
 source ./scripts/rand.nu
