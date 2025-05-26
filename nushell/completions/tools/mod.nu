@@ -15,6 +15,7 @@ source ./nap-completions.nu
 source ./ninja-completions.nu
 source ./onefetch-completions.nu
 source ./pastel-completions.nu
+source ./prettier-completions.nu
 source ./rpg-cli-completions.nu
 source ./scc-completions.nu
 source ./serve-completions.nu
