@@ -5,12 +5,12 @@
 def get_bookmarks []: nothing -> string {
 	$env.walk_path?
 	| default (($nu.home-path? | path join ".config"))
-	| path join "bm.msgpack"
+	| path join "bm.msgpackz"
 }
 
 # saving the bookmark input
 def save_bookmarks []: any -> nothing {
-	$in | save -f (get_bookmarks)
+	$in | to msgpackz | save -f (get_bookmarks)
 }
 
 # creating a bookmark list for custom completion
@@ -27,6 +27,7 @@ def "walk list" []: nothing -> any, nothing -> table {
 		{} | save $pth
 	}
 	open ($pth)
+	| from msgpackz # we need to add from msgpackz ... because it does not read it natively?
 	| sort
 }
 

@@ -1,3 +1,5 @@
+# written by graefchen
+
 def leet-encrypt [message]: nothing -> string {
 	let chars = ($message | split chars)
 	$chars | each {|char|

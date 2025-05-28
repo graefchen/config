@@ -22,6 +22,9 @@ history.txt
 # Ignore all nushell modules
 /nushell/modules/*
 
+# Ignore all nushell plugins
+/nushell/plugin.msgpackz
+
 # Ignore vim code for nvim
 # /nvim/ftdetect
 # /nvim/ftplugin
@@ -37,6 +40,7 @@ history.txt
 # Ignore my bookmarks (it is in the MessagePack format)
 # it is also a binary file
 bm.msgpack
+bm.msgpackz
 
-# Ignore nushell plugins
-/nushell/plugins
+# don't add android stuff
+/.android

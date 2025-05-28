@@ -63,6 +63,7 @@ alias gcm = git commit -m
 alias gap = git add --patch
 alias ga = git add
 alias gp = git push
+alias gpa = git push origin --all
 
 alias neovim = nvim
 alias vi = nvim

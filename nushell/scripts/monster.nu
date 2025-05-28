@@ -6,9 +6,9 @@
 def monster [cents: int]: nothing -> record {
 	mut ret = {normal:{amount:0,rest:0},sale:{amount:0,rest:0}}
 
-	if ($cents > 113) {
-		let rest = $cents mod 113
-		let amount = $cents // 113
+	if ($cents > 124) {
+		let rest = $cents mod 124
+		let amount = $cents // 124
 		$ret = ($ret | update sale {amount:$amount,rest:$rest})
 	}
 
