@@ -54,6 +54,7 @@ def "nu-complete log-level completions" [] {
 	[ "silent" "error" "warn" "log" "debug" ]
 }
 
+# Prettier is an opinionated code formatter.
 export extern prettier [
 	--check(-c)                                                                                       # Check if the given files are formatted, print a human-friendly summary message and paths to unformatted files (see also --list-different).
 	--list-different(-l)                                                                              # Print the names of files that are different from Prettier's formatting (see also --check).

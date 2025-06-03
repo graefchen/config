@@ -17,3 +17,4 @@ source ./picat-completions.nu
 source ./purs-completions.nu
 source ./python-completions.nu
 source ./sass-completions.nu
+source ./snobol4-completions.nu
