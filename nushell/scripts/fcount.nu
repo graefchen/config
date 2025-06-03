@@ -3,7 +3,7 @@
 # a file counter
 #
 # counts all the files and returns either a string or a record
-def --env "fcount" []: nothing -> string, nothing -> record {
+export def --env main []: nothing -> string, nothing -> record {
     let files = (ls **/* --threads | where type == "file")
     if ($files | is-empty) {
         return "No files in directory"

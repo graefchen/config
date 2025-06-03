@@ -21,7 +21,7 @@ def bookmarks []: nothing -> nothing {
 }
 
 # List all bookmarks
-def "walk list" []: nothing -> any, nothing -> table {
+export def "walk list" []: nothing -> any, nothing -> table {
 	let pth = (get_bookmarks)
 	if (not ($pth | path exists)) {
 		{} | save $pth
@@ -32,7 +32,7 @@ def "walk list" []: nothing -> any, nothing -> table {
 }
 
 # Creating an new bookmark
-def --env "walk add" [
+export def --env "walk add" [
 	name?: string # The name of the new bookmark
 	path?: path # The path of the new bookmark
 ]: nothing -> nothing {
@@ -58,7 +58,7 @@ def --env "walk add" [
 }
 
 # Deleting an bookmark
-def "walk remove" [
+export def "walk remove" [
 	name: string@bookmarks # The bookmarks to delete
 ]: nothing -> nothing {
 	if ($name in (walk list)) {
@@ -71,7 +71,7 @@ def "walk remove" [
 }
 
 # Renames a bookmark
-def "walk rename" [
+export def "walk rename" [
 	old_name: string@bookmarks # The bookmark to rename
 	new_name: string # The new name for the bookmark
 ]: nothing -> nothing {
@@ -91,7 +91,7 @@ def "walk rename" [
 }
 
 # A simple and opinionated bookmark-like module to get around your system fast.
-def --env walk [
+export def --env main [
 	name: string@bookmarks
 ]: nothing -> nothing {
 	if ($name | is-not-empty) {

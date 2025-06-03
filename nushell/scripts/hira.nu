@@ -1,7 +1,7 @@
 # written by graefchen
 
 # transforms romanji to hirigana
-def hira [
+export def main [
 	romanji?: string # the romanized japanese you want translated
 ]: nothing -> string, string -> string {
 	mut msg = $romanji

@@ -1,7 +1,7 @@
 # written by graefchen
 
 # Checks if a string is an URL.
-def "is-url" []: string -> bool {
+export def main []: string -> bool {
     # TODO: Complete rework.
     # base regex: https://stackoverflow.com/a/49849482
     # url ref: https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#Syntax

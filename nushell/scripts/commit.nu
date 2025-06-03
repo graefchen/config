@@ -1,7 +1,7 @@
 # written by graefchen
 
 # small little conventional commits helper
-def commit [] {
+export def main [] {
 	let type = (gum choose "fix" "feat" "docs" "style" "refactor" "test" "chore" "revert")
 	mut scope = (gum input --placeholder "scope")
 

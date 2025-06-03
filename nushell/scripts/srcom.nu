@@ -5,7 +5,6 @@
 # TODO: Use the nushell command `url build-query` for it
 #       Instead ... of the mess I did.
 
-
 def filter-empty []: record -> record {
 	$in
 	| transpose k v
@@ -33,7 +32,7 @@ const BASE_LINK = "https://www.speedrun.com/api/v1/"
 #
 # as of 26.04.2025 there are 1126 games
 # need to work with offset and max
-def "srcom engines" [
+export def "srcom engines" [
 	--offset(-O): int
 	--max(-M): int
 	--bulk(-B)
@@ -50,7 +49,7 @@ def "srcom engines" [
 }
 
 # get information about a engine by its id
-def "srcom engines id" [
+export def "srcom engines id" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)engine/($id)"
@@ -69,7 +68,7 @@ def "srcom engines id" [
 # technically games/{id}
 # to get a game you need to use `srcom games -n *NAMEOFTHEGAME*`
 # to get the id of the game
-def "srcom games id" [
+export def "srcom games id" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)"
@@ -77,7 +76,7 @@ def "srcom games id" [
 	return (http get $request)
 }
 
-def "srcom games category" [
+export def "srcom games category" [
 	id: string
 	--miscellanious(-m) # filter out miscellanious
 ] {
@@ -86,7 +85,7 @@ def "srcom games category" [
 	return (http get $request)
 }
 
-def "srcom games levels" [
+export def "srcom games levels" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/levels"
@@ -94,7 +93,7 @@ def "srcom games levels" [
 	return (http get $request)
 }
 
-def "srcom games variables" [
+export def "srcom games variables" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/variables"
@@ -102,7 +101,7 @@ def "srcom games variables" [
 	return (http get $request)
 }
 
-def "srcom games derived-games" [
+export def "srcom games derived-games" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/derived-games"
@@ -110,7 +109,7 @@ def "srcom games derived-games" [
 	return (http get $request)
 }
 
-def "srcom games records" [
+export def "srcom games records" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/records"
@@ -119,7 +118,7 @@ def "srcom games records" [
 }
 
 # get info about a speedrun.com game
-def "srcom games" [
+export def "srcom games" [
 	--name(-n): string
 	--abbreviation(-a): string
 	--released(-r): int
@@ -202,6 +201,6 @@ def "srcom games" [
 
 
 # the speedrun.com api
-def srcom [] {
+export def main [] {
 
 }

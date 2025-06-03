@@ -2,7 +2,7 @@
 
 # Returns a random argument out of the argument list
 # or out of the given input
-def rand [
+export def main [
 	...args: any # The arguments which are used to return one at random
 ]: list<any> -> any, nothing -> any {
 	let $input = $in

@@ -8,7 +8,7 @@
 # Takes in a list of numbers and returns the sparkline.
 # While it does not really implement correct sparklines
 # they are good enough to have some fun with.
-def spark [
+export def main [
 	value?: list<number> # The list of numbers
 ]: [
 	nothing -> string

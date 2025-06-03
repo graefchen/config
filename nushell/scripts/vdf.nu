@@ -181,6 +181,6 @@ def _parse [line: int]: string -> record {
 }
 
 # A vdf parser that works (but is extreamly slow)
-def vdf []: string -> record {
+export def main []: string -> record {
 	$in | _parse 1
 }

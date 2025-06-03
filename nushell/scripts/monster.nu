@@ -3,7 +3,7 @@
 # Checks how much cents couls have been spend on monster energy.
 #
 # Only works for one specific store. And its prices.
-def monster [cents: int]: nothing -> record {
+export def main [cents: int]: nothing -> record {
 	mut ret = {normal:{amount:0,rest:0},sale:{amount:0,rest:0}}
 
 	if ($cents > 124) {

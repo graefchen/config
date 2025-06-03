@@ -900,26 +900,26 @@ source ./completions/package/mod.nu
 source ./completions/tools/mod.nu
 
 # Using scripts...
-source ./scripts/b.nu
-source ./scripts/ceasar.nu
-source ./scripts/commit.nu
-source ./scripts/depth.nu
-source ./scripts/executables.nu
-source ./scripts/fcount.nu
-source ./scripts/goapps.nu
-source ./scripts/is-url.nu
-source ./scripts/leet.nu
-source ./scripts/monster.nu
-source ./scripts/neocities.nu
-source ./scripts/rand.nu
-source ./scripts/rustapps.nu
-source ./scripts/spark.nu
-source ./scripts/setup.nu
-source ./scripts/srcom.nu
-source ./scripts/toc.nu
-source ./scripts/vdf.nu
-source ./scripts/viginere.nu
-source ./scripts/walk.nu
+use ./scripts/binary.nu
+use ./scripts/ceasar.nu
+use ./scripts/commit.nu
+use ./scripts/depth.nu
+use ./scripts/executables.nu
+use ./scripts/fcount.nu
+use ./scripts/goapps.nu
+use ./scripts/is-url.nu
+use ./scripts/leet.nu
+use ./scripts/monster.nu
+use ./scripts/neocities.nu
+use ./scripts/rand.nu
+use ./scripts/rustapps.nu
+use ./scripts/spark.nu
+use ./scripts/setup.nu
+use ./scripts/srcom.nu
+use ./scripts/toc.nu
+use ./scripts/vdf.nu
+use ./scripts/viginere.nu
+use ./scripts/walk.nu
 
 # adding support for `open` for the shorthand file extension version of the
 # MessagePack and brotli-compressed MessagePack
