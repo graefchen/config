@@ -2,6 +2,8 @@
 # the neocities developer api (https://neocities.org/api)
 # minimal and only works for me, not general
 # DO NO USE WHEN YOU DO NOT KNOW WHAT YOU DO!
+# TODO: Check the return values of the requests.
+# TODO: Correctly parse the values.
 
 const MSG = $"
 It seems like you have not an neocities key in your (ansi yellow)$HOME/.config/secret.json(ansi reset) file.
@@ -63,7 +65,7 @@ export def upload [
 }
 
 export def "nu-completion-neocities-delete" [] {
-	neocities list
+	list
 	| get files
 	| where is_directory == false
 	| each { |f| return {value:$f.path, description:$f.created_at}}
@@ -105,11 +107,11 @@ export def list [
 	let query = ({"path": $path} | url build-query)
 
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
-		return (http get --allow-errors --user $user --password $password $"https://neocities.org/api/list?($query)")
+		return (http get --allow-errors --user $user --password $password $"https://neocities.org/api/list?($query)" | get files)
 	} else {
 		let header = (get-header)
 		if ($header | is-empty) { return $MSG }
-		return (http get --allow-errors --headers ($header) $"https://neocities.org/api/list?($query)")
+		return (http get --allow-errors --headers ($header) $"https://neocities.org/api/list?($query)" | get files)
 	}
 }
 
@@ -124,14 +126,14 @@ export def info [
 	--password(-p): string # Your Password
 ]: nothing -> any {
 	if ($name | is-not-empty) {
-		return (http get --allow-errors $"https://neocities.org/api/info?sitename=($name)")
+		return (http get --allow-errors $"https://neocities.org/api/info?sitename=($name)" | get info)
 	} else {
 		if (($user | is-not-empty) and ($password | is-not-empty)) {
-			return (http get --allow-errors --user $user --password $password https://neocities.org/api/info)
+			return (http get --allow-errors --user $user --password $password https://neocities.org/api/info | get info)
 		} else {
 			let header = (get-header)
 			if ($header | is-empty) { return $MSG }
-			return (http get --allow-errors --headers ($header) https://neocities.org/api/info)
+			return (http get --allow-errors --headers ($header) https://neocities.org/api/info | get info)
 		}
 	}
 }
@@ -145,11 +147,11 @@ export def key [
 	--password(-p): string # Your Password
 ]: nothing -> any {
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
-		return (http get --allow-errors --user $user --password $password https://neocities.org/api/key)
+		return (http get --allow-errors --user $user --password $password https://neocities.org/api/key | get api_key)
 	} else {
 		let header = (get-header)
 		if ($header | is-empty) { return $MSG }
-		return (http get --allow-errors --headers ($header) https://neocities.org/api/key)
+		return (http get --allow-errors --headers ($header) https://neocities.org/api/key | get api_key)
 	}
 }
 
