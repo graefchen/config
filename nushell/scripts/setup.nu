@@ -15,7 +15,7 @@ def download-completion [
 }
 
 # downloads all the completions defined in the `completions_list` constant
-export def "setup completions" []: nothing -> nothing {
+export def completions []: nothing -> nothing {
 	const completions_list = [
 		"bat"
 		"cargo"
@@ -37,7 +37,7 @@ export def "setup completions" []: nothing -> nothing {
 	print "Finished dowloading completions..."
 }
 
-export def "setup rustapps" []: nothing -> nothing {
+export def rustapps []: nothing -> nothing {
 	const rustapps_list = [
 		bat
 		coreutils
@@ -60,7 +60,7 @@ export def "setup rustapps" []: nothing -> nothing {
 	print "Finished downloading rustapps..."
 }
 
-export def "setup goapps" []: nothing -> nothing {
+export def goapps []: nothing -> nothing {
 	# Having an different version for anyone is smart
 	# as "nap@latest" would simply not work in the up to date way
 	# furthermore it could be adjusted to use a specific version

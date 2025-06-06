@@ -1,7 +1,7 @@
 # written by graefchen
 
 # list all files in the bin folder
-export def "binary list" [] {
+export def list [] {
 	ls ($env.HOMEPATH | path join "bin")
 	| get name | path parse | get stem
 }

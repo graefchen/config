@@ -1,6 +1,6 @@
 # written by graefchen
 
-def encrypt [
+def _encrypt [
 	message: string # The message to encrypt
 	key: string # The key to encrypt
 	alphabet: string # The used Alphabet
@@ -22,7 +22,7 @@ def encrypt [
 	} | str join ""
 }
 
-def decrypt [
+def _decrypt [
 	cipher: string # The cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string # The used Alphabet
@@ -45,7 +45,7 @@ def decrypt [
 }
 
 # viginere encrypt
-export def "viginere encrypt" [
+export def encrypt [
 	--message(-m): string # The message to encrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
@@ -56,24 +56,24 @@ export def "viginere encrypt" [
 	} else {
 		mut msg = $message
 		if ($input | is-not-empty) { $msg = $input }
-		encrypt $msg $key $alphabet
+		_encrypt $msg $key $alphabet
 	}
 }
 
 # viginere encrypt a file
-export def "viginere encrypt file" [
+export def "encrypt file" [
 	file: string # The file to encrypt
 	key: string # The key to encrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
 ]: nothing -> string {
-	encrypt (open $file --raw) $key $alphabet
+	_encrypt (open $file --raw) $key $alphabet
 	| save -f $file
 
 		echo $"encrypted ($file)"
 }
 
 # viginere decrypt
-export def "viginere decrypt" [
+export def decrypt [
 	--cipher(-c): string # the cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
@@ -84,17 +84,17 @@ export def "viginere decrypt" [
 	} else {
 		mut msg = $cipher
 		if ($input | is-not-empty) { $msg = $input }
-		encrypt $msg $key $alphabet
+		_decrypt $msg $key $alphabet
 	}
 }
 
 # viginere decrypt a file
-export def "viginere decrypt file" [
+export def "decrypt file" [
 	file: string # The cipher to decrypt
 	key: string # The key to decrypt
 	alphabet: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # The used Alphabet
 ]: nothing -> string {
-	decrypt (open $file --raw) $key $alphabet
+	_decrypt (open $file --raw) $key $alphabet
 	| save -f $file
 
 	echo $"decrypted ($file)"

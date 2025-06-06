@@ -38,7 +38,7 @@ def leet-decrypt [message]: nothing -> string {
 	} | str join ""
 }
 
-export def "main" [message?: string]: nothing -> string, string -> string {
+export def main [message?: string]: nothing -> string, string -> string {
 	let $input = $in
 	if (($input | is-empty) and ($message | is-empty)) {
 		echo "No input given."
@@ -49,7 +49,7 @@ export def "main" [message?: string]: nothing -> string, string -> string {
 	}
 }
 
-export def "leet undo" [message?: string]: nothing -> string, string -> string {
+export def undo [message?: string]: nothing -> string, string -> string {
 	let $input = $in
 	if (($input | is-empty) and ($message | is-empty)) {
 		echo "No input given."

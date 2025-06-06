@@ -32,7 +32,7 @@ const BASE_LINK = "https://www.speedrun.com/api/v1/"
 #
 # as of 26.04.2025 there are 1126 games
 # need to work with offset and max
-export def "srcom engines" [
+export def engines [
 	--offset(-O): int
 	--max(-M): int
 	--bulk(-B)
@@ -49,7 +49,7 @@ export def "srcom engines" [
 }
 
 # get information about a engine by its id
-export def "srcom engines id" [
+export def "engines id" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)engine/($id)"
@@ -68,7 +68,7 @@ export def "srcom engines id" [
 # technically games/{id}
 # to get a game you need to use `srcom games -n *NAMEOFTHEGAME*`
 # to get the id of the game
-export def "srcom games id" [
+export def "games id" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)"
@@ -76,7 +76,7 @@ export def "srcom games id" [
 	return (http get $request)
 }
 
-export def "srcom games category" [
+export def "games category" [
 	id: string
 	--miscellanious(-m) # filter out miscellanious
 ] {
@@ -85,7 +85,7 @@ export def "srcom games category" [
 	return (http get $request)
 }
 
-export def "srcom games levels" [
+export def " games levels" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/levels"
@@ -93,7 +93,7 @@ export def "srcom games levels" [
 	return (http get $request)
 }
 
-export def "srcom games variables" [
+export def "games variables" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/variables"
@@ -101,7 +101,7 @@ export def "srcom games variables" [
 	return (http get $request)
 }
 
-export def "srcom games derived-games" [
+export def "games derived-games" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/derived-games"
@@ -109,7 +109,7 @@ export def "srcom games derived-games" [
 	return (http get $request)
 }
 
-export def "srcom games records" [
+export def "games records" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/records"
@@ -118,7 +118,7 @@ export def "srcom games records" [
 }
 
 # get info about a speedrun.com game
-export def "srcom games" [
+export def games [
 	--name(-n): string
 	--abbreviation(-a): string
 	--released(-r): int
