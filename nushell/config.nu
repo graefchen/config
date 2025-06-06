@@ -903,6 +903,7 @@ source ./completions/tools/mod.nu
 use ./scripts/binary.nu
 use ./scripts/ceasar.nu
 use ./scripts/commit.nu
+use ./scripts/dead-links.nu
 use ./scripts/depth.nu
 use ./scripts/executables.nu
 use ./scripts/fcount.nu
