@@ -95,6 +95,19 @@ export def delete [
 	}
 }
 
+def parse_list []: table -> table<any> {
+	$in | each {|x|
+		return {
+			name: ($x.path | into string),
+			type: (if ($x.is_directory == false) {"file"} else {"dir"}),
+			size: (if ("size" in ($x|columns)) {$x.size|into filesize} else {0|into filesize}),
+			created: ($x.created_at|into datetime)
+			modified: ($x.updated_at|into datetime)
+			sha1_hash: (if ("sha1_hash" in ($x|columns)) {$x.sha1_hash|into string} else {null})
+		}
+	}
+}
+
 # List all files for your neocities site
 #
 # When given an path, it will only look up the files for the path
@@ -107,11 +120,24 @@ export def list [
 	let query = ({"path": $path} | url build-query)
 
 	if (($user | is-not-empty) and ($password | is-not-empty)) {
-		return (http get --allow-errors --user $user --password $password $"https://neocities.org/api/list?($query)" | get files)
+		return (http get --allow-errors --user $user --password $password $"https://neocities.org/api/list?($query)" | get files | parse_list)
 	} else {
 		let header = (get-header)
 		if ($header | is-empty) { return $MSG }
-		return (http get --allow-errors --headers ($header) $"https://neocities.org/api/list?($query)" | get files)
+		return (http get --allow-errors --headers ($header) $"https://neocities.org/api/list?($query)" | get files | parse_list)
+	}
+}
+
+def parse_info []: record -> record {
+	let input = $in
+	return {
+		sitename: ($input.sitename | into string),
+		views: ($input.views | into int),
+		hits: ($input.hits | into int),
+		created: ($input.created_at| into datetime),
+		modified: ($input.last_updated | into datetime),
+		domain: ($input.domain),
+		tags: ($input.tags | each {$in|into string}),
 	}
 }
 
@@ -126,14 +152,14 @@ export def info [
 	--password(-p): string # Your Password
 ]: nothing -> any {
 	if ($name | is-not-empty) {
-		return (http get --allow-errors $"https://neocities.org/api/info?sitename=($name)" | get info)
+		return (http get --allow-errors $"https://neocities.org/api/info?sitename=($name)" | get info | parse_info)
 	} else {
 		if (($user | is-not-empty) and ($password | is-not-empty)) {
-			return (http get --allow-errors --user $user --password $password https://neocities.org/api/info | get info)
+			return (http get --allow-errors --user $user --password $password https://neocities.org/api/info | get info | parse_info)
 		} else {
 			let header = (get-header)
 			if ($header | is-empty) { return $MSG }
-			return (http get --allow-errors --headers ($header) https://neocities.org/api/info | get info)
+			return (http get --allow-errors --headers ($header) https://neocities.org/api/info | get info | parse_info)
 		}
 	}
 }
