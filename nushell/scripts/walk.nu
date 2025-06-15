@@ -46,12 +46,12 @@ export def --env add [
 	if ($path | is-empty) {
 		$path = ($env.PWD)
 	}
-	if ($name in (walk list)) {
+	if ($name in (list)) {
 		print $"The bookmark: \"(ansi yellow)($name)(ansi reset)\" exists already."
 	} else {
 		if (($path | path type) == "dir") and ($path | path exists) {
 			let p = $path
-			walk list
+			list
 			| insert $name { $p }
 			| save_bookmarks
 		}
