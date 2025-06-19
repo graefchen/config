@@ -15,8 +15,8 @@ set wildmode=longest,list
 " setting the colorscheme
 set termguicolors
 " let ayucolor="dark"
-colorscheme ayu
-" colorscheme atlas
+" colorscheme ayu
+colorscheme atlas
 " setting the background to be invisible
 hi Normal guibg=NONE ctermbg=NONE
 " enable Autocorrect
@@ -26,7 +26,7 @@ hi Normal guibg=NONE ctermbg=NONE
 " 	" enabling autocorrect only for non data and programming files
 " 	autocmd FileType markdown,tex,text EnableAutocorrect
 " augroup END
-" " enable writegooder
+" enable writegooder
 " augroup WriteGooder
 " 	autocmd!
 " 	" enable writegooder for everything

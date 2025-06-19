@@ -40,7 +40,7 @@ export def completions []: nothing -> nothing {
 export def rustapps []: nothing -> nothing {
 	const rustapps_list = [
 		bat
-		coreutils
+		# coreutils
 		fd-find
 		hexyl
 		hyperfine
@@ -88,7 +88,7 @@ export def goapps []: nothing -> nothing {
 
 # An Script that tries to setup my environment ..
 export def main []: nothing -> nothing {
-	setup completions
-	setup rustapps
-	setup goapps
+	completions
+	rustapps
+	goapps
 }
