@@ -15,10 +15,15 @@ set wildmode=longest,list
 " setting the colorscheme
 set termguicolors
 " let ayucolor="dark"
-" colorscheme ayu
-colorscheme atlas
+colorscheme ayu
+" colorscheme atlas
 " setting the background to be invisible
 hi Normal guibg=NONE ctermbg=NONE
+
+"-- AUTOCOMPLETION --
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 " enable Autocorrect
 " augroup ILoveCorrections
 " 	autocmd!
