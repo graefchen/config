@@ -1,6 +1,6 @@
 # Written by graefchen
 # based on: version 2.3.3
-# link: https://www.regressive.org/snobol4/
+# link: https://ftp.regressive.org/snobol4/
 
 # SNOBOL4 (StriNg Oriented and symBOlic Language)
 export extern "snobol4" [

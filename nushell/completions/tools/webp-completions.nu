@@ -4,9 +4,9 @@
 
 # cwebp
 
-# NOTE: Only a short version because it uses "-*string*" and nushell doew not like this 
+# NOTE: Only a short version because it uses "-*string*" and nushell does not like this 
 
-# convert PNG or JPEG image files to WebP format (use -h/-H fro more options)
+# convert PNG or JPEG image files to WebP format (use -h/-H for more options)
 export extern cwebp [
 	-h        # short help
 	-H        # long help

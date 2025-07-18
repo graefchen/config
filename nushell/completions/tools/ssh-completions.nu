@@ -8,6 +8,7 @@
 def "nu-complete ssh" [] {
 	# Inpired and incluenced by:
 	# https://github.com/nushell/nu_scripts/blob/main/custom-completions/ssh/ssh-completions.nu
+	# https://github.com/nushell/nu_scripts/blob/b09b60cc434bb9be05ce2bbb6dc299760d13b18b/custom-completions/ssh/ssh-completions.nu#L35-L109
 	let lines = '~/.ssh/config' | open | lines | str trim
 	mut result = []
 	let hosts = $lines

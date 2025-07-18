@@ -64,6 +64,13 @@ export extern "io" [
 	file?: string@"nu-complete io"
 ]
 
+# based on https://github.com/XXIIVV/oscean/tree/edc4de3b16908f1c09089b9756630b067eceec09/src/projects/arvelie
+
+# arvelie is a calender format
+export extern "arvelie" [
+	date?: string # The Arvelie or ISO 8601 Date
+]
+
 # Private binaries
 
 # fallout 4 save
