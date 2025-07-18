@@ -3,6 +3,8 @@
 # a file counter
 #
 # counts all the files and returns either a string or a record
+# it does not ignore files and directorys that are specified in the
+# .gitignore file
 export def --env main []: nothing -> string, nothing -> record {
     let files = (ls **/* --threads | where type == "file")
     if ($files | is-empty) {

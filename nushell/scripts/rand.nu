@@ -10,7 +10,7 @@ export def main [
 		let max = $input | length
 		if $max != 0 {
 			let index = (random int 1..$max) - 1
-			 return ($input | get $index)
+			return ($input | get $index)
 		}
 	} else if ($args | is-not-empty) == true {
 		let max = ($args | length)

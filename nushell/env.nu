@@ -111,3 +111,10 @@ def --env ds [] {
     | sort-by apparent
     | update path { path basename }
 }
+
+# return the sha256 integrity of a file (for the web)
+#
+# like: cat FILENAME.js | openssl dgst -sha256 -binary | openssl base64 -A
+def integrity [file: path]: nothing -> string {
+    return $"sha256-(open $file | hash sha256 -b | encode base64)"
+}

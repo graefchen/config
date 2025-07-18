@@ -95,7 +95,7 @@ export def delete [
 	}
 }
 
-def parse_list []: table -> table<any> {
+def parse_list []: table -> table {
 	$in | each {|x|
 		return {
 			name: ($x.path | into string),

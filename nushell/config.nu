@@ -901,25 +901,22 @@ source ./completions/tools/mod.nu
 
 # Using scripts...
 use ./scripts/binary.nu
-use ./scripts/ceasar.nu
 use ./scripts/commit.nu
 use ./scripts/dead-links.nu
 use ./scripts/depth.nu
 use ./scripts/executables.nu
 use ./scripts/fcount.nu
 use ./scripts/goapps.nu
-use ./scripts/is-url.nu
+use ./scripts/hira.nu
 use ./scripts/leet.nu
 use ./scripts/monster.nu
 use ./scripts/neocities.nu
 use ./scripts/rand.nu
 use ./scripts/rustapps.nu
-use ./scripts/spark.nu
 use ./scripts/setup.nu
+use ./scripts/spark.nu
 use ./scripts/srcom.nu
 use ./scripts/toc.nu
-use ./scripts/vdf.nu
-use ./scripts/viginere.nu
 use ./scripts/walk.nu
 
 # adding support for `open` for the shorthand file extension version of the
@@ -930,12 +927,3 @@ use ./scripts/walk.nu
 def "from mpk" [] { $in | from msgpack }
 # same as `from msgpackz`
 def "from mpkz" [] { $in | from msgpackz }
-
-# Parse text as .vdf and create a record.
-# 
-# While it works ... it is also (when purely writen in nushell and in the way
-# it is written now) super slow.
-# Should be only used for data formats that are at best only multiple kb big.
-def "from vdf" []: string -> record {
-    $in | vdf
-}

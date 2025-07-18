@@ -32,7 +32,7 @@ export def main [
 	# uses 1 for when the min and the max are the same, mainly because it looks better
 	# and would be because of the calculation of the index not really needed because
 	# the element - min will ALWAYS be 0 (and 0 times x will always be 0)
-    let ratio = (if $max == $min { 1.0 } else { 7.0 / ($max - $min)})
+	let ratio = (if $max == $min { 1.0 } else { 7.0 / ($max - $min)})
 
 	let list = (if ($input | is-not-empty) {$input} else {$value})
 
@@ -40,9 +40,9 @@ export def main [
 
 	# returning a string
 	# after looping through the list we return the correct block
-    $list | each { |element|
-        let index = ((($element - $min) * $ratio) | math round)
-        return ($BLOCKS | get $index)
-    } | str join
+	$list | each { |element|
+		let index = ((($element - $min) * $ratio) | math round)
+		return ($BLOCKS | get $index)
+	} | str join
 }
 #

@@ -1,5 +1,7 @@
 # written by graefchen
 
+# NOTE: url parse is better!
+
 # Checks if a string is an URL.
 export def main []: string -> bool {
     # TODO: Complete rework.

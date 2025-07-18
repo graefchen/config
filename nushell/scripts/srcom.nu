@@ -85,7 +85,7 @@ export def "games category" [
 	return (http get $request)
 }
 
-export def " games levels" [
+export def "games levels" [
 	id: string
 ] {
 	let request = $"($BASE_LINK)games/($id)/levels"
