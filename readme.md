@@ -38,17 +38,6 @@ I like this shell for multiple good reasons.
 
 ### completions
 
-- extern &mdash; extern ressources that I inport from [nushell/nu_scripts](https://github.com/nushell/nu_scripts)
-  - [bat](https://github.com/sharkdp/bat) &mdash; a cat alternative
-  - [cargo](https://www.rust-lang.org) &mdash; the rust language
-  - [curl](https://curl.se) &mdash; a fetch tool
-  - [gh](https://cli.github.com) &mdash; the github cli
-  - [git](https://git-scm.com) &mdash; the git version controll system
-  - [npm](https://nodejs.org/en) &mdash; the package manager of node
-  - [rg](https://github.com/BurntSushi/ripgrep) &mdash; a grep alternative
-  - [rustup](https://www.rust-lang.org) &mdash; the rust init tool
-  - [vs-code](https://code.visualstudio.com) &mdash; vscode
-  - [yarn](https://yarnpkg.com) &mdash; the yarn package manager
 - lang &mdash; all programmming languages I use
   - [cake](https://github.com/thradams/cake) &mdash; a c23 frontend
   - [dart](https://dart.dev) &mdash; the dart language
@@ -102,12 +91,13 @@ I like this shell for multiple good reasons.
 ### scripts
 
 - b &mdash; move files into the binary folder (fast way for me to add executable to the path)
-- ceasar &mdash; the Ceasar cipher
 - commit &mdash; like commitzen, but as a shellscript (with the help og [gum](https://github.com/charmbracelet/gum))
+- dead-links &mdash; checking if links in a md document are not dead
 - depth &mdash; see the maximum depth of the folder
 - executables &mdash; see all executables in the path
 - fcount &mdash; count of all the file extensions in you folder
 - goapps &mdash; see all go apps
+- hira &mdash; transforms romanji to hirigana
 - is-url &mdash; check if a string is an url
 - monster &mdash; how much is something worth ... in monster energy drinks!!!
 - neocitie &mdash; neocities api command
@@ -117,8 +107,6 @@ I like this shell for multiple good reasons.
 - spark &mdash; sparkline command
 - srcom &mdash; speedrun.com api command (unfinished)
 - toc &mdash; creates a table of contents from a markdown file
-- vdf &mdash; parse the Valve Data Format (it is very very slow)
-- viginere &mdash; the Viginere cipher
 - walk &mdash; a bookmarking script
 
 ## vim
@@ -217,6 +205,15 @@ This data only shows base (+0) versions of the Items.
 3. [wikidot data-table p.3](http://darksouls3.wikidot.com/data-table/p/3)
 
 ## content
+
+### logos
+
+all the logos I use:
+
+- black-moon-filled.svg &mdash; a black filled moon
+- black-moon-outline.svg &mdash; a black outline of a moon
+- white-moon-filled.svg &mdash; a white filled moon
+- white-moon-outline.svg &mdash; a white outline of a moon
 
 ### haiku
 
