@@ -56,3 +56,4 @@ Current Number: `35`, including non programming languages like markup languages.
 - snobol4 &mdash; [snobol4](https://ftp.regressive.org/snobol4/)
 - SQLite &mdash; [DB4S](https://sqlitebrowser.org), [sqlite](https://sqlite.org/download.html)
 - TypeScript &mdash; [deno](https://deno.com)
+- Wren &mdash; [wren-cli](https://wren.io)
