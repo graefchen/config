@@ -19,7 +19,7 @@ executables
 > video game engines/editors).
 > Ignored are for example: batch, powershell and the msvc compiler.
 
-Current Number: `35`, including non programming languages like markup languages. Way to many?
+Current Number: `36`, including non programming languages like markup languages. Way to many?
 
 - Ada &mdash; [alire](https://ada-lang.io)
 - AutoHotkey &mdash; [AutoHotkey](https://www.autohotkey.com)
@@ -37,11 +37,12 @@ Current Number: `35`, including non programming languages like markup languages.
 - J &mdash; [J](https://code.jsoftware.com/wiki/System/Installation)
 - Java &mdash; [ADOPTIUM](https://adoptium.net/temurin/releases/)
 - JavaScript &mdash; [nodejs](https://nodejs.org/en), [deno](https://deno.com)
-- jq &mdash; [jq](https://jqlang.org/download/)
+- jq &mdash; [jq](https://www.nial-array-language.org/download/)
 - Julia &mdash; [Julia](https://julialang.org)
 - k &mdash; [kona](https://github.com/kevinlawler/kona)
 - LaTeX &mdash; [MiKTeX](https://miktex.org/about)
-- lua &mdash; [lua](https://www.lua.org/download.html), [luajit](https://luajit.org)
+- Lua &mdash; [Lua](https://www.lua.org/download.html), [LuaJIT](https://luajit.org)
+- Nial &mdash; [Nial](https://www.nial-array-language.org)
 - Numbat &mdash; [Numbat](https://github.com/sharkdp/numbat)
 - Nushell &mdash;[Nushell](https://www.nushell.sh)
 - Odin &mdash;[Odin](https://odin-lang.org)
@@ -53,7 +54,7 @@ Current Number: `35`, including non programming languages like markup languages.
 - Rust &mdash; [Rust](https://www.rust-lang.org)
 - rye &mdash; [rye](https://ryelang.org)
 - sass &mdash; [Dart Sass](https://github.com/sass/dart-sass/releases/tag/1.89.2)
-- snobol4 &mdash; [snobol4](https://ftp.regressive.org/snobol4/)
-- SQLite &mdash; [DB4S](https://sqlitebrowser.org), [sqlite](https://sqlite.org/download.html)
+- SNOBOL4 &mdash; [snobol4](https://ftp.regressive.org/snobol4/)
+- SQLite &mdash; [DB4S](https://sqlitebrowser.org), [SQlite](https://sqlite.org/download.html)
 - TypeScript &mdash; [deno](https://deno.com)
 - Wren &mdash; [wren-cli](https://wren.io)
