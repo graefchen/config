@@ -1,4 +1,4 @@
 # removing all of the code I have not written for this repo
-nushell/completions/extern/* linguist-documentation
-nushell/config.nu linguist-documentation
+nushell/** linguist-documentation
 nvim/** linguist-documentation
+nap/** linguist-documentation
