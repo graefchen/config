@@ -23,6 +23,7 @@ Current Number: `36`, including non programming languages like markup languages.
 
 - Ada &mdash; [alire](https://ada-lang.io)
 - AutoHotkey &mdash; [AutoHotkey](https://www.autohotkey.com)
+- AWK &mdash; [GoAWK](https://github.com/benhoyt/goawk)
 - Bash &mdash; [git](https://git-scm.com)
 - C &mdash; [cake](https://github.com/thradams/cake), [clang](https://releases.llvm.org/download.html), [tcc](https://download.savannah.gnu.org/releases/tinycc/)
 - C++ &mdash; [clang](https://releases.llvm.org/download.html)
