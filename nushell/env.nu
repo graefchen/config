@@ -58,6 +58,7 @@ alias lume = deno run -A https://lume.land/init.ts
 
 alias g = git
 alias gl = git log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr) %C(blue)<%an>%C(reset)' --abbrev-commit --date=relative
+alias glf = git log --pretty=format:'%C(yellow)%H%C(reset) %C(blue)(%as)%C(reset) %s'
 alias gc = git commit
 alias gcm = git commit -m
 alias gap = git add --patch
@@ -95,6 +96,14 @@ def alp [-b]: nothing -> string {
 
 # command line games
 alias rpg = rpg-cli
+
+# working with dates
+
+# getting todays date
+# as ISO 8601 format
+def today [] {
+    return (date now | format date "%F")
+}
 
 # get the wordcount of all md, org and txt files in your current location
 def --env wordcount [--depth(-d): int = 4] {

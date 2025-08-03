@@ -4,9 +4,14 @@
 #
 # counts all the files and returns either a string or a record
 # it does not ignore files and directorys that are specified in the
-# .gitignore file
-export def --env main []: nothing -> string, nothing -> record {
-    let files = (ls **/* --threads | where type == "file")
+# .gitignore file or other files
+export def --env main [
+    # ...ignores: glob
+]: nothing -> string, nothing -> record {
+    mut files = (ls **/* --threads | where type == "file")
+    # for $ignore in $ignores {
+    #     $files = $files | where {|x| not ($x.name =~ $ignore)}
+    # }
     if ($files | is-empty) {
         return "No files in directory"
     } else {
