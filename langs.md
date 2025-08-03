@@ -19,7 +19,7 @@ executables
 > video game engines/editors).
 > Ignored are for example: batch, powershell and the msvc compiler.
 
-Current Number: `40`, including non programming languages like markup languages. Way to many?
+Current Number: `40`, including non programming languages like markup languages. Way too many?
 
 - Ada &mdash; [alire](https://ada-lang.io)
 - AutoHotkey &mdash; [AutoHotkey](https://www.autohotkey.com)
