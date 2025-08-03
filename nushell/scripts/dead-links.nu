@@ -8,10 +8,10 @@ def links [file: string]: nothing -> list<string> {
 		# | lines
 		# | each { $in | parse --regex '\[.*?\]\((?<link>.*?)\)'}
 		| each { $in | parse --regex '\[.*\]\((?<link>.*?)\)'}
-		| filter { $in | is-not-empty }
+		| where { $in | is-not-empty }
 		| flatten
 		| get link
-		| filter {|x| ( ($x | str starts-with "#") != true ) }
+		| where {|x| ( ($x | str starts-with "#") != true ) }
 		| sort
 		| uniq
 	}

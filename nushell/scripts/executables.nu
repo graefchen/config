@@ -3,11 +3,11 @@
 # prints ALL executables
 export def main [] {
 	$env.Path
-	# | filter { |x| ($x | str contains "WINDOWS") == false }
+	# | where { |x| ($x | str contains "WINDOWS") == false }
 	| each { |x|
 		do --ignore-errors {
 			ls $x
-			| filter { |y| $y.name | str contains ".exe" }
+			| where { |y| $y.name | str contains ".exe" }
 			| get name
 		}
 	}

@@ -22,8 +22,8 @@ def parse-lines [
 	# - link
 	# and the creating an string out of it that is returned
 	$input
-	| filter { not ($in | str starts-with $max_string) }
-	| filter { $in | str starts-with $min_string }
+	| where { not ($in | str starts-with $max_string) }
+	| where { $in | str starts-with $min_string }
 	| parse "{level} {name}"
 	| each {|x|
 		# the level puts the number of space. it is a little bit complicated
