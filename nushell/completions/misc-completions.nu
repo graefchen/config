@@ -22,7 +22,6 @@ def "nu-complete json" [] {
 	| sort -in
 }
 
-
 # jqp is a TUI to explore the jq command line utility
 export extern "jqp" [
 	--config: string       # path to config file (default is $HOME/.jqp.yaml)
@@ -62,6 +61,37 @@ def "nu-complete io" [] {
 # Io programmming language
 export extern "io" [
 	file?: string@"nu-complete io"
+]
+
+# based on wren_cli 0.4.0
+# link: https://github.com/wren-lang/wren-cli
+
+def "nu-complete wren" [] {
+	ls -la **/*.wren
+	| get name
+	| sort -in
+}
+
+# the wren cli
+export extern wren [
+	file?: string@"nu-complete wren"
+	--help    # Show command line usage
+	--version # Show version
+]
+
+export extern wrenc [
+	file?: string@"nu-complete wren"
+	--help(-h)    # print wrenc command line options
+	--version(-v) # print wrenc and Wren version
+	-e: string    #  evaluate code
+]
+
+# based on sqlite3
+# link: https://sqlite.org/download.html
+
+export extern sqlite3 [
+	filename
+	-A # run ".archive ARGS" and exit
 ]
 
 # based on https://github.com/XXIIVV/oscean/tree/edc4de3b16908f1c09089b9756630b067eceec09/src/projects/arvelie

@@ -8,7 +8,9 @@ source ./glow-completions.nu
 source ./gum-completions.nu
 source ./hexyl-completions.nu
 source ./hyperfine-completions.nu
+source ./jj-completions.nu
 source ./lsd-completions.nu
+source ./mdq-completions.nu
 source ./meson-completions.nu
 source ./moul-completions.nu
 source ./nap-completions.nu
@@ -16,6 +18,7 @@ source ./ninja-completions.nu
 source ./onefetch-completions.nu
 source ./pastel-completions.nu
 source ./prettier-completions.nu
+source ./purgecss-completions.nu
 source ./rpg-cli-completions.nu
 source ./scc-completions.nu
 source ./serve-completions.nu
