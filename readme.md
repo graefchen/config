@@ -109,21 +109,9 @@ I like this shell for multiple good reasons.
 - toc &mdash; creates a table of contents from a markdown file
 - walk &mdash; a bookmarking script
 
-## vim
+## nvim
 
-- color:
-  - atlas [ref](https://github.com/huyvohcmc/atlas.vim)
-  - monochrome [ref](https://github.com/fxn/vim-monochrome)
-  - paramount [ref](https://github.com/owickstrom/vim-colors-paramount)
-  - pencil [ref](https://github.com/preservim/vim-colors-pencil)
-  - preto [ref](https://github.com/ewilazarus/preto)
-  - pushcx [ref](https://gist.github.com/pushcx/8f9fe335f7812a31b51d552b268e2cbc)
-  - sunbather [ref](https://github.com/nikolvs/vim-sunbather)
-- plugins:
-  - djot [ref](https://github.com/jgm/djot)
-  - rainbow parentheses [ref](https://github.com/junegunn/rainbow_parentheses.vim)
-  - vim you autocorrect [ref](https://github.com/sedm0784/vim-you-autocorrect)
-  - writegooder [ref](https://github.com/JKirchartz/writegooder.vim)
+<!-- TODO: 2025-08-08 Finish-->
 
 ## data
 

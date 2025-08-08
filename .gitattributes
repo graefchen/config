@@ -1,8 +1,7 @@
 # removing all of the code I have not written for this repo
-nushell/completions/** linguist-documentation
-nushell/*.env linguist-documentation
-nvim/** linguist-documentation
-nap/** linguist-documentation
+nushell/completions/extern linguist-documentation
+nushell/config.nu linguist-documentation
+
 # setting some things to being detectable
 *.md linguist-detectable
 content/** linguist-detectable
