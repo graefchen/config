@@ -14,8 +14,7 @@ set mouse=a
 set wildmode=longest,list
 " setting the colorscheme
 set termguicolors
-" let ayucolor="dark"
-colorscheme ayu
+colorscheme sunbather
 " colorscheme atlas
 " setting the background to be invisible
 hi Normal guibg=NONE ctermbg=NONE
