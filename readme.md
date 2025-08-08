@@ -113,11 +113,7 @@ I like this shell for multiple good reasons.
 
 - color:
   - atlas [ref](https://github.com/huyvohcmc/atlas.vim)
-  - ayu [ref](https://github.com/ayu-theme/ayu-vim)
-  - hemisu [ref](https://github.com/noahfrederick/vim-hemisu)
-  - jcs [ref](https://github.com/jcs/dotfiles/blob/master/.vim/colors/jcs.vim)
   - monochrome [ref](https://github.com/fxn/vim-monochrome)
-  - off [ref](https://github.com/pbrisbin/vim-colors-off)
   - paramount [ref](https://github.com/owickstrom/vim-colors-paramount)
   - pencil [ref](https://github.com/preservim/vim-colors-pencil)
   - preto [ref](https://github.com/ewilazarus/preto)
@@ -125,8 +121,6 @@ I like this shell for multiple good reasons.
   - sunbather [ref](https://github.com/nikolvs/vim-sunbather)
 - plugins:
   - djot [ref](https://github.com/jgm/djot)
-  - goyo [ref](https://github.com/junegunn/goyo.vim)
-  - rainbow csv [ref](https://github.com/mechatroner/rainbow_csv)
   - rainbow parentheses [ref](https://github.com/junegunn/rainbow_parentheses.vim)
   - vim you autocorrect [ref](https://github.com/sedm0784/vim-you-autocorrect)
   - writegooder [ref](https://github.com/JKirchartz/writegooder.vim)
