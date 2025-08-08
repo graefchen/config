@@ -1,5 +1,0 @@
-    cat_pat = 'meow'
-    "The animal goes meow." cat_pat :s(cat) f(notcat)
-cat    output = "It was a cat." :(end)
-notcat output = "It was NOT a cat."
-end

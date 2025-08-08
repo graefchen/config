@@ -1,9 +1,0 @@
-name,cost,military budget,maintenance,hit points,attack power,attack range,size
-"Small military camp","1000 gold, 10 weapons",3,"20 gold",1800,3,11,"4x4"
-"Large military camp","3000 gold, 30 weapons",6,"60 gold",3300,6,13,"6x6"
-"Trebuchet position","2500 gold, 20 war machines",5,"40 gold",2000,5,18,"5x5"
-"Oriental encampment","750 gold, 15 weapons",3,"20 gold",1200,4,11,"4x4"
-"Cannon position","3000 gold, 15 cannons",4,"40 gold",1400,7,20,"4x4"
-"Miner position","400 gold, 2 wood, 20 weapons, 15 war machines",4,"40 gold",400,1,21,"3x3"
-"Robber baron camp","2000 gold, 15 beer",3,"20 gold",2400,2,13,"6x6"
-"Assassin's camp","1500 gold, 5 carpets, 10 hemp",3,"20 gold",200,13,11,"4x4"

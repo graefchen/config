@@ -7,17 +7,6 @@ return {
         local configs = require("nvim-treesitter.configs")
 
         configs.setup({
-            -- TODO: 2025-08-08 PRUNE
-            ensure_installed = {"ada", "angular", "asm", "astro", "bash", "bibtex", "c", "c_sharp", "cmake", "comment",
-                                "corn", "cpp", "css", "csv", "dart", "dhall", "diff", "dockerfile", "elixir", "elm",
-                                "elvish", "erlang", "fennel", "fish", "fortran", "git_config", "git_rebase",
-                                "gitattributes", "gitcommit", "gitignore", "gleam", "glsl", "go", "gomod", "gosum",
-                                "gowork", "graphql", "hare", "haskell", "hlsl", "html", "http", "ini", "java",
-                                "javascript", "jq", "jsdoc", "json", "jsonc", "julia", "kotlin", "latex", "lua",
-                                "luadoc", "markdown", "meson", "nim", "ninja", "nix", "odin", "perl", "php", "phpdoc",
-                                "pod", "psv", "properties", "purescript", "python", "query", "r", "re2c", "regex",
-                                "ruby", "rust", "scheme", "scss", "sql", "svelte", "todotxt", "toml", "tsv", "tsx",
-                                "typescript", "vento", "vim", "vimdoc", "vue", "wgsl", "xml", "yaml", "zig"},
             -- Automatically installing all treesitters from files that get opened
             auto_install = true,
             sync_install = false,
