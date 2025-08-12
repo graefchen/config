@@ -13,18 +13,18 @@
 # Some aliases
 
 # list alias
-alias l="lsd"
-alias ls="lsd"
-alias la="lsd -a"
-alias ll="lsd -l"
-alias lla="lsd -la"
-alias tree='lsd --tree'
+# alias l="lsd"
+# alias ls="lsd"
+# alias la="lsd -a"
+# alias ll="lsd -l"
+# alias lla="lsd -la"
+# alias tree='lsd --tree'
 
 # cd alias
-alias ..="cd .."
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
+# alias ..="cd .."
+# alias ...='cd ../..'
+# alias ....='cd ../../..'
+# alias .....='cd ../../../..'
 
 # nvim alias
 alias neovim='nvim'

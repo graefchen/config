@@ -73,6 +73,8 @@ symbol = "🐜 "
 # appart from lua we also want to detect luarocks
 # it would probably be better to have this in [package]
 # also detect other files that are detected as lua files by github
+# Note (2025-08-11): I currently do not use luarocks, but I think it is
+#                    better to let this stay in.
 detect_extensions = ["lua", "fgci", "nse", "p8", "rbxs", "rockspec", "wlua"]
 detect_folders = ["lua", "lua_modules", ".luarocks"]
 
