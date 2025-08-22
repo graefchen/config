@@ -8,7 +8,6 @@
 > video game engines/editors).
 
 - C &mdash; [clang](https://releases.llvm.org/download.html), [tcc](https://download.savannah.gnu.org/releases/tinycc/)
-- elvish &mdash; [elvish](https://elv.sh/get/)
 - Fennel &mdash; [Fennel](https://fennel-lang.org/setup#downloading-fennel)
 - Go &mdash; [Go](https://go.dev/dl/)
 - io &mdash; [io](https://iolanguage.org/binaries.html)
