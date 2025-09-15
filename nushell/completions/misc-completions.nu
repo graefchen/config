@@ -2,17 +2,6 @@
 # Just some miscellaneous apps (small and big)
 # Or just as text for the command
 
-# some go apps
-
-# based on: bunnyfetch v0.2.0
-# link: https://github.com/Rosettea/bunnyfetch
-
-# Tiny system info fetch utility.
-export extern "bunnyfetch" [
-	--help(-h)              # help for bunnyfetch
-	--no-distro-color(-d)   # don't use the color defined in os-release for the OS color
-]
-
 # based on: jqp version 0.7.0
 # link: https://github.com/noahgorstein/jqp
 
@@ -29,24 +18,6 @@ export extern "jqp" [
 	--help(-h)             # help for jqp
 	--theme(-t): string    # jqp theme
 	--version(-v)          # version for jqp
-]
-
-# based on: kona-211225
-# link: https://github.com/kevinlawler/kona
-
-def "nu-complete k" [] {
-	ls -la **/*.k
-	| get name
-	| sort -in
-}
-
-# kona(k3) programming language
-export extern "k" [
-	-h: int       # open an HTTP port
-	-i: int       # open an IPC port
-	-e: string    # execute a string
-	-x: string    # execute a string and print
-	file?: string@"nu-complete k" # execute a script
 ]
 
 # based on: Io 20110905
@@ -84,14 +55,6 @@ export extern wrenc [
 	--help(-h)    # print wrenc command line options
 	--version(-v) # print wrenc and Wren version
 	-e: string    #  evaluate code
-]
-
-# based on sqlite3
-# link: https://sqlite.org/download.html
-
-export extern sqlite3 [
-	filename
-	-A # run ".archive ARGS" and exit
 ]
 
 # based on https://github.com/XXIIVV/oscean/tree/edc4de3b16908f1c09089b9756630b067eceec09/src/projects/arvelie

@@ -68,16 +68,10 @@ export def goapps []: nothing -> nothing {
 	const goapps_list = [
 		{ name: "filippo.io/age/cmd/age-keygen", version: "@latest" }
 		{ name: "filippo.io/age/cmd/age", version: "@latest" }
-		{ name: "github.com/benhoyt/goawk", version: "@latest" }
 		{ name: "github.com/boyter/scc/v3", version: "@latest" }
-		{ name: "github.com/charmbracelet/glow", version: "@latest" }
-		{ name: "github.com/charmbracelet/gum", version: "@latest" },
-		{ name: "github.com/maaslalani/nap", version: "@main"},
-		{ name: "github.com/moulco/moul", version: "@latest" },
 		{ name: "github.com/noahgorstein/jqp", version: "@latest" },
 		{ name: "github.com/Rosettea/bunnyfetch", version: "@latest" },
 		{ name: "github.com/tsoding/snitch", version: "@latest" }
-		{ name: "github.com/waynezhang/foto", version: "@latest" },
 	]
 	print "Downloading Go Apps..."
 	for i in $goapps_list {

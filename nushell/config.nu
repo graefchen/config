@@ -15,25 +15,17 @@ source ./completions/misc-completions.nu
 source ./completions/extern/mod.nu
 source ./completions/lang/mod.nu
 source ./completions/package/mod.nu
-source ./completions/tools/mod.nu
+# source ./completions/tools/mod.nu
 
 # Using scripts...
-use ./scripts/binary.nu
-use ./scripts/commit.nu
 use ./scripts/dead-links.nu
 use ./scripts/depth.nu
 use ./scripts/executables.nu
 use ./scripts/fcount.nu
 use ./scripts/goapps.nu
-use ./scripts/hira.nu
-use ./scripts/leet.nu
-use ./scripts/monster.nu
 use ./scripts/neocities.nu
-use ./scripts/rand.nu
 use ./scripts/rustapps.nu
 use ./scripts/setup.nu
-use ./scripts/spark.nu
-use ./scripts/srcom.nu
 use ./scripts/toc.nu
 use ./scripts/walk.nu
 

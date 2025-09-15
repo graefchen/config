@@ -33,19 +33,9 @@ alias tree = lsd --tree
 # alias for coreutils
 alias uu = coreutils
 
-$env.NAP_CONFIG = "~/.config/nap/config.yaml"
-$env.NAP_HOME = "~/.config/nap"
-$env.NAP_DEFAULT_LANGUAGE = "txt"
-$env.NAP_THEME = "nord"
-
 $env.EDITOR = "nvim"
 
 $env.ZEIT_DB =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')
-
-def alp [-b]: nothing -> string {
-    if ($b) { return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" }
-    return "abcdefghijklmnopqrstuvwxyz"
-}
 
 # command line games
 alias rpg = rpg-cli
@@ -80,3 +70,6 @@ def --env ds [] {
 def integrity [file: path]: nothing -> string {
     return $"sha256-(open $file | hash sha256 -b | encode base64)"
 }
+
+# hello, message
+print $"(arvelie), (neralie)"
