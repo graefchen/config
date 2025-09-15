@@ -5,13 +5,17 @@ Just my config files or also called dotfiles.
 ## What it includes
 
 - starship prompt configs
-- neovim config
+- neovim config & extensions
 - vscode extensions I use(d)
-- bash config
+- shell config
+  - bash
+  - elvish
+  - nushell
 
 ## shell
 
-I use the [elvish](https://elv.sh/get/) shell.
+I use bash, [elvish](https://elv.sh/get/) and
+[nu](https://www.nushell.sh/book/installation.html) shell.
 
 ## nvim
 

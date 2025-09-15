@@ -33,6 +33,11 @@ export def list []: nothing -> any, nothing -> table {
 	| sort
 }
 
+# Get a table
+export def table []: nothing -> table {
+	return (list | transpose name path)
+}
+
 # Creating an new bookmark
 export def --env add [
 	name?: string # The name of the new bookmark

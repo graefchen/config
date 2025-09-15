@@ -2,8 +2,13 @@
 
 $env.config = {
   show_banner: false
+
   history: {
     file_format: sqlite
+  }
+
+  rm: {
+    always_trash: true
   }
 }
 
@@ -31,7 +36,7 @@ use ./scripts/walk.nu
 
 # adding support for `open` for the shorthand file extension version of the
 # MessagePack and brotli-compressed MessagePack
-# be aware that nushell writes this comment when using `help ftom mpk(z)`
+# be aware that nushell writes this comment when using `help from mpk(z)`
 
 # same as `from msgpack`
 def "from mpk" [] { $in | from msgpack }
