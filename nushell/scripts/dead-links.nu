@@ -20,10 +20,14 @@ def check-links [file: string, links: list<string>]: nothing -> number {
 	mut count = 0
 
 	for $link in $links {
-		if (($link | str starts-with ".") or ($link | str starts-with "./")) {
+		let scheme = try {($link | url parse | get scheme)} catch {""}
+		if (not ($scheme =~ "http")) {
 			continue
 		}
-		let status = (http get --allow-errors --full $link) | get status
+		# TODO: Maybe add way to get the Error Message ...
+		let status = try {
+			(http get --allow-errors --full $link) | get status
+		} catch { 530 } # Note: Site is frozen, Origin DNS Error (Shopify), Origin Unavailable (Cloudflare)
 
 		if (not ($status in 200..299)) {
 			print $"File: ($file) • Link: ($link) • (ansi red)Error: ($status)(ansi reset)"
@@ -49,7 +53,7 @@ export def main [...files: string]: nothing -> string {
 			if not ( $file | path exists) { return $"File \"($file)\" does not exist." }
 			if not (($file | path type) == "file") { return "File \"($file)\" is not a file." }
 			# print (links $file)
-			$count = (check-links $file (links $file))
+			$count = (check-links $file (links $file)) + $count
 		}
 	}
 
