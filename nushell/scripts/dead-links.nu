@@ -14,9 +14,9 @@ def links [file: string]: nothing -> list<string> {
 		| where {|x| ( ($x | str starts-with "#") != true ) }
 		| sort
 		| uniq
-	}
+}
 
-def check-links [file: string, links: list<string>]: nothing -> nothing {
+def check-links [file: string, links: list<string>]: nothing -> number {
 	mut count = 0
 
 	for $link in $links {
@@ -33,22 +33,29 @@ def check-links [file: string, links: list<string>]: nothing -> nothing {
 		}
 	}
 
-	if ($count > 0) {
-		print $"❌ Found (ansi yellow)($count)(ansi reset) dead links 🙀"
-	} else {
-		print "No dead links found 😸"
-	}
+	return $count
 }
 
-# get dead links from a markdown file
+# get dead links from markdown files
 #
 # currently only supports the normal links and not the reference links.
 # This command can be slow as it waits for a response before
 # sending anpther one, so bad connections can make the program take
 # a while to run.
-export def main [file: string]: nothing -> nothing {
-	if not ( $file | path exists) { return "File does not exist." }
-	if not (($file | path type) == "file") { return "File is not a file." }
-	# print (links $file)
-	check-links $file (links $file)
+export def main [...files: string]: nothing -> string {
+	mut count = 0
+	if ($files | is-not-empty) {
+		for file in $files  {
+			if not ( $file | path exists) { return $"File \"($file)\" does not exist." }
+			if not (($file | path type) == "file") { return "File \"($file)\" is not a file." }
+			# print (links $file)
+			$count = (check-links $file (links $file))
+		}
+	}
+
+	if ($count > 0) {
+		print $"❌ Found (ansi yellow)($count)(ansi reset) dead links 🙀"
+	} else {
+		print "No dead links found 😸"
+	}
 }

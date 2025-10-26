@@ -73,3 +73,4 @@ def integrity [file: path]: nothing -> string {
 
 # hello, message
 print $"(arvelie), (neralie)"
+pkmnday
