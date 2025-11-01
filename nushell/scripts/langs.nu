@@ -8,6 +8,7 @@ export def main [] {
 		Bash : [bash]
 		C : [clang msvc gcc tcc]
 		"C++" : [clang gcc]
+		"Common Lisp": [sbcl]
 		D: [dmd]
 		djot: [djot jotdown]
 		Elm : [elm]
@@ -29,9 +30,11 @@ export def main [] {
 		numbat : [numbat]
 		nushell : [nu]
 		Odin : [odin]
+		Perl: [perl]
 		Papyrus: [PapyrusCompiler]
 		Python : [python]
 		R: [R]
+		Ruby: [ruby]
 		Rust : [cargo rustc]
 		SASS : [sass]
 		SNOBOL4 : [snobol4]
@@ -50,9 +53,7 @@ export def main [] {
 			do --ignore-errors {
 				ls $x
 				| get name
-				| each {
-					$in | path parse | get stem
-				}
+				| each { $in | path parse | get stem }
 				| uniq
 			}
 		}
