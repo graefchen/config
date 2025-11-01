@@ -5,7 +5,7 @@
 > [!note]
 > This list is only composed on the programming languages for which I have an
 > extra language etc installed (even through another program like git or certain
-> video game engines/editors).
+> video game engines/editors), it does not contain the shell languages I use.
 
 - C &mdash; [clang](https://releases.llvm.org/download.html), [tcc](https://download.savannah.gnu.org/releases/tinycc/)
 - Fennel &mdash; [Fennel](https://fennel-lang.org/setup#downloading-fennel)
