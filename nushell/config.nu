@@ -1,0 +1,10 @@
+# Nushell Config File
+
+$env.config = {
+  show_banner: false
+  history: { file_format: sqlite }
+  rm: { always_trash: true }
+}
+
+# Starship
+use ~/.cache/starship/init.nu
