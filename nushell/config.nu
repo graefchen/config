@@ -8,3 +8,12 @@ $env.config = {
 
 # Starship
 use ~/.cache/starship/init.nu
+
+use ./scripts/binary.nu
+use ./scripts/fcount.nu
+use ./scripts/walk.nu
+
+# same as `from msgpack`
+def "from mpk" [] { $in | from msgpack }
+# same as `from msgpackz`
+def "from mpkz" [] { $in | from msgpackz }
