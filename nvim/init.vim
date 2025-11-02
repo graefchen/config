@@ -17,15 +17,6 @@ set wildmode=longest,list
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
-" Using plug, not to much, I hope, keep it minimal
-call plug#begin()
-  " color schemes
-  Plug 'huyvohcmc/atlas.vim'
-
-  " other
-  Plug 'junegunn/goyo.vim'
-call plug#end()
-
 " setting the colorscheme
 set termguicolors
 colorscheme sunbather
