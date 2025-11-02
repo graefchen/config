@@ -6,7 +6,7 @@ return { {
     lazy = false,
     config = function()
         require("Comment").setup({
-            -- Setting cmd and the # key (german keyboard) to comment line(s)
+            -- Setting cmd and the "#"" key (german keyboard) to comment line(s)
             toggler = { line = "<C-\\>" },
             opleader = { line = "<C-\\>" }
         })
