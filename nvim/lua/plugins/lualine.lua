@@ -3,10 +3,12 @@
 -- [2] https://github.com/nvim-tree/nvim-web-devicons
 return {
     "nvim-lualine/lualine.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    dependencies = {"nvim-tree/nvim-web-devicons"},
     config = function()
         require("lualine").setup({
-            options = { theme = "ayu" }
+            options = {
+                theme = "ayu"
+            }
         })
     end
 }
