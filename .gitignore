@@ -47,6 +47,3 @@ bm.msgpackz
 
 # don't add android stuff
 /.android
-
-# don't wanna share plug
-/nvim/autoload/plug.vim
