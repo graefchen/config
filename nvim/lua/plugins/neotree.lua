@@ -6,8 +6,8 @@
 return {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
-    dependencies = {"nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-    "MunifTanjim/nui.nvim"},
+    dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+        "MunifTanjim/nui.nvim" },
     config = function()
         require("neo-tree").setup({
             close_if_last_window = true,
@@ -23,11 +23,7 @@ return {
                     hide_dotfiles = false,
                     hide_gitignore = false,
                     hide_hidden = true, -- only on Windows
-                    hide_by_name = {},
-                    hide_by_pattern = {},
-                    always_show = {},
-                    never_show = {".git", "node_modules"},
-                    never_show_by_pattern = {}
+                    never_show = { ".git", ".jj", "node_modules" },
                 }
             }
         })
@@ -42,9 +38,6 @@ return {
                 -- https://github.com/nvim-tree/nvim-web-devicons/blob/cff25ce621e6d15fae0b0bfe38c00be50ce38468/lua/nvim-web-devicons/icons-default.lua#L1703-L1708
                 ["toml"] = {
                     icon = "",
-                    color = "#ffffff",
-                    cterm_color = "231",
-                    name = "Toml"
                 }
             }
         })
