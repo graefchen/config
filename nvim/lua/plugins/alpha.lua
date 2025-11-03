@@ -22,9 +22,9 @@ return {
         --     [[                 ]],
         --     [[   — Matsuo Bashō]],
         -- }
+        theta.header.type = "group"
         theta.header.val = require("haikus")
-        theta.header.opts = { position = "center", hl = "String" }
-        theta.buttons.type = "group"
+        theta.header.opts = { width = 50 }
         theta.buttons.val = {
             { type = "text",    val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
             { type = "padding", val = 1 },
@@ -37,7 +37,6 @@ return {
             dashboard.button("u", "  Update plugins", "<cmd>Lazy sync<CR>"),
             dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
         }
-        theta.buttons.position = "center"
         alpha.setup(theta.config)
         vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
     end

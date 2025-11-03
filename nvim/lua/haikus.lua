@@ -1,27 +1,12 @@
 local list_extend = vim.list_extend
 
-local fmt_author = function(str, len, chr)
-	local lngth = len >= 0 and len or 0
-	return { string.rep(chr, lngth) .. str }
-end
-
 local fmt_haiku = function(haiku)
 	local formatted = { "" }
 	local max = 0
-	for _, line in ipairs(haiku.lines) do
+	for _, line in ipairs(haiku) do
 		local l = string.len(line)
 		max = l > max and l or max
 		formatted = list_extend(formatted, { line })
-	end
-	list_extend(formatted, { "" })
-	if haiku["author"] ~= nil then
-		local author = haiku.author
-		local str = "— "
-		local size = string.len(str)
-		if haiku["translator"] ~= nil then
-			author = author .. " (" .. haiku["translator"] .. ")"
-		end
-		list_extend(formatted, fmt_author(str .. author, max - (string.len(author) + size), " "))
 	end
 	return formatted
 end
@@ -72,9 +57,32 @@ local haiku_list = {
 
 local main = function()
 	local haiku = get_haiku(haiku_list)
-	local formatted = fmt_haiku(haiku)
 
-	return formatted
+	local fmt = {
+		{
+			type = "text",
+			val = fmt_haiku(haiku.lines),
+			opts = { hl = "Type", position = "center" }
+		}, { type = "padding", val = 1 },
+	}
+
+	if haiku["author"] ~= nil then
+		table.insert(fmt, {
+			type = "text",
+			val = haiku.author,
+			opts = { hl = "Number", position = "center" }
+		})
+	end
+
+	if haiku["translator"] ~= nil then
+		table.insert(fmt, {
+			type = "text",
+			val = haiku.translator,
+			opts = { hl = "String", position = "center" }
+		})
+	end
+
+	return fmt
 end
 
 return main
