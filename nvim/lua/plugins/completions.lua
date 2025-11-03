@@ -1,15 +1,6 @@
--- The whole snippets engine thing is way to complicated to explain
--- maybe I am going to write a little bit about it later ...
--- Uses:
--- [1] https://github.com/hrsh7th/cmp-nvim-lsp
--- [2] https://github.com/hrsh7th/cmp-nvim-lsp-signature-help
--- [3] https://github.com/L3MON4D3/LuaSnip
--- [4] https://github.com/saadparwaiz1/cmp_luasnip
--- [5] https://github.com/rafamadriz/friendly-snippets
--- [6] https://github.com/hrsh7th/nvim-cmp
-return {{"hrsh7th/cmp-nvim-lsp"}, {"hrsh7th/cmp-nvim-lsp-signature-help"}, {
+return { { "hrsh7th/cmp-nvim-lsp" }, { "hrsh7th/cmp-nvim-lsp-signature-help" }, {
     "L3MON4D3/LuaSnip",
-    dependencies = {"saadparwaiz1/cmp_luasnip", "rafamadriz/friendly-snippets"}
+    dependencies = { "saadparwaiz1/cmp_luasnip", "rafamadriz/friendly-snippets" }
 }, {
     "hrsh7th/nvim-cmp",
     config = function()
@@ -36,15 +27,14 @@ return {{"hrsh7th/cmp-nvim-lsp"}, {"hrsh7th/cmp-nvim-lsp-signature-help"}, {
                     select = true
                 })
             }),
-            sources = cmp.config.sources({{
+            sources = cmp.config.sources({ {
                 name = "nvim_lsp"
             }, {
                 name = "luasnip"
-            } -- The function signarure
-            -- { name = "nvim_lsp_signature_help" },
-            }, {{
+            }
+            }, { {
                 name = "buffer"
-            }})
+            } })
         })
     end
-}}
+} }

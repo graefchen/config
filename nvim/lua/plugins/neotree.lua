@@ -1,8 +1,3 @@
--- Uses:
--- [1] https://github.com/nvim-neo-tree/neo-tree.nvim
--- [2] https://github.com/nvim-lua/plenary.nvim
--- [3] https://github.com/nvim-tree/nvim-web-devicons
--- [4] https://github.com/MunifTanjim/nui.nvim
 return {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",

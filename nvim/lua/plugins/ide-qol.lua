@@ -1,13 +1,3 @@
--- Uses:
--- [1] https://github.com/nanozuki/tabby.nvim
--- [2] https://github.com/nvim-tree/nvim-web-devicons
--- [3] https://github.com/windwp/nvim-autopairs
--- [4] https://github.com/lukas-reineke/indent-blankline.nvim
--- [5] https://github.com/NvChad/nvim-colorizer.lua
--- [6] https://github.com/lewis6991/gitsigns.nvim
--- [7] https://github.com/windwp/nvim-ts-autotag
--- [8] https://github.com/fedepujol/move.nvim
--- [9] https://github.com/folke/todo-comments.nvim
 return { {
     -- A tabline plugin
     "nanozuki/tabby.nvim",

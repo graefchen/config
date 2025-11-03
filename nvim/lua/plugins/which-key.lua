@@ -1,5 +1,3 @@
--- Uses:
--- [1] https://github.com/folke/which-key.nvim
 return {
     "folke/which-key.nvim",
     config = function()

@@ -1,5 +1,3 @@
--- Uses:
--- [1] https://github.com/Shatur/neovim-ayu
 return {
     "Shatur/neovim-ayu",
     name = "ayu",
