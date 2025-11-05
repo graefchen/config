@@ -9,6 +9,7 @@ vim.cmd("set smarttab")
 vim.cmd("syntax on")
 vim.cmd("set mouse=a")
 vim.cmd("set wildmode=longest,list")
+vim.cmd("set cursorline")
 
 -- Do not delete this line below !!!!
 vim.g.mapleader = " "
