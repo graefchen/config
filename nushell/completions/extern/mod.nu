@@ -1,0 +1,11 @@
+source ./bat-completions.nu
+source ./cargo-completions.nu
+source ./curl-completions.nu
+source ./gh-completions.nu
+source ./git-completions.nu
+source ./npm-completions.nu
+source ./rg-completions.nu
+source ./rustup-completions.nu
+source ./vscode-completions.nu
+source ./winget-completions.nu
+source ./yarn-v4-completions.nu
