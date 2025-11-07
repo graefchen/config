@@ -51,6 +51,14 @@ export extern wrenc [
 	-e: string    #  evaluate code
 ]
 
+# based on sqlite3
+# link: https://sqlite.org/download.html
+
+export extern sqlite3 [
+	filename
+	-A # run ".archive ARGS" and exit
+]
+
 # based on https://github.com/XXIIVV/oscean/tree/edc4de3b16908f1c09089b9756630b067eceec09/src/projects/arvelie
 
 # arvelie is a calender format
