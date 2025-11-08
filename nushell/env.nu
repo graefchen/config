@@ -18,6 +18,8 @@ alias vi = nvim
 alias vim = nvim
 alias nv = nvim
 
+alias snb = snobol4
+
 $env.EDITOR = "nvim"
 $env.ZEIT_DB =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')
 
@@ -43,3 +45,5 @@ def integrity [file: path]: nothing -> string {
 # hello, message
 print $"(arvelie), (neralie)"
 pkmnday
+
+# [[animal,fish];[cow,koi],[bat,catfish]]

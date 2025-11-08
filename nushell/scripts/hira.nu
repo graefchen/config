@@ -16,7 +16,7 @@ export def main [
 	mut i = 0
 	# a "simple" for loop made with the loop constraints
 	while $i < $length {
-		# next_two is for: 
+		# next_two is for:
 		let next = if ($i + 1) < $length {$chars | get ($i + 1)} else {""}
 		let next_two = if (($i + 2) < $length) { $next ++ ($chars | get ($i + 2))} else {""}
 		let char = $chars | get $i
@@ -250,7 +250,6 @@ export def main [
 			_   => { $ret ++= $char}
 		}
 		$i += 1
-		# print $ret
 	}
 
 	return $ret

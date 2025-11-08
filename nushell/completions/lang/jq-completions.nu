@@ -2,8 +2,13 @@
 # based on: jq-1.7.1
 # link: https://jqlang.github.io/jq/
 
+def "nu-complete json" [] {
+	ls -lat | where name =~ ".json"
+}
+
 # jq - commandline JSON processor
 export extern "jq" [
+	...file: string@"nu-complete json"
 	--null-input(-n)        # use `null` as the single input value;    
 	--raw-input(-R)         # read each line as string instead of JSON;
 	--slurp(-s)             # read all inputs into an array and use it as  the single input value;
@@ -34,4 +39,16 @@ export extern "jq" [
 	--version(-V)           # show the version;
 	--build-configuration   # show jq's build configuration;
 	--help(-h)              # show the help;
+]
+
+# based on: jqp version 0.7.0
+# link: https://github.com/noahgorstein/jqp
+
+# jqp is a TUI to explore the jq command line utility
+export extern "jqp" [
+	--config: string       # path to config file (default is $HOME/.jqp.yaml)
+	--file(-f): string@"nu-complete json"     # path to the input JSON file
+	--help(-h)             # help for jqp
+	--theme(-t): string    # jqp theme
+	--version(-v)          # version for jqp
 ]

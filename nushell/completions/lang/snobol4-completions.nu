@@ -2,8 +2,12 @@
 # based on: version 2.3.3
 # link: https://ftp.regressive.org/snobol4/
 
+def "nu-complete snobol4" [] {
+	ls -lat | where name =~ ".snb"
+}
 # SNOBOL4 (StriNg Oriented and symBOlic Language)
 export extern "snobol4" [
+	...files: string@"nu-complete snobol4"
 	-b         # disable display of startup banner
 	-d: int    # size of dynamic region in descriptors (default: 512k)
 	-f         # toggle folding of identifiers to upper case (-CASE)

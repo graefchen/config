@@ -57,3 +57,13 @@ def --env depth []: nothing -> int {
         $dir | get name | path split | each { $in | length } | sort | last | $in + 1
     }
 }
+
+# get the number of files in all subdirectorys
+#
+# is bad with ".vscode" folders
+def --env filenum []: nothing -> table {
+    ls -t | where type == dir | each {|name| {
+        name: $name.name,
+        filenum: (ls -t **/* | where ($it.type == file) | where ($it.name | path split | first) == $name.name | length)
+    } }
+}
