@@ -57,8 +57,6 @@ export COLORTERM='truecolor'
 # looks for starship.toml in the .config filder
 eval "$(starship init bash)"
 
-export PATH=$PATH:~/programming/bash:~/programming/awk
-
 # some functions
 
 function adog {

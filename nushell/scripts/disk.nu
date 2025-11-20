@@ -46,7 +46,7 @@ def --env fsize  []: nothing -> string,  nothing -> table {
 }
 
 # getting the current disk space
-def --env ds [] { du --max-depth 8 s| sort-by apparent s| update path { path basename } }
+def --env ds [] { du --max-depth 8 | sort-by apparent | update path { path basename } }
 
 # get the maximum depth of the current folder
 def --env depth []: nothing -> int {

@@ -24,7 +24,7 @@ return {
         -- }
         theta.header.type = "group"
         theta.header.val = require("haikus")
-        theta.header.opts = { width = 50 }
+        theta.header.opts = { position = "center", width = 40 }
         theta.buttons.val = {
             { type = "text",    val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
             { type = "padding", val = 1 },

@@ -20,23 +20,23 @@ end
 -- -> https://www.bopsecrets.org/gateway/passages/basho-frog.htm
 -- -> https://www.poetryfoundation.org/poets/kobayashi-issa
 local haiku_list = {
-	{ lines = { "Cherry blossoms —", "lights", "of years past." }, author = "Matsuo Bashō", translator = "Lucien Stryk" },
-	{ lines = { "Lips too chilled", "for prattle —", "autumn wind." }, author = "Matsuo Bashō", translator = "Lucien Stryk" },
-	{ lines = { "Old pond", "  and a frog-jump-in", "    water-sound" }, author = "Matsuo Bashō", translator = "Harold G. Henderson" },
-	{ lines = { "The old pond —", "A frog leaps in,", "And a splash." }, author = "Matsuo Bashō", translator = "Makoto Ueda" },
-	{ lines = { "old pond", "a frog in-leaping", "water-note" }, author = "Matsuo Bashō", translator = "Cana Maeda" },
-	{ lines = { "Old pond", "leap-splash —", "a frog." }, author = "Matsuo Bashō", translator = "Lucien Stryk" },
-	{ lines = { "dark old pond", ":", "a frog plunks in" }, author = "Matsuo Bashō", translator = "Dick Bakken" },
-	{ lines = { "pond", "  frog", "    plop!" }, author = "Matsuo Bashō", translator = "James Kirkup" },
-	{ lines = { "There once was a curious frog", "Who sat by a pond on a log", "And, to see what resulted,", "In the pond catapulted", "With a water-noise heard round the bog." }, author = "Matsuo Bashō", translator = "Alfred H. Marks" },
-	{ lines = { "Within aging pond", "frogs jumping vibrate the calm", "water’s resonance" }, author = "Matsuo Bashō", translator = "Sarah Isbell" },
-	{ lines = { "The old pond;", "a frog jumps in —", "the sound of the water." }, author = "Matsuo Bashō", translator = "Robert Aitken" },
+	{ lines = { "Cherry blossoms —", "lights", "of years past." }, author = "Matsuo Basho", translator = "Lucien Stryk" },
+	{ lines = { "Lips too chilled", "for prattle —", "autumn wind." }, author = "Matsuo Basho", translator = "Lucien Stryk" },
+	{ lines = { "Old pond", "  and a frog-jump-in", "    water-sound" }, author = "Matsuo Basho", translator = "Harold G. Henderson" },
+	{ lines = { "The old pond —", "A frog leaps in,", "And a splash." }, author = "Matsuo Basho", translator = "Makoto Ueda" },
+	{ lines = { "old pond", "a frog in-leaping", "water-note" }, author = "Matsuo Basho", translator = "Cana Maeda" },
+	{ lines = { "Old pond", "leap-splash —", "a frog." }, author = "Matsuo Basho", translator = "Lucien Stryk" },
+	{ lines = { "dark old pond", ":", "a frog plunks in" }, author = "Matsuo Basho", translator = "Dick Bakken" },
+	{ lines = { "pond", "  frog", "    plop!" }, author = "Matsuo Basho", translator = "James Kirkup" },
+	{ lines = { "There once was a curious frog", "Who sat by a pond on a log", "And, to see what resulted,", "In the pond catapulted", "With a water-noise heard round the bog." }, author = "Matsuo Basho", translator = "Alfred H. Marks" },
+	{ lines = { "Within aging pond", "frogs jumping vibrate the calm", "water’s resonance" }, author = "Matsuo Basho", translator = "Sarah Isbell" },
+	{ lines = { "The old pond;", "a frog jumps in —", "the sound of the water." }, author = "Matsuo Basho", translator = "Robert Aitken" },
 	{ lines = { "On a branch", "Floating downriver", "a cricket, singing." }, author = "Kobayashi Issa", translator = "Jane Hirshfield" },
 	{ lines = { "The snow is melting", "and the village is floooded", "    with children." }, author = "Kobayashi Issa", translator = "Robert Hass" },
 	{ lines = { "All the time I pray to Buddha", "I keep on", "   killing mosquitos." }, author = "Kobayashi Issa", translator = "Robert Hass" },
 	{ lines = { "Even with insects—", "some can sing,", "  some can’t." }, author = "Kobayashi Issa", translator = "Robert Hass" },
 	{ lines = { "Goes out,", "comes back—", "      the love life of a cat." }, author = "Kobayashi Issa", translator = "Robert Hass" },
-	{ lines = { "Wake, butterfly—", "it's late, we've miles", "to go together." }, author = "Matsuo Bashō", translator = "Lucien Stryk" },
+	{ lines = { "Wake, butterfly—", "it's late, we've miles", "to go together." }, author = "Matsuo Basho", translator = "Lucien Stryk" },
 }
 
 

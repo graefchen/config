@@ -21,11 +21,11 @@ export def main [
 		let next_two = if (($i + 2) < $length) { $next ++ ($chars | get ($i + 2))} else {""}
 		let char = $chars | get $i
 		match $char {
-			"A" => { $ret ++= "あ"}
-			"I" => { $ret ++= "い"}
-			"U" => { $ret ++= "ぅ"}
-			"E" => { $ret ++= "え"}
-			"O" => { $ret ++= "お"}
+			"A" => { $ret ++= "あ" }
+			"I" => { $ret ++= "い" }
+			"U" => { $ret ++= "ぅ" }
+			"E" => { $ret ++= "え" }
+			"O" => { $ret ++= "お" }
 			"K" => {
 				match $next {
 					"A" => { $ret ++= "か"; $i += 1 }
@@ -33,6 +33,12 @@ export def main [
 					"U" => { $ret ++= "く"; $i += 1 }
 					"E" => { $ret ++= "け"; $i += 1 }
 					"O" => { $ret ++= "こ"; $i += 1 }
+				}
+				# now the combination hiragana...
+				match $next_two {
+					"YA" => { $ret ++= "きゃ"; $i += 2 }
+					"YU" => { $ret ++= "きゅ"; $i += 2 }
+					"YO" => { $ret ++= "きょ"; $i += 2 }
 				}
 			}
 			"S" => {
@@ -119,9 +125,9 @@ export def main [
 				}
 				# combination
 				match $next_two {
-					"YA" => { $ret ++= "みゃ"; $i += 2}
-					"YU" => { $ret ++= "みゅ"; $i += 2}
-					"YO" => { $ret ++= "みょ"; $i += 2}
+					"YA" => { $ret ++= "みゃ"; $i += 2 }
+					"YU" => { $ret ++= "みゅ"; $i += 2 }
+					"YO" => { $ret ++= "みょ"; $i += 2 }
 				}
 			}
 			"Y" => {
@@ -148,8 +154,8 @@ export def main [
 			}
 			"W" => {
 				match $next {
-					"A" => { $ret ++= "わ"; $i += 2 }
-					"O" => { $ret ++= "を"; $i += 2 }
+					"A" => { $ret ++= "わ"; $i += 1 }
+					"O" => { $ret ++= "を"; $i += 1 }
 				}
 			}
 			# here start the dakuten ... that are very very complicated
@@ -239,15 +245,7 @@ export def main [
 					"YO" => { $ret ++= "ぴょ"; $i += 2 }
 				}
 			}
-			# now the combination hiragana...
-			"K" => {
-				match $next_two {
-					"YA" => { $ret ++= "きゃ"; $i += 2 }
-					"YU" => { $ret ++= "きゅ"; $i += 2 }
-					"YO" => { $ret ++= "きょ"; $i += 2 }
-				}
-			}
-			_   => { $ret ++= $char}
+			_   => { $ret ++= $char }
 		}
 		$i += 1
 	}
