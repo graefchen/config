@@ -26,6 +26,7 @@ use ./scripts/langs.nu
 use ./scripts/neocities.nu
 use ./scripts/rand.nu
 use ./scripts/setup.nu
+use ./scripts/smolf.nu
 use ./scripts/toc.nu
 use ./scripts/walk.nu
 
