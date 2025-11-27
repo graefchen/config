@@ -17,6 +17,7 @@ source ./completions/tools/mod.nu
 
 source ./scripts/apps.nu
 source ./scripts/disk.nu
+source ./scripts/pandora.nu
 
 use ./scripts/binary.nu
 use ./scripts/commit.nu

@@ -18,6 +18,9 @@ alias vi = nvim
 alias vim = nvim
 alias nv = nvim
 
+# gnu cat has some funny querks
+alias cat = bat
+
 alias snb = snobol4
 
 $env.EDITOR = "nvim"
