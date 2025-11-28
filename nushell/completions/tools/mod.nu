@@ -1,5 +1,6 @@
 # all the tool things
 
+source ./age-completions.nu
 source ./djot-completions.nu
 source ./fd-completions.nu
 source ./hexyl-completions.nu

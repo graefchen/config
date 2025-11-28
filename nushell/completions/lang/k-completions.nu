@@ -1,9 +1,7 @@
 # based on: kona-211225
 # link: https://github.com/kevinlawler/kona
 
-def "nu-complete k" [] {
-	ls -lat | where (name | path parse | get extension) == "k"
-}
+def "nu-complete k" [] { ls -lat | where name =~ ".k" | get name }
 
 # kona(k3) programming language
 export extern "k" [

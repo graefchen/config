@@ -16,20 +16,20 @@ source ./completions/package/mod.nu
 source ./completions/tools/mod.nu
 
 source ./scripts/apps.nu
+source ./scripts/binary.nu
+source ./scripts/commit.nu
 source ./scripts/disk.nu
+source ./scripts/neocities.nu
 source ./scripts/pandora.nu
+source ./scripts/walk.nu
 
-use ./scripts/binary.nu
-use ./scripts/commit.nu
 use ./scripts/dead-links.nu
 use ./scripts/hira.nu
 use ./scripts/langs.nu
-use ./scripts/neocities.nu
 use ./scripts/rand.nu
 use ./scripts/setup.nu
 use ./scripts/smolf.nu
 use ./scripts/toc.nu
-use ./scripts/walk.nu
 
 # same as `from msgpack`
 def "from mpk" [] { $in | from msgpack }

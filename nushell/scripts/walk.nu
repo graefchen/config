@@ -15,13 +15,13 @@ def save_bookmarks []: any -> nothing {
 
 # creating a bookmark list for custom completion
 def bookmarks [] {
-	list
+	walk list
 	| transpose name path
 	| each {|r| { value: $r.name, description: $r.path }}
 }
 
 # List all bookmarks
-export def list []: nothing -> any, nothing -> table {
+def "walk list" []: nothing -> any, nothing -> table {
 	let pth = (get_bookmarks)
 	if (not ($pth | path exists)) {
 		{} | save $pth
@@ -32,7 +32,7 @@ export def list []: nothing -> any, nothing -> table {
 }
 
 # Creating an new bookmark
-export def --env add [
+def --env "walk add" [
 	name?: string # The name of the new bookmark
 	path?: path # The path of the new bookmark
 ]: nothing -> nothing {
@@ -49,7 +49,7 @@ export def --env add [
 	} else {
 		if (($path | path type) == "dir") and ($path | path exists) {
 			let p = $path
-			list
+			walk list
 			| insert $name { $p }
 			| save_bookmarks
 		}
@@ -57,11 +57,11 @@ export def --env add [
 }
 
 # Deleting an bookmark
-export def remove [
+def "walk remove" [
 	name: string@bookmarks # The bookmarks to delete
 ]: nothing -> nothing {
 	if ($name in (list)) {
-		list
+		walk list
 		| reject $name
 		| save_bookmarks
 	} else {
@@ -70,11 +70,11 @@ export def remove [
 }
 
 # A simple and opinionated bookmark-like module to get around your system fast.
-export def --env main [
+def --env "walk" [
 	name: string@bookmarks
 ]: nothing -> nothing {
 	if ($name | is-not-empty) {
-		let list = list
+		let list = walk list
 		if ($name in $list) {
 			$list
 			| get $name

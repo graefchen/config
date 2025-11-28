@@ -3,6 +3,7 @@ source ./cargo-completions.nu
 source ./curl-completions.nu
 source ./gh-completions.nu
 source ./git-completions.nu
+source ./jj-completions.nu
 source ./npm-completions.nu
 source ./rg-completions.nu
 source ./rustup-completions.nu

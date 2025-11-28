@@ -3,7 +3,7 @@
 # link: https://github.com/wren-lang/wren-cli
 
 def "nu-complete wren" [] {
-	ls -lat | where name =~ ".wren"
+	ls -lat | where name =~ ".wren" | get name
 }
 
 # the wren cli

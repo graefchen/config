@@ -42,4 +42,4 @@ fn t {||
 date-elv:date-elv -Q "%A, %B %d, %Y %T"
 # todays date in arvelie & neralie
 echo (e:arvelie.exe), (e:neralie.exe)
-echo (e:pkmnday)
+echo (e:pkmnday.exe)

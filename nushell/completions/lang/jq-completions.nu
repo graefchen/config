@@ -3,7 +3,7 @@
 # link: https://jqlang.github.io/jq/
 
 def "nu-complete json" [] {
-	ls -lat | where name =~ ".json"
+	ls -lat | where name =~ ".json" | get name
 }
 
 # jq - commandline JSON processor

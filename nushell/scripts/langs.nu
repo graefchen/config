@@ -40,6 +40,7 @@ export def main [] {
 		PureScript: [purs spago]
 		Python : [python]
 		R: [R]
+		Reku: [raku]
 		Ruby: [ruby]
 		Rust : [cargo rustc]
 		SASS : [sass]

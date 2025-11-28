@@ -3,7 +3,7 @@
 # link: https://ftp.regressive.org/snobol4/
 
 def "nu-complete snobol4" [] {
-	ls -lat | where name =~ ".snb"
+	ls -lat | where name =~ ".snb" | get name
 }
 # SNOBOL4 (StriNg Oriented and symBOlic Language)
 export extern "snobol4" [

@@ -22,6 +22,7 @@ export def completions []: nothing -> nothing {
 		"curl"
 		"gh"
 		"git"
+		"jj"
 		"npm"
 		"rg"
 		"rustup"
