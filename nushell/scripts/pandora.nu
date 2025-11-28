@@ -14,6 +14,20 @@
 #   - gum
 #   - ssh
 
+# Further Work:
+# Note(2025-11-28):
+# - make the get-dir function better
+# - *maybe* switch from gum, while it is indeed awesome
+#   to a more basic, at best nushell cental implementation
+# - while pa[4] has another subcommand called "edit", 
+#   pandora does not currently have it, maybe this should
+#   be changed in the future
+# - It could be also good to look at pa[4] again for more
+#   inspiration, especially for the way it handles recipients
+#   so you could possible use it in a setting, that multiple
+#   computers can use it
+# - like pa[4], use a git (or another vcs) integration
+
 module pandhelp {
 	export def get-identity [] {
 		if (($env | get --optional pandora.id) != null) {
@@ -49,8 +63,9 @@ def "pandora add" [name: string]: nothing -> string {
 	if ($pass != $p2) { return "passwords don't match" }
 	touch $"(pandhelp get-dir)/.($name)"
 
-	# Note(2025-11-28): I do not know how secure that is.
-	#                   Need to reevaluate it!
+	# Note(2025-11-28):
+	#   I do not know how secure that is.
+	#   Need to reevaluate it!
 	try {
 		$pass
 		| age --encrypt --recipients-file $"(pandhelp get-identity).pub" -o $"(pandhelp get-dir)/($name).age"
