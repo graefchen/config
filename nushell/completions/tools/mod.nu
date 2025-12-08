@@ -3,9 +3,14 @@
 source ./age-completions.nu
 source ./djot-completions.nu
 source ./fd-completions.nu
+source ./foto-completions.nu
+source ./glow-completions.nu
+source ./gum-completions.nu
 source ./hexyl-completions.nu
 source ./hyperfine-completions.nu
 source ./lsd-completions.nu
+source ./moul-completions.nu
+source ./meson-completions.nu
 source ./ninja-completions.nu
 source ./onefetch-completions.nu
 source ./pastel-completions.nu

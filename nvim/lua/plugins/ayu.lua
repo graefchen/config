@@ -4,13 +4,13 @@ return {
     priority = 1000,
     config = function()
         local colors = require('ayu.colors')
+        colors.generate()
 
         require("ayu").setup({
             mirage = false,
             overrides = {
                 Normal = { bg = "None" },
-                NormalFloat = { bg = "none" },
-                ColorColumn = { bg = "None" },
+                NormalFloat = { bg = "None" },
                 SignColumn = { bg = "None" },
                 Folded = { bg = "None" },
                 FoldColumn = { bg = "None" },
@@ -18,7 +18,7 @@ return {
                 CursorColumn = { bg = "None" },
                 VertSplit = { bg = "None" },
                 Comment = { italic = false },
-                LineNr = { fg = colors.accent }
+                LineNr = { bg = "None" }
             },
         })
         require("ayu").colorscheme()

@@ -70,7 +70,6 @@ export def goapps []: nothing -> nothing {
 		{ name: "filippo.io/age/cmd/age-keygen", version: "@latest" }
 		{ name: "filippo.io/age/cmd/age", version: "@latest" }
 		{ name: "github.com/benhoyt/goawk", version: "@latest" }
-		{ name: "github.com/benhoyt/goawk", version: "@latest" }
 		{ name: "github.com/boyter/scc/v3", version: "@latest" }
 		{ name: "github.com/charmbracelet/glow", version: "@latest" }
 		{ name: "github.com/charmbracelet/gum", version: "@latest" }
@@ -80,6 +79,7 @@ export def goapps []: nothing -> nothing {
 		{ name: "github.com/Rosettea/bunnyfetch", version: "@latest" }
 		{ name: "github.com/tsoding/snitch", version: "@latest" }
 		{ name: "github.com/waynezhang/foto", version: "@latest" }
+		# { name: "github.com/mrusme/zeit", version: "@1.0.1" }
 	]
 	print "Downloading Go Apps..."
 	for i in $goapps_list {

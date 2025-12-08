@@ -3,12 +3,12 @@
 
 # Which languages do I have installed?
 export def main [] {
-	let lang_list = {
+	const lang_list = {
 		Ada: [alr]
 		AutoHotkey: [Ahk2Exe AutoHotkey32 AutoHotkey64]
 		AWK: [awk goawk]
 		Bash : [bash]
-		BASIC: [sbasic TinyBasic]
+		BASIC: [fbc sbasic TinyBasic]
 		C : [clang msvc gcc tcc]
 		"C++" : [clang gcc]
 		"Common Lisp": [sbcl]
@@ -20,7 +20,8 @@ export def main [] {
 		fennel : [fennel]
 		go : [go]
 		Haskell: [ghc ghci]
-		io : [io]
+		hy: [hy hyc hy2p]
+		io : [io io_static]
 		J: [jqt]
 		Janet: [janet]
 		Java: [javac]
@@ -40,10 +41,11 @@ export def main [] {
 		PureScript: [purs spago]
 		Python : [python]
 		R: [R]
-		Reku: [raku]
+		Raku: [raku]
 		Ruby: [ruby]
 		Rust : [cargo rustc]
 		SASS : [sass]
+		sh: [sh]
 		SNOBOL4 : [snobol4]
 		sqlite : [sqlite3]
 		TypeScript : [bun deno]

@@ -47,3 +47,5 @@ bm.msgpackz
 
 # don't add android stuff
 /.android
+
+/scripts

@@ -1,5 +1,8 @@
 # programming languages on me 'puter
 
+> [!info]
+> This is just sporadically updated.
+
 ## Main 'puter
 
 > [!note]

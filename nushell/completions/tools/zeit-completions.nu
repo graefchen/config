@@ -1,52 +1,46 @@
 # Written by graefchen
-# based on: zeit 0.0.8
+# based on: zeit 1.0.1
 # link: https://github.com/mrusme/zeit
 
 # TODO: Finish
 
+# zeit block
+export extern "zeit block" []
+
 # Generate the autocompletion script for the specified shell
 export extern "zeit completion" []
 
-# Display or update activity
-export extern "zeit entry" []
+# zeit end
+export extern "zeit end" []
 
-# Erase activity
-export extern "zeit erase" []
-
-# Export tracked activities
+# zeit export
 export extern "zeit export" []
-
-# Finish currently running activity
-export extern "zeit finish" []
 
 # Help about any command
 export extern "zeit help" []
 
-# Import tracked activities
-export extern "zeit import" []
+# zeit import
+export extern "zeit import " []
 
-# List activities
-export extern "zeit list" []
-
-# Project settings
+# zeit project
 export extern "zeit project" []
 
-# Display activity statistics
-export extern "zeit stats" []
+# zeit start
+export extern "zeit start" []
 
-# Task settings
+# zeit stat
+export extern "zeit stat" []
+
+# zeit task
 export extern "zeit task" []
 
-# Tracking time
-export extern "zeit track" []
-
-# Currently tracking activity
-export extern "zeit tracking" []
-
-# Display what Zeit it is
+# zeit version
 export extern "zeit version" []
 
+
 export extern "zeit" [
-	--help(-h)       # help for zeit
-	--no-colors  # Do not use colors in output
+	--color              # When to display icons (always, auto, never) (default "auto")
+	--debug              # Display debugging output in the console
+	--format(-f): string # Output format (cli, json) (default "cli")
+	--help(-h)           # help for zeit
 ]

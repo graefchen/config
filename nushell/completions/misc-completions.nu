@@ -11,13 +11,6 @@ export extern "bunnyfetch" [
        --no-distro-color(-d)   # don't use the color defined in os-release for the OS color
 ]
 
-# based on: Io 20110905
-# link: https://iolanguage.org
-
-def "nu-complete io" [] { ls -lat | where name =~ ".io" | get name }
-# Io programmming language
-export extern "io" [ file?: string@"nu-complete io" ]
-
 # based on sqlite3
 # link: https://sqlite.org/download.html
 
@@ -43,5 +36,33 @@ def "nu-complete si" [] { ls -lat | where name =~ ".ess" | get name }
 # skyrim save inspector
 export extern "si" [] { ...file:string@"nu-complete si" }
 alias sa = si ...(ls -lat | where name =~ ".ess" | get name | sort -in)
+
+# get the current season of the japanese calender
+export extern tsuyu [
+	--english(-e)      # print the english name
+	--japanese(-j)     # print the japanese name
+	--romanisation(-r) # print the romanisation
+	--solar(-s)        # use the solar term
+	--microseason(-m)  # use the microseason
+	--help(-h)         # the help message
+]
+
+def "pyra-backend" [] {
+	return [
+		{ value: "lua" , description: "Lua" }
+		{ value: "love" , description: "LÖVE" }
+		{ value: "javascript" , description: "JavaScript" }
+		{ value: "ruby" , description: "Ruby" }
+		{ value: "graph" , description: "Graphviz" }
+	]
+}
+
+# pyra - a comfy language
+export extern pyra [
+	# NOTE: Maybe add a small little way to directly execute the pyra code.
+	--help(-h) # prints help
+	backend: string@"pyra-backend"
+	input: path
+]
 
 # Commented out (outdated|unwanted) misc items

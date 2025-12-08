@@ -44,7 +44,7 @@ def --env "walk add" [
 	if ($path | is-empty) {
 		$path = ($env.PWD)
 	}
-	if ($name in (list)) {
+	if ($name in (walk list)) {
 		print $"The bookmark: \"(ansi yellow)($name)(ansi reset)\" exists already."
 	} else {
 		if (($path | path type) == "dir") and ($path | path exists) {
@@ -60,7 +60,7 @@ def --env "walk add" [
 def "walk remove" [
 	name: string@bookmarks # The bookmarks to delete
 ]: nothing -> nothing {
-	if ($name in (list)) {
+	if ($name in (walk list)) {
 		walk list
 		| reject $name
 		| save_bookmarks

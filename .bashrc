@@ -52,6 +52,8 @@ alias lume='deno run -A https://lume.land/init.ts'
 # language logos in the correct colour
 export COLORTERM='truecolor'
 
+# export LANG=ja_JP.UTF8
+
 # starship config
 # the default config of plain text will be choosen
 # looks for starship.toml in the .config filder

@@ -47,6 +47,7 @@ def integrity [file: path]: nothing -> string {
 
 # hello, message
 print $"(arvelie), (neralie)"
-pkmnday
+# pkmnday
+tsuyu -s | split row "  " | where (is-not-empty) | str join ", "
 
 # [[animal,fish];[cow,koi],[bat,catfish]]
