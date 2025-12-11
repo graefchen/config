@@ -2,6 +2,7 @@
 
 > [!info]
 > This is just sporadically updated.
+> When I want to and when I feel like it is a good idea to.
 
 ## Main 'puter
 

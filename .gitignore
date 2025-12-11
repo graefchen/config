@@ -6,18 +6,11 @@ secret.json
 # nuxtrc, removed because telemetry seed
 .nuxtrc
 
-# my scoop -- psssst
-/scoop
-
 # My histroy!
 history.txt
 
-# Just a lot of repo bloat
-*/.hyper_plugins
-
 # Ignore all nushell completions files that are extern
 /nushell/completions/extern/*
-!/nushell/completions/extern/mod.nu
 
 # Ignore all nushell modules
 /nushell/modules/*
@@ -42,10 +35,9 @@ history.txt
 
 # Ignore my bookmarks (it is in the MessagePack format)
 # it is also a binary file
+bm.json
 bm.msgpack
 bm.msgpackz
 
 # don't add android stuff
 /.android
-
-/scripts

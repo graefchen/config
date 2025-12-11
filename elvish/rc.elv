@@ -15,11 +15,11 @@ use github.com/zzamboni/elvish-completions/ssh
 # https://zzamboni.org/post/using-and-writing-completions-in-elvish/
 use github.com/zzamboni/elvish-completions/comp
 
+# completions for the tools I use the most/I hope
 use ./completions/io
 use ./completions/k
 use ./completions/wren
 
-use ./misc
 use ./util
 
 # using the starship prompt
@@ -52,17 +52,9 @@ fn gcm {|@a| git commit -m         $@a }
 fn gpa {|@a| git push origin --all $@a }
 
 # some useful functions
-fn t {||
-  e:date -I | e:clip
-  echo "Copied todays date into clipboard"
-}
-
+fn t {|| e:date -I | e:clip; echo "Copied todays date into clipboard" }
 fn pyra {|backend file| e:lua (util:find-file pyra) $backend $file }
-
-fn md {|dir|
-  mkdir -p $dir
-  cd $dir
-}
+fn md {|dir| mkdir -p $dir; cd $dir }
 
 # todays date in elvish
 date-elv:date-elv -Q "%A, %B %d, %Y %T"
