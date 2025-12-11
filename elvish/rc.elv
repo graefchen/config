@@ -59,8 +59,13 @@ fn t {||
 
 fn pyra {|backend file| e:lua (util:find-file pyra) $backend $file }
 
+fn md {|dir|
+  mkdir -p $dir
+  cd $dir
+}
+
 # todays date in elvish
 date-elv:date-elv -Q "%A, %B %d, %Y %T"
 # todays date in arvelie & neralie
 echo (e:arvelie), (e:neralie)
-echo (str:split "  " (str:trim-left (e:tsuyu) " ") | str:join ", ")
+echo (str:split "  " (str:trim-left (e:tsuyu -s) " ") | str:join ", ")

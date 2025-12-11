@@ -45,6 +45,8 @@ def integrity [file: path]: nothing -> string {
     return $"sha256-(open $file | hash sha256 -b | encode base64)"
 }
 
+def --env md [dir: string] { mkdir $dir; cd $dir }
+
 # hello, message
 print $"(arvelie), (neralie)"
 # pkmnday

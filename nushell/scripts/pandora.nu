@@ -1,3 +1,4 @@
+# nu-pandora v 1.0
 # a passwort manager using age[1], ssh[2] and gum[3]
 # inspired by pa[4] and passage[5]
 #
