@@ -32,3 +32,25 @@ print $"(arvelie), (neralie)"
 tsuyu -s | split row "  " | where (is-not-empty) | str join ", "
 
 # [[animal,fish];[cow,koi],[bat,catfish]]
+
+# print all go apps
+def goapps []: nothing -> list<string> {
+    ls ($env.GOPATH | path join "bin") | get name | split column "\\" | get column6 | split column "." | get column1
+}
+# print all rust apps
+def rustapps []: nothing -> list<string> {
+    cargo install --list | split row "\n" | split column " " | get column1 | uniq | sort | reverse | drop | reverse
+}
+
+# small little conventional commits helper
+def "commit" [] {
+	let type = (gum choose "fix" "feat" "docs" "style" "refactor" "test" "chore" "revert")
+	mut scope = (gum input --placeholder "scope")
+	if ($scope != "") {$scope = $"\(($scope)\)" }
+	let summary = (gum input --value $"($type)($scope): " --placeholder "Summary of this change")
+	let details = (gum write --placeholder "Details of this change")
+	gum confirm "Commit changes?"
+	if ($env.LAST_EXIT_CODE == 0) {
+		git commit -m $"($summary)" -m $"($details)"
+	}
+}

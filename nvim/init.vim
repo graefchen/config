@@ -3,29 +3,30 @@ language en_US
 " Recursive Path
 set path+=**
 
-" showing the number at the lines
 set number
-set relativenumber
-" set showmatch
+set showmatch
 
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
 set autoindent
 set smarttab
 
-" I like the syntax
+" syntax is good
 syntax on
+
 set mouse=a
 set wildmode=longest,list
-set cursorline
 
 set notermguicolors
 colors vim
 
 let mapleader = " "
 
+" very good for workin' in this file
 map <leader>o :update<CR> :source<CR>
 map <leader>w :write<CR>
 map <leader>q :quit<CR>
+map <leader>n :Ntree<CR>
 
+" suppress intro
+set shortmess+=I
+
+highlight ColorColumn ctermbg=Black
