@@ -39,6 +39,8 @@ fn la  {|@a| e:lsd --all        $@a }
 fn ll  {|@a| e:lsd --long       $@a }
 fn lla {|@a| e:lsd --long --all $@a }
 
+fn tree {|@a| e:lsd --tree $@a }
+
 # snobol
 fn snb {|@a| e:snobol4 $@a }
 
