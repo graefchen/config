@@ -63,3 +63,6 @@ date-elv:date-elv -Q "%A, %B %d, %Y %T"
 # todays date in arvelie & neralie
 echo (e:arvelie), (e:neralie)
 echo (str:split "  " (str:trim-left (e:tsuyu -s) " ") | str:join ", ")
+
+set E:EDITOR = "nvim"
+set E:COLORTERM = "truecolor"

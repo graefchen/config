@@ -29,7 +29,7 @@ def --env md [dir: string] { mkdir $dir; cd $dir }
 
 # hello, message
 print $"(arvelie), (neralie)"
-tsuyu -s | split row "  " | where (is-not-empty) | str join ", "
+print $"(tsuyu -s | split row '  ' | where (is-not-empty) | str join ', ')"
 
 # [[animal,fish];[cow,koi],[bat,catfish]]
 
@@ -44,13 +44,13 @@ def rustapps []: nothing -> list<string> {
 
 # small little conventional commits helper
 def "commit" [] {
-	let type = (gum choose "fix" "feat" "docs" "style" "refactor" "test" "chore" "revert")
-	mut scope = (gum input --placeholder "scope")
-	if ($scope != "") {$scope = $"\(($scope)\)" }
-	let summary = (gum input --value $"($type)($scope): " --placeholder "Summary of this change")
-	let details = (gum write --placeholder "Details of this change")
-	gum confirm "Commit changes?"
-	if ($env.LAST_EXIT_CODE == 0) {
-		git commit -m $"($summary)" -m $"($details)"
-	}
+    let type = (gum choose "fix" "feat" "docs" "style" "refactor" "test" "chore" "revert")
+    mut scope = (gum input --placeholder "scope")
+    if ($scope != "") {$scope = $"\(($scope)\)" }
+    let summary = (gum input --value $"($type)($scope): " --placeholder "Summary of this change")
+    let details = (gum write --placeholder "Details of this change")
+    gum confirm "Commit changes?"
+    if ($env.LAST_EXIT_CODE == 0) {
+        git commit -m $"($summary)" -m $"($details)"
+    }
 }
