@@ -1,6 +1,7 @@
 # ~/.elvish/rc.elv
 
 use str
+use math
 
 # using modules
 use github.com/jkbr-19/sindarin-term/date-elv
@@ -57,6 +58,12 @@ fn gpa {|@a| git push origin --all $@a }
 fn t {|| e:date -I | e:clip; echo "Copied todays date into clipboard" }
 fn pyra {|backend file| e:lua (util:find-file pyra) $backend $file }
 fn md {|dir| mkdir -p $dir; cd $dir }
+fn integrity {|file|
+  echo "sha256-"(cat $file | openssl dgst -sha256 -binary | openssl base64 -A)
+}
+fn depth {
+  + (math:max (lsd -1d **/* --icon never | each {|f| str:count $f "/" })) 1
+}
 
 # todays date in elvish
 date-elv:date-elv -Q "%A, %B %d, %Y %T"
@@ -66,3 +73,5 @@ echo (str:split "  " (str:trim-left (e:tsuyu -s) " ") | str:join ", ")
 
 set E:EDITOR = "nvim"
 set E:COLORTERM = "truecolor"
+
+set E:LEDGER_FILE = "~/private/finance/"(date '+%Y')".journal"

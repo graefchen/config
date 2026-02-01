@@ -2,11 +2,12 @@ vim.cmd("language en_US")
 vim.cmd("set number")
 vim.cmd("set showmatch")
 vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
+vim.cmd("set smarttab")
+vim.cmd("set shiftwidth=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd("set tabstop=2")
 vim.cmd("set autoindent")
-vim.cmd("set smarttab")
 vim.cmd("syntax on")
 vim.cmd("set mouse=a")
 vim.cmd("set wildmode=longest,list")
@@ -19,3 +20,6 @@ vim.g.mapleader = " "
 
 -- Setting the background to light...
 -- vim.opt.background = "light"
+
+vim.keymap.set('n', '<leader>w', ':write<CR>')
+vim.keymap.set('n', '<leader>q', ':quit<CR>')

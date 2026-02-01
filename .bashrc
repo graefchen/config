@@ -52,6 +52,8 @@ alias lume='deno run -A https://lume.land/init.ts'
 # language logos in the correct colour
 export COLORTERM='truecolor'
 
+export LEDGER_FILE=$"~/private/finance/$(date "+%Y").journal"
+
 # export LANG=ja_JP.UTF8
 
 # starship config

@@ -18,7 +18,7 @@ return {
                 CursorColumn = { bg = "None" },
                 VertSplit = { bg = "None" },
                 Comment = { italic = false },
-                LineNr = { bg = "None" }
+                LineNr = { fg = colors.fg }
             },
         })
         require("ayu").colorscheme()

@@ -30,9 +30,9 @@ const MAP = {
     x:   { upper: " ▀▄▀",   lower: " █░█" },
     y:   { upper: " █▄█",   lower: " ░█░" },
     z:   { upper: " ▀█",    lower: " █▄" },
-    "-": { upper: " ▄▄",    lower: "░░░" },
-    "+": { upper: " ▄█▄",   lower: "░░▀░" },
-    ".": { upper: "░",      lower: "▄" },
+    "-": { upper: " ▄▄",    lower: " ░░" },
+    "+": { upper: " ▄█▄",   lower: " ░▀░" },
+    ".": { upper: " ░",      lower: " ▄" },
 }
 
 def smolf [msg: string]: nothing -> string {
