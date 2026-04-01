@@ -38,6 +38,8 @@ history.txt
 bm.json
 bm.msgpack
 bm.msgpackz
+# and my stack
+stack.msgpackz
 
 # don't add android stuff
 /.android

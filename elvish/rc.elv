@@ -57,7 +57,7 @@ fn gpa {|@a| git push origin --all $@a }
 # some useful functions
 fn t {|| e:date -I | e:clip; echo "Copied todays date into clipboard" }
 fn pyra {|backend file| e:lua (util:find-file pyra) $backend $file }
-fn md {|dir| mkdir -p $dir; cd $dir }
+fn md {|file| e:perl "~/AppData/Local/Markdown/Markdown.pl" $file }
 fn integrity {|file|
   echo "sha256-"(cat $file | openssl dgst -sha256 -binary | openssl base64 -A)
 }
@@ -75,3 +75,9 @@ set E:EDITOR = "nvim"
 set E:COLORTERM = "truecolor"
 
 set E:LEDGER_FILE = "~/private/finance/"(date '+%Y')".journal"
+
+# a very basic walk, like my nushell functions
+var bm = (cat "~/.config/bm.json" | from-json)
+set edit:completion:arg-completer[walk] = (comp:subcommands $bm)
+
+fn walk {|where| if (has-key $bm $where) { cd $bm[$where] }}

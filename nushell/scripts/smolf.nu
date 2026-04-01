@@ -1,7 +1,6 @@
 # written by graefchen
 # NOTE: I have no idea where that "font" is from
 #       I only know, that i slightly modified it
-# got some parts from here: 
 
 const MAP = {
     a:   { upper: " ▄▀█",   lower: " █▀█" },

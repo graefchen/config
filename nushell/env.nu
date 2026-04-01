@@ -34,7 +34,11 @@ def yesterday [] { return ("yesterday" | date from-human | format date "%F") }
 # getting todays date as ISO 8601 format
 def today [] { return (date now | format date "%F") }
 def tomorrow [] { return ("tomorrow" | date from-human | format date "%F") }
-def --env md [dir: string] { mkdir $dir; cd $dir }
+
+# The original markdown parser
+def md [file: string] {perl "~/AppData/Local/Markdown/Markdown.pl" $file}
+
+def pyra [backend, file] {lua "~/bin/pyra.out" $backend $file}
 
 # list all files in the bin folder
 def "binary list" [] {
@@ -69,11 +73,12 @@ print $"(tsuyu -s | split row '  ' | where (is-not-empty) | str join ', ')"
 
 # print all go apps
 def goapps []: nothing -> list<string> {
-    ls ($env.GOPATH | path join "bin") | get name | split column "\\" | get column6 | split column "." | get column1
+    ls ($env.GOPATH | path join "bin") | get name | each {$in | path parse | get stem} | uniq
 }
+
 # print all rust apps
 def rustapps []: nothing -> list<string> {
-    cargo install --list | split row "\n" | split column " " | get column1 | uniq | sort | reverse | drop | reverse
+    cargo install --list | split row "\n" | split column " " | get column0 | where {$in | is-not-empty}
 }
 
 # small little conventional commits helper

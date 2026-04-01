@@ -1,4 +1,4 @@
-# based on  nu-pandora v 1.0
+# based on nu-pandora v 1.0
 # 
 # Further Work:
 # Note(2025-11-28):

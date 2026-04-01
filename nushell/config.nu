@@ -9,10 +9,12 @@ $env.config = {
 use ~/.cache/starship/init.nu
 source ./completions.nu
 # some of my better more liked scripts
-source ./disk.nu
-source ./pandora.nu
-source ./smolf.nu
-source ./walk.nu
+source ./scripts/disk.nu
+source ./scripts/langs.nu
+source ./scripts/pandora.nu
+source ./scripts/smolf.nu
+source ./scripts/toc.nu
+source ./scripts/walk.nu
 
 def "from mpk" [] { $in | from msgpack }
 def "from mpkz" [] { $in | from msgpackz }

@@ -1,5 +1,32 @@
 # written by graefchen
 
+# filestats
+def --env fstats  []: nothing -> string,  nothing -> table {
+    mut files = (ls **/* --threads | where type == "file")
+    if ($files | is-empty) {
+        return "No files in directory"
+    } else {
+        mut dict = {}
+        for $file in $files {
+            let index = ($file | get name | path parse | get extension)
+            let size  = ($file | get size)
+            if ($index | is-empty) { continue }
+            if ($index in $dict) {
+                $dict = $dict | update $index {
+                    {
+                        size: (($in | get size) + $size),
+                        amount: (($in | get amount) + 1)
+                    }
+                }
+            } else {
+                $dict = $dict | insert $index {size: $size, amount: 1}
+            }
+        }
+        return (($dict | sort) | transpose name size | flatten
+                | each {$in | insert "size/amount" ($in.size / $in.amount)})
+    }
+}
+
 # a file counter
 #
 # counts all the files and returns either a string or a record
@@ -20,7 +47,7 @@ def --env fcount []: nothing -> string, nothing -> number, nothing -> record {
                 $dict = $dict | insert $index 1
             }
         }
-        return ($dict | sort)
+        return ($dict | sort) # | transpose name amount
     }
 }
 
@@ -41,7 +68,7 @@ def --env fsize  []: nothing -> string,  nothing -> table {
                 $dict = $dict | insert $index $size
             }
         }
-        return ($dict | sort | transpose name size)
+        return ($dict | sort) # | transpose name size
     }
 }
 
