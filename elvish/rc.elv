@@ -58,6 +58,7 @@ fn gpa {|@a| git push origin --all $@a }
 fn t {|| e:date -I | e:clip; echo "Copied todays date into clipboard" }
 fn pyra {|backend file| e:lua (util:find-file pyra) $backend $file }
 fn md {|file| e:perl "~/AppData/Local/Markdown/Markdown.pl" $file }
+fn rot { tr 'A-Za-z' 'N-ZA-Mn-za-m' }
 fn integrity {|file|
   echo "sha256-"(cat $file | openssl dgst -sha256 -binary | openssl base64 -A)
 }
