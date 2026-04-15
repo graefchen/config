@@ -82,3 +82,15 @@ var bm = (cat "~/.config/bm.json" | from-json)
 set edit:completion:arg-completer[walk] = (comp:subcommands $bm)
 
 fn walk {|where| if (has-key $bm $where) { cd $bm[$where] }}
+
+fn roms {
+  pprint [~/bin/uxn/*.rom]
+}
+
+# all the uxn roms on my pc
+fn drifblim {|@a| e:raven-cli.exe ~/bin/uxn/drifblim.rom -- $@a }
+fn talos    {|@a| e:raven-cli.exe ~/bin/uxn/talos.rom    -- $@a }
+fn uxnbal   {|@a| e:raven-cli.exe ~/bin/uxn/uxnbal.rom   -- $@a }
+fn uxndis   {|@a| e:raven-cli.exe ~/bin/uxn/uxndis.rom   -- $@a }
+fn uxnfor   {|@a| e:raven-cli.exe ~/bin/uxn/uxnfor.rom   -- $@a }
+fn uxnlin   {|@a| e:raven-cli.exe ~/bin/uxn/uxnlin.rom   -- $@a }

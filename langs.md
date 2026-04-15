@@ -11,8 +11,8 @@
 > extra language etc installed (even through another program like git or certain
 > video game engines/editors).
 
-- AutoHotkey &mdash; [AutoHotkey](https://www.autohotkey.com)
 - AWK &mdash; [git](https://git-scm.com), [GoAWK](https://github.com/benhoyt/goawk),
+- AutoHotkey &mdash; [AutoHotkey](https://www.autohotkey.com)
 - Bash &mdash; [git](https://git-scm.com)
 - BASIC &mdash; [SmallBASIC](https://smallbasic.github.io)
 - batch &mdash; default(windows)
@@ -40,12 +40,16 @@
 - Powershell &mdash; default(windows)
 - Prolog &mdash; [Scryer Prolog](https://github.com/mthom/scryer-prolog), [Trealla Prolog](https://github.com/trealla-prolog/trealla)
 - Python &mdash; [Python](https://www.python.org/downloads/)
-- R &mdash; [R](https://ryelang.org)
 - Rust &mdash; [Rust](https://www.rust-lang.org/tools/install)
-- rye &mdash; [rye]()
+- rye &mdash; [rye](https://ryelang.org)
 - Sass &mdash; [Dart Sass](https://github.com/sass/dart-sass/releases)
 - Shell &mdash; [git](https://git-scm.com)
 - SNOBOL4 &mdash; [snobol4](https://ftp.regressive.org/snobol4/)
 - TypeScript &mdash; [deno](https://deno.com)
 - V &mdash; [V](https://vlang.io)
 - Wren &mdash; [wren-cli](https://github.com/wren-lang/wren-cli/releases), [wren-console](https://github.com/joshgoebel/wren-console/releases)
+
+
+## Laptop
+
+- R &mdash; [R](https://www.r-project.org)

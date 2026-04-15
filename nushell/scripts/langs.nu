@@ -63,7 +63,7 @@ def langs [] {
 		| each { |x|
 			do --ignore-errors {
 				ls -lam $x
-				| where { $in.type == "application/octet-stream" or $in.type == "symlink" }
+				| where { $in.type == "application/octet-stream" or $in.type == "symlink" or $in.type == "unknown" }
 				| get name
 				| each { $in | path parse | get stem }
 				| uniq
