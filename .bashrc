@@ -52,7 +52,8 @@ alias lume='deno run -A https://lume.land/init.ts'
 # language logos in the correct colour
 export COLORTERM='truecolor'
 
-export LEDGER_FILE=$"~/private/finance/$(date "+%Y").journal"
+DATE="$(date +%Y)"
+export LEDGER_FILE=$"~/private/finance/$DATE.journal"
 
 # export LANG=ja_JP.UTF8
 
@@ -72,3 +73,10 @@ function log {
 		--format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %s%C(reset) %C(dim white)- %C(bold blue)<%an>%C(reset)%C(reset)%C(bold yellow)%d%C(reset)'
 	echo ""
 }
+
+function md {
+	perl ~/AppData/Local/Markdown/Markdown.pl $1
+}
+
+export -f md
+

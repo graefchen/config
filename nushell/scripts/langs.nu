@@ -51,7 +51,7 @@ def langs [] {
 		SNOBOL4: [snobol4]
 		sqlite: [sqlite3]
 		TypeScript: [deno]
-		v: [v]
+		V: [v]
 		wren: [wren wrenc]
 		zig: [zig]
 	}
