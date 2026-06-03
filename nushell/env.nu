@@ -96,3 +96,11 @@ def "commit" [] {
         git commit -m $"($summary)" -m $"($details)"
     }
 }
+
+alias c = commit
+alias cc = tcc
+
+def --env uncommit [] {
+    git reset --soft HEAD~1
+    git reset .
+}

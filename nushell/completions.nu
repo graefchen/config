@@ -4076,3 +4076,10 @@ export extern "jj workspace update-stale" [
 
 # endregion
 
+# region: zola
+
+# Completion based on zola 0.22.1
+
+# TODO: Write 'em.
+
+# endregion

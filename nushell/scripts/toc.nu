@@ -76,6 +76,8 @@ def levels [] {
 
 # toc - table of contents - generate a table of contents from a markdown(-like) file
 #
+# Does only work on Atx-Style headers!
+#
 # We assume that the input is always a correct markdown file-
 # Failes on multiple occasions.
 # For example if the argument `min` or max is smaller than 0.
