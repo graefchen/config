@@ -2,6 +2,7 @@
 
 use str
 use math
+use builtin
 
 # using modules
 use github.com/jkbr-19/sindarin-term/date-elv

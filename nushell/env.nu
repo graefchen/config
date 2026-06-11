@@ -25,6 +25,9 @@ alias nv = nvim
 
 alias snb = snobol4
 
+alias fa = fi ...(ls -la *.fos | sort-by modified | get name)
+# alias sa = si ...(ls -la *.fos | sort-by modified | get name)
+
 $env.EDITOR = "nvim"
 $env.ZEIT_DATABASE =  ($env.XDG_CONFIG_HOME | path join 'zeit.db')
 
@@ -55,7 +58,7 @@ def "binary" [...files: path] {
 def --env wordcount [--depth(-d): int = 4] {
     ls --threads ...(glob --depth $depth **/*.{md,org,txt})
     | where type == file
-    | each {|x| open $x.name | str stats | insert name $x.name }
+    | each {|x| open --raw $x.name | str stats | insert name $x.name }
     | move name --before lines
     | update name { $in | str replace $"(pwd)" "."}
 }
@@ -92,4 +95,12 @@ def "commit" [] {
     if ($env.LAST_EXIT_CODE == 0) {
         git commit -m $"($summary)" -m $"($details)"
     }
+}
+
+alias c = commit
+alias cc = tcc
+
+def --env uncommit [] {
+    git reset --soft HEAD~1
+    git reset .
 }

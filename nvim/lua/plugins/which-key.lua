@@ -1,9 +1,0 @@
-return {
-    "folke/which-key.nvim",
-    config = function()
-        vim.o.timeout = true
-        -- A timeout to not cause problems
-        vim.o.timeoutlen = 300
-        require("which-key").setup({})
-    end
-}
