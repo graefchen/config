@@ -43,3 +43,6 @@ stack.msgpackz
 
 # don't add android stuff
 /.android
+
+# micro editor
+/micro

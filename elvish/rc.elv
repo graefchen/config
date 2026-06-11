@@ -17,7 +17,11 @@ use github.com/zzamboni/elvish-completions/ssh
 # https://zzamboni.org/post/using-and-writing-completions-in-elvish/
 use github.com/zzamboni/elvish-completions/comp
 
+# using my own monorepo elvish scripts
+use github.com/graefchen/monorepo/nyx/pandora
+
 # completions for the tools I use the most/I hope
+# I could potentially sort them out to another repo .. will see
 use ./completions/io
 use ./completions/k
 use ./completions/wren
@@ -55,6 +59,9 @@ fn gap {|@a| git add --patch       $@a }
 fn gcm {|@a| git commit -m         $@a }
 fn gpa {|@a| git push origin --all $@a }
 
+# => https://github.com/mithrandie/csvq
+fn cq {|@a| csvq $@a }
+
 # some useful functions
 fn t {|| e:date -I | e:clip; echo "Copied todays date into clipboard" }
 fn pyra {|backend file| e:lua (util:find-file pyra) $backend $file }
@@ -73,7 +80,7 @@ date-elv:date-elv -Q "%A, %B %d, %Y %T"
 echo (e:arvelie), (e:neralie)
 echo (str:split "  " (str:trim-left (e:tsuyu -s) " ") | str:join ", ")
 
-set E:EDITOR = "nvim"
+set E:EDITOR = "edit"
 set E:COLORTERM = "truecolor"
 
 set E:LEDGER_FILE = "~/private/finance/"(date '+%Y')".journal"
@@ -84,9 +91,7 @@ set edit:completion:arg-completer[walk] = (comp:subcommands $bm)
 
 fn walk {|where| if (has-key $bm $where) { cd $bm[$where] }}
 
-fn roms {
-  pprint [~/bin/uxn/*.rom]
-}
+fn roms { pprint [~/bin/uxn/*.rom] }
 
 # all the uxn roms on my pc
 fn drifblim {|@a| e:raven-cli.exe ~/bin/uxn/drifblim.rom -- $@a }
