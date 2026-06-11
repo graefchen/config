@@ -78,7 +78,7 @@ set E:COLORTERM = "truecolor"
 set E:LEDGER_FILE = "~/private/finance/"(date '+%Y')".journal"
 
 # a very basic walk, like my nushell functions
-var bm = (cat "~/.config/bm.json" | from-json)
+var bm = (cat ~/.config/bm.json | from-json)
 set edit:completion:arg-completer[walk] = (comp:subcommands $bm)
 
 fn walk {|where| if (has-key $bm $where) { cd $bm[$where] }}
