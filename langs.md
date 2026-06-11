@@ -11,7 +11,7 @@
 > extra language etc installed (even through another program like git or certain
 > video game engines/editors).
 
-- AWK &mdash; [git](https://git-scm.com), [GoAWK](https://github.com/benhoyt/goawk),
+- AWK &mdash; [git](https://git-scm.com), [GoAWK](https://github.com/benhoyt/goawk)
 - AutoHotkey &mdash; [AutoHotkey](https://www.autohotkey.com)
 - C &mdash; [clang](https://releases.llvm.org/download.html), [tcc](https://download.savannah.gnu.org/releases/tinycc/)
 - C++ &mdash; [clang](https://releases.llvm.org/download.html)
@@ -37,4 +37,16 @@
 
 ## Laptop
 
+- AWK &mdash; [git](https://git-scm.com), [GoAWK](https://github.com/benhoyt/goawk)
+- C &mdash; [clang](https://releases.llvm.org/download.html), [tcc](https://download.savannah.gnu.org/releases/tinycc/)
+- C++ &mdash; [clang](https://releases.llvm.org/download.html)
+- Go &mdash; [Go](https://go.dev/dl/)
+- Haskell &mdash; [ghc]()
+- Io &mdash; [io](https://iolanguage.org/binaries.html)
+- JavaScript &mdash; [nodejs](https://nodejs.org/en/download), [deno](https://deno.com)
+- jq &mdash; [jq](https://jqlang.org/download/)
+- k &mdash; [kona](https://kona.github.io/#/)
+- Numbat &mdash; [Numbat](https://github.com/sharkdp/numbat)
+- Odin &mdash; [Odin](https://odin-lang.org/docs/install/)
 - R &mdash; [R](https://www.r-project.org)
+- TypeScript &mdash; [deno](https://deno.com)
